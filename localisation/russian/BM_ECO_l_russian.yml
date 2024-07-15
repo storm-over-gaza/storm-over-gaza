@@ -1,0 +1,60 @@
+﻿l_russian:
+ country_GDP_M: "[?country_GDP_M] М" #NT!
+ country_GDP_B: "[?country_GDP_B] Б" #NT!
+ country_GDP_T: "[?country_GDP_T] Т" #NT!
+ country_GDP_M_d: "[?country_GDP_M|Y0] §YM§!" #NT!
+ country_GDP_B_d: "[?country_GDP_B|Y0..3] §YB§!" #NT!
+ country_GDP_T_d: "[?country_GDP_T|Y0..3] §YT§!" #NT!
+ country_GDP_M_map_tooltip: "§Y[FROM.controller.GetName]§!: $[?FROM.controller:country_GDP_M|Y0] §YM§!" #NT!
+ country_GDP_B_map_tooltip: "§Y[FROM.controller.GetName]§!: $[?FROM.controller:country_GDP_B|Y0..3] §YB§!" #NT!
+ country_GDP_T_map_tooltip: "§Y[FROM.controller.GetName]§!: $[?FROM.controller:country_GDP_T|Y0..3] §YT§!" #NT!
+ country_GDP_M_map_1: "[?FROM.controller:country_GDP_M|Y0] §YM§!" #NT!
+ country_GDP_T_map_2: "[?FROM.controller:country_GDP_T|Y0..3] §YT§!" #NT!
+ country_GDP_B_map_3: "[?FROM.controller:country_GDP_B|Y0..3] §YB§!" #NT!
+ view_GDP_button_tt: "Открыть экономический экран" #NT!
+ top_ten_GDP_country_flag_icon_tt: "[THIS.GetName]\nВВП: [country_GDP_f_d]$\nВВП на душу населения: [?country_GDP_per_capita|Y0]$\nРост ВВП/м: [?GDP_growth_value|0..3+=%%]\nПроцент от общего ВВП: §Y[?percentage_of_GDP|%%]§!" #NT!
+ GDP_list_flag_button_tt: "[THIS.GetName]\nВВП: [country_GDP_f_d]$\nВВП на душу населения: [?country_GDP_per_capita|Y0]$\nРост ВВП/м: [?GDP_growth_value|0..3+=%%]\nПроцент от общего ВВП: §Y[?percentage_of_GDP|%%]§!" #NT!
+ GDP_selected_country_flag_icon_tt: "[THIS.GetName]\nВВП: [country_GDP_f_d]$\nВВП на душу населения: [?country_GDP_per_capita|Y0]$\nРост ВВП/м: [?GDP_growth_value|0..3+=%%]\nПроцент от общего ВВП: §Y[?percentage_of_GDP|%%]§!" #NT!
+ GDP_list_text: "[country_GDP_f]" #NT!
+ GDP_per_capita_list_text: "[?country_GDP_per_capita|0]" #NT!
+ top_ten_GDP_rank: "Нет [?THIS.GDP_position|0]" #NT!
+ GDP_selected_country_rank: "Мировой рейтинг: [?THIS.GDP_position|0]" #NT!
+ GDP_main_title: "Управлять экономикой" #NT!
+ GDP_list_sort_button_text: "ВВП" #NT!
+ GDP_per_capita_list_sort_button_text: "ВВП на душу населения" #NT!
+ GDP_main_text: "ВВП страны:§Y [country_GDP_f] §! ВВП страны на душу населения: [?country_GDP_per_capita|Y0]" #NT!
+ GDP_main_text2: "Долг: §R[?debttotal] Б§! Проценты по долгу: §R[?debtexp] Б§!/неделя" #NT!
+ GDP_main_text3: "§RExpenses§!" #NT!
+ GDP_main_text4: "Ваши общие расходы: §R[?allexpenses] Б§! в неделю \n §RРасходы§! \nВоенное содержание: §R[?ms] Б§! в неделю\nВоенные расходы: §R[?nf] Б§! в неделю\nСодержание военно-морского флота: ☻ _0[?allexpenses]1 Б§! в неделю\nСодержание состояния: §R[?allexpenses]4 Б§! в неделю\nИмпорт ресурсов: §R[?allexpenses]7 Б§! в неделю" #NT!
+  
+ GDP_main_text5: "§GIncome§!" #NT!
+ GDP_main_text6: "Ваш общий доход: §G[?nmnw] Б§! в неделю \n §GДоходы§! \nНалоги на население: §G[?tax] Б§! в неделю\nКорпоративные налоги: §G[?cfff] Б§! в неделю\nЭкспорт ресурсов: ☻ _0[?nmnw]1 Б§!/неделя\n" #NT!
+  
+ APMODE_TWR_GOVERNMENT_TYPE_MAP_MODE: "§YСброс отображения режима карты ВВП§!" #NT!
+ MAPMODE_TWR_GOVERNMENT_TYPE_MAP_MODE_NAME: "Сброс дисплея" #NT!
+ MAPMODE_TWR_GOVERNMENT_TYPE_MAP_MODE_DESCRIPTION: "Отображение мер противодействия ошибкам" #NT!
+  
+ TWR_government_type_map_mode_tooltip: "§Y[FROM.controller.GetName]§!" #NT!
+ TWR_government_type_map_mode_tooltip_delayed: "§Y[FROM.controller.GetName]§! (§Y[FROM.controller.GetMapModeGovernmentType]§!)" #NT!
+  
+ MAPMODE_TWR_INDUSTRIALISATION_MAP_MODE: "§YСброс отображения режима карты ВВП§!" #NT!
+ MAPMODE_TWR_INDUSTRIALISATION_MAP_MODE_NAME: "Сброс дисплея" #NT!
+ MAPMODE_TWR_INDUSTRIALISATION_MAP_MODE_DESCRIPTION: "Отображение мер противодействия ошибкам" #NT!
+  
+ TWR_industrialisation_map_mode_tooltip: "§Y[FROM.controller.GetName]§!" #NT!
+ TWR_industrialisation_map_mode_tooltip_delayed: "§Y[FROM.controller.GetName]§! (§Y[FROM.controller.GetMapModeIndustrialisationLevel]§!)" #NT!
+  
+ MAPMODE_TWR_GDP_MAP_MODE: "§YВВП страны§!" #NT!
+ MAPMODE_TWR_GDP_MAP_MODE_NAME: "ВВП" #NT!
+ MAPMODE_TWR_GDP_MAP_MODE_DESCRIPTION: "Обновления ежемесячно" #NT!
+  
+ TWR_GDP_map_mode_tooltip: "[FROM.controller.country_GDP_f_map]" #NT!
+  
+ TWR_GDP_map_mode_tooltip_delayed: "§Y[FROM.controller.GetName]§! имеет ВВП $[FROM.controller.country_GDP_f_map_d]\nРост ВВП: §Y[?FROM.controller:gdp_growth|0..3+=%%]§!" #NT!
+  
+ MAPMODE_TWR_GDP_PER_CAPITA_MAP_MODE: "§YВВП страны на душу населения§!" #NT!
+ MAPMODE_TWR_GDP_PER_CAPITA_MAP_MODE_NAME: "ВВП на душу населения" #NT!
+ MAPMODE_TWR_GDP_PER_CAPITA_MAP_MODE_DESCRIPTION: "Обновления ежемесячно" #NT!
+  
+ TWR_GDP_per_capita_map_mode_tooltip: "§Y[FROM.controller.GetName]§!: $§Y[?FROM.controller:country_GDP_per_capita|Y0]§!" #NT!
+ TWR_GDP_per_capita_map_mode_tooltip_delayed: "§Y[FROM.controller.GetName]§! ВВП на душу населения составляет §Y[?FROM.controller:country_GDP_per_capita|Y0]§ доллар!" #NT!

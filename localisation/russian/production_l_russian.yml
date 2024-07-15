@@ -1,0 +1,312 @@
+﻿l_russian:
+ PRODUCTION_PRODUCTION_LABEL: "Производство" #NT!
+ PRODUCTION_EQUIPMENTPOOL_LABEL: "Хранилище" #NT!
+ PRODUCTION_EFFICIENCY_LABEL: "§TEfficiency§!" #NT!
+ PRODUCTION_EQUIPMENT_LABEL: "Оборудование" #NT!
+ PRODUCTION_ADJUSTERS_LABEL: "Настройщики" #NT!
+ PRODUCTION_MATERIALS_LABEL: "Материалы" #NT!
+ PRODUCTION_FACTORIES_LABEL: "Заводы" #NT!
+ PRODUCTION_OPERATIONAL_ARMS_FACTORIES_LABEL: "Военные заводы" #NT!
+ PRODUCTION_OPERATIONAL_DOCKYARDS_LABEL: "Военно-морские верфи" #NT!
+ PRODUCTION_OPERATIONAL_FACTORIES_LABEL: "Гражданские заводы" #NT!
+ PRODUCTION_OPERATIONAL_DOCKYARDS_LABEL_SHORT: "Верфи" #NT!
+ PRODUCTION_AVAILABLE_ARMS_FACTORIES_LABEL: "Доступные военные заводы" #NT!
+ PRODUCTION_AVAILABLE_DOCKYARDS_LABEL: "Доступные военно-морские верфи" #NT!
+ PRODUCTION_AVAILABLE_FACTORIES_LABEL: "Доступные гражданские заводы" #NT!
+ PRODUCTION_OPERATIONAL_FACTORIES_VALUE: "$VALUE$/$TOT$" #NT!
+ PRODUCTION_MILITARY_LABEL: "§TАрмейская и авиационная техника§!" #NT!
+ PRODUCTION_NAVAL_LABEL: "§TВоенно-морская техника§!" #NT!
+ PRODUCTION_BUILDINGS_LABEL: "§TСтроительство зданий§!" #NT!
+ PRODUCTION_PRODUCING_DAILY: "$AMOUNT$/день" #NT!
+ PRODUCTION_PRODUCING_WEEKLY: "$AMOUNT$/неделя" #NT!
+ PRODUCTION_PRODUCING_MONTHLY: "$AMOUNT$/месяц" #NT!
+ PRODUCTION_PRODUCING_YEARLY: "$AMOUNT$/год" #NT!
+ PRODUCTION_PRODUCING_ETA_DATE: "Следующее завершено: $DATE$" #NT!
+ PRODUCTION_REPAIRING_ETA_DATE: "Восстановление завершено: $DATE$" #NT!
+ PRODUCTION_PRODUCING_ETA_DAYS: "Через $AMOUNT$ дней" #NT!
+ PRODUCTION_PRODUCING_ETA_WEEKS: "Через $AMOUNT$ недель" #NT!
+ PRODUCTION_PRODUCING_ETA_MONTHS: "Через $AMOUNT$ месяцев" #NT!
+ PRODUCTION_PRODUCING_ETA_YEARS: "Через $AMOUNT$ лет" #NT!
+ PRODUCTION_PRODUCING_NEVER: "§RNever§!" #NT!
+ PRODUCTION_REPAIRING_PAUSED_NAVAL_TRANSFER: "Ремонт в настоящее время приостановлен, пока подразделение находится в транспортировке на флот." #NT!
+ PRODUCTION_PRODUCING_NO_FACTORIES: "§RЗаводы не назначены§!" #NT!
+ PRODUCTION_PRODUCING_NONE: "§RNone§!" #NT!
+ PRODUCTION_CAN_NOT_DEPLOY: "§RНевозможно развернуть§!" #NT!
+ PRODUCTION_CAN_NOT_DEPLOY_MANPOWER: "Недостаточная рабочая сила" #NT!
+ PRODUCTION_CAN_NOT_DEPLOY_NO_CAPITAL: "Столица недоступна" #NT!
+ PRODUCTION_INCREASE_PRIORITY_LABEL: "§GНажмите, чтобы §Hповысить приоритет§!.\nShift+щелкните, чтобы присвоить производству §Hвысший приоритет§!.§!" #NT!
+ PRODUCTION_DECREASE_PRIORITY_LABEL: "§GНажмите, чтобы §Hуменьшить приоритет§!.\nShift+щелкните, чтобы присвоить производству §Hсамый низкий приоритет§!.§!" #NT!
+ PRODUCTION_PRIORITY_DELAYED: "Производственная линия с более высоким приоритетом получит доступ к ресурсам раньше, чем производственные линии с более низким приоритетом." #NT!
+ PRODUCTION_EFFICIENCY: "£prod_eff  §TЭффективность производства: $AMOUNT|H2%$§!" #NT!
+ PRODUCTION_EFFICIENCY_MOD: "£prod_eff §TЭффективность производства: $AMOUNT|Y2%$§!\n" #NT!
+ PRODUCTION_EFFICIENCY_WITH_GAIN: "£prod_eff  §TЭффективность производства: $AMOUNT|H2%$§! ($GAIN|H3%$ в день)" #NT!
+ PRODUCTION_EFFICIENCY_DESC: "§TСредняя эффективность заводского производства.\nЭффективность производства увеличивается на $VALUE|H=2$% за единицу произведенной продукции, распределяется поровну на активных Фабриках.§!" #NT!
+ PRODUCTION_RESOURCE_PENALTY: "§TНедостаток ресурсов: $AMOUNT|R2%$§!" #NT!
+ PRODUCTION_RESOURCE_PENALTY_WITH_MIO: "§TНедостаток ресурсов: $AMOUNT|R2%$§! ($FROM_MIO$)" #NT!
+ PRODUCTION_ASSIGN_EQUIPMENT: "§TНазначьте оборудование для начала производства.§!" #NT!
+ PRODUCTION_MATERIALS_OIL: "Масло" #NT!
+ PRODUCTION_MATERIALS_ALUMINIUM: "Алюминий" #NT!
+ PRODUCTION_MATERIALS_RUBBER: "Резина" #NT!
+ PRODUCTION_MATERIALS_CHROMIUM: "Хром" #NT!
+ PRODUCTION_MATERIALS_STEEL: "Сталь" #NT!
+ PRODUCTION_MATERIALS_TUNGSTEN: "Вольфрам" #NT!
+ PRODUCTION_MATERIAL_VAL: "$VALUE|0H$" #NT!
+ PRODUCTION_VEHICLES_BUTTON: "Стройте бронетехнику" #NT!
+ PRODUCTION_VEHICLES_BUTTON_DISABLED: "Бронированные автомобили §RНе изобретены§!!" #NT!
+ PRODUCTION_VEHICLES_BUTTON_NO_FACTORIES_DISABLED: "У нас §RНет военных заводов!§!" #NT!
+ PRODUCTION_INFANTRY_BUTTON: "Создание пехотного снаряжения" #NT!
+ PRODUCTION_INFANTRY_BUTTON_DISABLED: "Пехотное и артиллерийское оборудование §RНе изобретено§!!" #NT!
+ PRODUCTION_INFANTRY_BUTTON_NO_FACTORIES_DISABLED: "У нас §RНикаких военных заводов!§!" #NT!
+ PRODUCTION_AIRCRAFT_BUTTON: "Построить самолет" #NT!
+ PRODUCTION_AIRCRAFT_BUTTON_DISABLED: "Самолет §RНе изобретен§!!" #NT!
+ PRODUCTION_AIRCRAFT_BUTTON_NO_FACTORIES_DISABLED: "У нас §RНет военных заводов§!!" #NT!
+ PRODUCTION_SHIPS_BUTTON: "Стройте корабли" #NT!
+ PRODUCTION_SHIPS_BUTTON_DISABLED: "Корабли §RНе изобретены§!!" #NT!
+ PRODUCTION_SHIPS_BUTTON_NO_DEPLOY_DISABLED: "У нас §RНет портов§!!" #NT!
+ PRODUCTION_SHIPS_BUTTON_NO_FACTORIES_DISABLED: "У нас §RНет верфей§!!" #NT!
+ PRODUCTION_CONSUMER_GOODS_VALUE: "$VALUE$" #NT!
+ PRODUCTION_CONSUMER_GOODS: "Потребительские товары" #NT!
+ PRODUCTION_CONSUMER_GOODS_LABEL: "§HПотребительские товары§!" #NT!
+ PRODUCTION_CONSUMER_GOODS_DESC: "При нашей нынешней экономической политике люди ожидают, что $PERCENTAGE|H0%$ из наших $TOTAL_FACTORIES|H$ гражданских и военных заводов будут производить потребительские товары. Эта потребность удовлетворяется нашими $GENERAL_FACTORIES|H$ гражданскими фабриками, в результате чего у нас остается $OPERATIONAL|H$ фабрики, $TRADE_USABLE|H$ которых можно использовать для торговли." #NT!
+ PRODUCTION_CIV_AND_MIL_FACTORIES: "Гражданские и военные заводы: $KEY|H$" #NT!
+ PRODUCTION_REQ_CONSUMER_GOODS_FACTORIES: "Требуемые заводы по производству потребительских товаров: $KEY|H$" #NT!
+ PRODUCTION_CONSUMER_GOODS_FACTORIES_BASE_EXPECTATION: "Базовое ожидание:" #NT!
+ PRODUCTION_CONSUMER_GOODS_FACTORIES_FACTOR: "Факторы:" #NT!
+ PRODUCTION_CONSUMER_GOODS_FACTORIES_FACTORS_MULTIPLIED: "Факторы, умноженные вместе: $PERCENTAGE|H0%$" #NT!
+ PRODUCTION_MATERIAL_COST_DESC: "§TЭта производственная линия использует $AMOUNT|0H$ единицу $MATERIAL|H$.§!" #NT!
+ PRODUCTION_MATERIAL_COST_LACKING_DESC: "Для полной эффективности требуется на §T$AMOUNT|0H$ больше единиц.§!\nПроизводство продолжится на §Rсниженной скорости§!." #NT!
+ PRODUCTION_LINE_CANCEL: "§GClick§! до §RCancel§! этой производственной линии.\n§GShift+Click§! до §RCancel§! все производственные линии." #NT!
+ PRODUCTION_LINE_CANCEL_SHIP_REFIT: "§GClick§! до §RScuttle§! этот Корабль, который находится на ремонте." #NT!
+ PRODUCTION_CREATE_VARIANT: "§HСоздать вариант§!" #NT!
+ PRODUCTION_CANCEL_CONSTRUCTION: "§TОтменить строительство.§!" #NT!
+ PRODUCTION_VARIANT_OBSOLETE_YES: "Повторный ввод в эксплуатацию" #NT!
+ PRODUCTION_VARIANT_OBSOLETE_NO: "Вывод из эксплуатации" #NT!
+ PRODUCTION_VARIANT_OBSOLETE_YES_DESC: "§GClick§! повторно ввести этот вариант в эксплуатацию, отметив его как современное оборудование." #NT!
+ PRODUCTION_VARIANT_OBSOLETE_NO_DESC: "§GClick§! вывести этот вариант из эксплуатации, отметив его как устаревшее оборудование." #NT!
+ TRADE_FACTORIES_VALUE: "$VALUE$/$TOT$" #NT!
+ CONFIRMCANCELPRODUCTIONLINE_TITLE: "Отменить производственную линию" #NT!
+ CONFIRMCANCELPRODUCTIONLINE_DESC: "Вы уверены, что хотите §Rcancel§! эта производственная линия?" #NT!
+ CONFIRMCANCELALLPRODUCTIONLINE_TITLE: "Отменить все строки" #NT!
+ CONFIRMCANCELALLPRODUCTIONLINE_DESC: "Вы уверены, что хотите §Rcancel§! все производственные линии?" #NT!
+ CONFIRM_SWITCH_PRODUCTION_MODEL_TITLE: "Коммутационное оборудование" #NT!
+ CONFIRM_SWITCH_PRODUCTION_MODEL_DESC: "Вы уверены, что хотите §Rswitch§! Оборудование? Из-за этого вы теряете $DAYS|R$ дней производства." #NT!
+ CONFIRMCANCELCONSTRUCTION_TITLE: "Отменить строительство" #NT!
+ CONFIRMCANCELCONSTRUCTION_DESC: "Вы уверены, что хотите §Rcancel§! строительство $CONSTRUCTION|H$ в $REGION|H$?" #NT!
+ CONFIRMCANCELCONSTRUCTION_RAILWAY_DESC: "Вы уверены, что хотите §Rcancel§! строительство железной дороги $NAME|H$" #NT!
+ CONFIRMCANCELCONSTRUCTIONS_TITLE: "Отменить конструкции" #NT!
+ CONFIRMCANCELCONSTRUCTIONS_DESC: "Вы уверены, что хотите §Rcancel§! все конструкции?" #NT!
+ INFINITY: "£infinity_icon" #NT!
+ PRODUCTION_EQUIPMENT_NEED: "Нужно: $AMOUNT|Y$" #NT!
+ PRODUCTION_DEPLOY_TO_BASE: "Развернуть в порт: $BASE|H$" #NT!
+ PRODUCTION_DEPLOY_TO_FLEET: "Развертывание в оперативной группе: $FLEET|H$" #NT!
+ PRODUCTION_DEPLOY_TO_RESERVE_FLEET_THEATER: "Размещение в резерве театра военных действий: $THEATER|H$" #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_FLEET_INVALID_BASE: "Цель развертывания $FLEET|H$ не имеет базы." #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_FLEET: "Разверните целевую оперативную группу $FLEET|H$ с базой в $STATE|H$." #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_THEATER: "Разверните целевой театр $THEATER|H$ с базой в $STATE|H$." #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_BASE: "Разверните целевую базу в $STATE|H$." #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_INVALID_BASE: "Не задан целевой объект развертывания." #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_NOT_DEPLOYABLE: "Не развертывается" #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_AUTO_DEPLOYMENT: "Авто" #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_SCRAPPING: "Утилизация" #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_SCRAPPING_DESC: "Нет подходящей базы для развертывания. После завершения работы объект будет утилизирован." #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_STOCKPILING: "Накопление запасов" #NT!
+ PRODUCTION_RIGHT_CLICK_TO_ZOOM: "§GНажмите ПКМ, чтобы перейти в провинцию§!" #NT!
+ PRODUCTION_NAVAL_DEPLOY_LIST: "Развернуть цель" #NT!
+ WEEKLY_PRODUCTION: "Еженедельное производство" #NT!
+ PRODUCTION_WORKING_FACTORIES: "Это количество заводов, которые в настоящее время работают на одной из ваших производственных линий." #NT!
+ PRODUCTION_WORKING_DOCKYARDS: "Это количество верфей, которые в настоящее время работают на одной из ваших производственных линий." #NT!
+ PRODUCTION_WORKING_DOCKYARDS_FOR_REPAIRS: "Это количество верфей, которые в настоящее время используются для ремонта кораблей." #NT!
+ PRODICTION_MIC_TRANSFERED: "$AMOUNT|Y$ наших заводов используются $OVERLORD|Y$." #NT!
+ PRODICTION_MIC_RECEIVED_FROM_SUBJECT: "$AMOUNT|Y$ военных заводов получено от наших подданных." #NT!
+ PRODICTION_MIC_SENT_TO_OVERLORD: "$AMOUNT|R$ наших военных заводов отданы нашему повелителю, а у нас осталось только $LEFT|H$." #NT!
+ PRODICTION_MIC_RECEIVED_FROM_EXILE_DONATIONS: "$AMOUNT|Y$ наших военных заводов — это пожертвования сосланных правительств, которые мы принимаем." #NT!
+ PRODUCTION_MAX_EFFICIENCY_BASE: "Базовая крышка: $VALUE|Y%$" #NT!
+ PRODUCTION_MAX_EFFICIENCY_TOT: "£prod_eff_cap  Предел эффективности производства: $VALUE|Y%$" #NT!
+ PRODUCTION_MAX_EFFICIENCY_HINT: "£prod_eff_cap  Ограничение эффективности производства определяет максимальное значение вашей £prod_eff  эффективности производства. Его можно увеличить на £tech_mod Технологии." #NT!
+ PRODUCTION_RESOURCES_PER_FACTORY: "§HИспользование ресурсов на завод:§!" #NT!
+ PRODUCTION_RESOURCE_COST: "$VALUE$" #NT!
+ PRODUCTION_MATERIAL_NO_WASTE: "Line не тратит зря этот ресурс." #NT!
+ PRODUCTION_MATERIAL_WASTE: "Линия тратит $WASTE|R2$ этого ресурса." #NT!
+ PRODUCTION_SPEED: "Скорость производства: $SPEED|Y$" #NT!
+ PRODUCTION_SPEED_MODIFIERS: "§YПроизводственная мощность изменена:§!" #NT!
+ INDUSTRIAL_CAPACITY_FACTOR: "Заводская производительность: $VALUE|Y$" #NT!
+ INDUSTRIAL_CAPACITY_FACTOR_MODIFIERS: "Заводской вывод изменен:" #NT!
+ INDUSTRIAL_PROGRESS: "$BUILDING|H$ — это $PROGRESS|0H$/$COST|0H$ ( $VALUE|0%H$ ) завершено." #NT!
+ INDUSTRIAL_PROGRESS_REPAIR: "$BUILDING|H$ прогресс ремонта: $PROGRESS|%1H$" #NT!
+ INDUSTRIAL_BASE_FACTORY_OUTPUT: "Базовая производительность фабрики: $VALUE|H$" #NT!
+ INDUSTRIAL_BASE_SPEED: "Продукция $FACTORIES|0H$ заводов: $VALUE|H$" #NT!
+ PROD_COST_VALUE: "£production_cost  $VALUE$" #NT!
+ NAVPROD_COST_VALUE: "£navprod_cost  $VALUE$" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_HEADER: "§HИспользуемые фабрики§!" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_TOTAL: "Итого: $VALUE|Y$" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_AVAILABLE: "Неиспользовано: $VALUE|Y$" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_CURRENTLY: "Используется: $VALUE|R$" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_OWNED: "Владелец: $VAL|H$" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_FROM_TRADE: "Торговый экспорт: §G+$VAL$§!" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_FROM_LICENSES: "Экспорт лицензий: §G+$VAL$§!" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_FROM_SUBJECTS: "Из тем: §G+$VAL$§!" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_FROM_OTHERS: "Из других стран: §G+$VAL$§!" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_FROM_OCCUPATION: "От рода занятий: §G+$VAL$§!" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_SENT_TO_MASTER: "Отдано Оверлорду: $VAL|R$" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_SENT_TO_OTHERS: "Передано в другие страны: $VAL|R$" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_SENT_TO_TRADE: "Торговый импорт: $VAL|R$" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_SENT_TO_LICENSES: "Импорт лицензий: $VAL|R$" #NT!
+ PRODUCTION_CIVILIAN_FACTORIES_DAMAGED: "Повреждено: $VAL|R$" #NT!
+ PRODUCTION_EQUIPMENT_TOTAL_NEED: "$VALUE|0Y$" #NT!
+ PRODUCTION_EQUIPMENT_TOTAL_NEED_FILLED: "$AMOUNT|0G$" #NT!
+ PRODUCTION_EQUIPMENT_TOTAL_NEED_UPGRADE: "$VALUE|0Y$" #NT!
+ PRODUCTION_EQUIPMENT_DAILY_BALANCE: "Дневной баланс: $VALUE|=2Y$" #NT!
+ PRODUCTION_EQUIPMENT_FILL_ESTIMATION: "С текущим дневным балансом мы получим §YFill§! наши потребности через $VALUE|0Y$ дней." #NT!
+ PRODUCTION_EQUIPMENT_FILLED: "На данный момент наши потребности §GFilled§!" #NT!
+ PRODUCTION_EQUIPMENT_LOSSES: "Вчера мы потеряли $VALUE|R$ оборудования." #NT!
+ PROD_LINE_PLANE_DEST_RESERVES_DUE_TO_MANPOWER: "Перемещен в §YReserves§! из-за недостаточности §HManpower§! за запрошенное §YReinforcements§!" #NT!
+ PROD_LINE_PLANE_DEST_RESERVES: "Перемещен в §YReserves§!" #NT!
+ PROD_LINE_PLANE_DEST_UPGRADING: "Требуется для §YUpgrades§!" #NT!
+ PROD_LINE_PLANE_DEST_REINFORCEMENT: "Требуется для §YReinforcement§!" #NT!
+ PROD_LINE_LAND_DEST_RESERVES: "Быть §YStockpiled§!" #NT!
+ PROD_LINE_LAND_DEST_UPGRADING: "Требуется для §YUpgrades§!" #NT!
+ PROD_LINE_LAND_DEST_REINFORCEMENT: "Требуется для §YReinforcement§!" #NT!
+ CONFIRM_REMOVE_BUILDING_LEVEL_TITLE: "Удалить здание" #NT!
+ CONFIRM_REMOVE_BUILDING_LEVEL_DESC: "Вы уверены, что хотите §Rremove§! это здание?" #NT!
+ CONFIRM_REMOVE_CONSTRUCTION_LEVEL_TITLE: "Отменить строительство" #NT!
+ CONFIRM_REMOVE_CONSTRUCTION_LEVEL_DESC: "Вы уверены, что хотите §Rcancel§! это строительство?" #NT!
+ CONFIRM_REMOVE_CONVERSION_LEVEL_TITLE: "Отменить преобразование" #NT!
+ CONFIRM_REMOVE_CONVERSION_LEVEL_DESC: "Вы уверены, что хотите §Rcancel§! это преобразование?" #NT!
+ CONFIRM_ADD_CONVERSION_LEVEL_TITLE: "Начать преобразование" #NT!
+ CONFIRM_ADD_CONVERSION_LEVEL_DESC: "Вы уверены, что хотите §Rconvert§! это здание?" #NT!
+ PRODUCTION_EFFICIENCY_GAIN_BASE: "Базовый ежедневный прирост: $VAL|H3%$" #NT!
+ PRODUCTION_RESOURCE_FACTOR: "Недостаток ресурсов: $VAL|%+$" #NT!
+ PRODUCTION_RESOURCE_FACTOR_WITH_MIO: "Недостаток ресурсов: $VAL|%+$ ($FROM_MIO$)" #NT!
+ PRODUCTION_OUTPUT_EXPLAIN: "Наши $FACTORIES|Y$ £factory_item  военные заводы вносят $OUTPUT|Y$ £production_cost . \n$ITEM|Y$ имеет стоимость $ITEM_COST|2Y$ £production_cost , что означает, что мы можем производить $PERTIMEPERIOD$.\n" #NT!
+ PRODUCTION_OUTPUT_EXPLAIN_REFIT: "Наши $FACTORIES|Y$ £factory_item  военные заводы вносят $OUTPUT|Y$ £production_cost . \nПреобразование $FROM|Y$ стоит $COST|2Y$ £production_cost , что означает, что мы можем преобразовать $PERTIMEPERIOD$.\n" #NT!
+ PRODUCTION_OUTPUT_EXPLAIN_NAVAL: "Наши $FACTORIES|Y$ £naval_factory_icon  Военно-морские верфи вносят £navprod_cost $OUTPUT|Y$.\n$ITEM|Y$ имеет стоимость $ITEM_COST|2Y$ £navprod_cost , что означает, что мы можем производить $PERTIMEPERIOD$.\n" #NT!
+ PRODUCTION_OUTPUT_EXPLAIN_NAVAL_REFIT: "Наши $FACTORIES|Y$ £naval_factory_icon  военно-морские верфи вносят £navprod_cost $OUTPUT|Y$. \nПереоборудование $FROM|Y$ стоит $COST|2Y$ £navprod_cost , а это значит, что мы можем переоборудовать $PERTIMEPERIOD$.\n" #NT!
+ PRODUCTION_UNITS_PER_DAY: "$UNITS|Y$ единиц в день" #NT!
+ PRODUCTION_UNITS_PER_WEEK: "$UNITS|Y$ единиц в неделю" #NT!
+ PRODUCTION_UNITS_PER_MONTH: "$UNITS|Y$ единиц в месяц" #NT!
+ PRODUCTION_UNITS_PER_YEAR: "$UNITS|Y$ единиц в год" #NT!
+ PRODUCTION_FACTORY_ASSIGN_DESC: "Нажмите, чтобы назначить £factory_item $FACTORIES|Y$ §YВоенные заводы§! этой производственной линии. Это даст базовый объем производства £production_cost $OUTPUT|Y$ в день.\nНа общий объем производства будут влиять §YРесурсы§!, §YЭффективность производства§! и другие §Yмодификаторы производства§!." #NT!
+ PRODUCTION_DOCKYARD_ASSIGN_DESC: "Нажмите, чтобы назначить £naval_factory_icon $FACTORIES|Y$ §YВоенно-морские верфи§! этой производственной линии. Это даст базовый выход продукции £navprod_cost $OUTPUT|Y$ в день. \nОбщий выход будет зависеть от §YРесурсов§! и других §YМодификаторов производства§!." #NT!
+ PRODUCTION_BASE_OUTPUT: "Базовый вывод: $VALUE|Y$ x $MUL|Y$" #NT!
+ PRODUCTION_EFF_GAIN_HINT: "§YСкорость повышения эффективности изменена:§!" #NT!
+ CARRIER_AIR_WING_COMPOSITION_TITLE: "Установите состав Air Wings по умолчанию для этого перевозчика" #NT!
+ CARRIER_AIR_WING_LIMIT_UNDER: "$COUNT|Y$/$LIMIT$" #NT!
+ CARRIER_AIR_WING_LIMIT_MATCH: "$COUNT|G$/$LIMIT$" #NT!
+ CARRIER_AIR_WING_LIMIT_OVER: "$COUNT|R$/$LIMIT$" #NT!
+ CARRIER_AIR_WING_LIMIT_DESC: "Самолеты/Вместимость авианосца" #NT!
+ CARRIER_AIR_WING_LIMIT_DESC_UNDER: "§YПропускная способность этого оператора не будет использована полностью§!" #NT!
+ CARRIER_AIR_WING_LIMIT_DESC_OVER: "§RВместимость этого авианосца будет превышена, и размещенные там авиакрылья понесут штраф§!" #NT!
+ CARRIER_AIR_WING_INCREASE: "Увеличьте сумму\n§GCtrl+клик, чтобы увеличить вдвое§!\n§GShift+клик, чтобы увеличить до полной§!" #NT!
+ CARRIER_AIR_WING_DECREASE: "Уменьшить сумму\n§GCtrl+клик, чтобы удалить половину§!\n§GShift+клик, чтобы удалить все§!" #NT!
+ PRODUCTION_ENTRY_NEW: "(новый)" #NT!
+ PRODUCTION_ENTRY_OUTDATED: "(устарело)" #NT!
+ PRODUCTION_LINE_CHANGE: "§GНажмите, чтобы §Hchange§! произведенное оборудование.\nВы сохраните часть эффективности, если перейдете на более новую версию того же оборудования.\n§!§RВы потеряете весь прогресс по этой линии.§!" #NT!
+ PRODUCTION_LINE_CHANGE_NAVAL: "§GНажмите, чтобы §Hchange§! произведенное оборудование.\n§!§RВы потеряете весь прогресс по этой линии.§!" #NT!
+ PRODUCTION_EQUIPMENT_FILTER: "Пехотная и артиллерийская техника" #NT!
+ PRODUCTION_ARMOR_FILTER: "Бронированные автомобили" #NT!
+ PRODUCTION_AIR_FILTER: "Самолет" #NT!
+ PRODUCTION_CAPITAL_SHIPS_FILTER: "Капитальные корабли" #NT!
+ PRODUCTION_SCREEN_SHIPS_FILTER: "Экранные корабли" #NT!
+ PRODUCTION_OTHER_SHIPS_FILTER: "Другие корабли" #NT!
+ PRODUCTION_LACKING_RESOURCES_FILTER: "Выполненные ресурсы" #NT!
+ PRODUCTION_STOCKPILING_FILTER: "Накопление запасов" #NT!
+ PRODUCTION_REINFORCING_FILTER: "Армирование" #NT!
+ PRODUCTION_UPGRADING_FILTER: "Обновление" #NT!
+ PRODUCTION_OUTDATED_FILTER: "Современное оборудование" #NT!
+ PRODUCTION_REFITTING_FILTER: "Переоборудование" #NT!
+ PRODUCTION_FILTER_CLICK_TO_HIDE: "§GClick§! до §Rhide§! все из этой категории." #NT!
+ PRODUCTION_FILTER_CLICK_TO_SHOW: "§GClick§! до §Gshow§! все из этой категории." #NT!
+ PRODUCTION_FILTER_SHIFTCLICK: "\n§GShift+Click§! до §Rhide§! все остальное." #NT!
+ PRODUCTION_FILTER_SHIFTCLICK_AGAIN: "\n§GShift+Click§! до §Gshow§! все снова." #NT!
+ PRODUCTION_FILTER_RIGHTCLICK: "\n§GЩелкните правой кнопкой мыши§!, чтобы свернуть всю эту категорию." #NT!
+ PRODUCTION_FILTER_ARMS_FACTORIES: "Используемые военные заводы" #NT!
+ PRODUCTION_FILTER_DOCKYARDS: "Используемые военно-морские верфи" #NT!
+  
+  
+ INTEL_CIVILIAN_FACTORIES_USED_ON_TRADE: "Предполагаемое количество гражданских заводов, используемых в торговле" #NT!
+ INTEL_ARMS_FACTORIES_USED_ON_EQUIPMENT: "Предполагаемое количество военных заводов, используемых для производства военной техники" #NT!
+ INTEL_ARMS_FACTORIES_USED_ON_ARMOR: "Предполагаемые военные заводы, используемые на бронетехнике" #NT!
+ INTEL_ARMS_FACTORIES_USED_ON_AIR: "Предполагаемое количество военных заводов, используемых на самолетах" #NT!
+ INTEL_DOCKYARDS_USED_ON_CAPITAL: "Предполагаемые военно-морские верфи использовали крупные корабли" #NT!
+ INTEL_DOCKYARDS_USED_ON_SCREEN: "Предполагаемые военно-морские верфи использовали экранные корабли" #NT!
+ INTEL_DOCKYARDS_USED_ON_OTHER: "Предполагаемые военно-морские верфи использовали другие корабли" #NT!
+  
+  
+ PRODUCTION_DRAG_N_DROP: "§GПеретащите§!, чтобы изменить §Yприоритет§!." #NT!
+ PRODUCTION_COLLAPSE: "§GClick§! чтобы свернуть.\n§GCtrl + Click§!, чтобы свернуть всю эту категорию.\n§GShift + Click§!, чтобы свернуть все производственные линии." #NT!
+ PRODUCTION_EXPAND: "§GClick§! чтобы развернуть.\n§GCtrl + щелчок§!, чтобы развернуть всю эту категорию.\n§GShift + щелчок§!, чтобы развернуть все производственные линии." #NT!
+ PRODUCTION_FACTORY_SCALE_UP: "§GClick§! для масштабирования до §Y$SCALE$x§! вид." #NT!
+ PRODUCTION_FACTORY_SCALE_DOWN: "§GClick§! еще раз, чтобы уменьшить масштаб до §Y1x§! вид." #NT!
+ PRODUCTION_ADD_FACTORIES_CLICK: "§GClick§! чтобы добавить §Y+1§!\n§GCtrl + Нажмите§!, чтобы добавить §Y+5§!\n§GShift + Нажмите§!, чтобы добавить §Y+10§!" #NT!
+ PRODUCTION_SUB_FACTORIES_CLICK: "§GClick§! чтобы вычесть §Y1§!\n§GCtrl + Нажмите§!, чтобы вычесть §Y5§!\n§GShift + Нажмите§!, чтобы вычесть §Y10§!" #NT!
+ PRODUCTION_ADD_1: "§GClick§! добавить §Y+1§!" #NT!
+ PRODUCTION_ADD_5: "§GCtrl + щелчок §!, чтобы добавить §Y+5§!" #NT!
+ PRODUCTION_ADD_10: "§GShift + щелчок§!, чтобы добавить §Y+10§!" #NT!
+ PRODUCTION_SUB_1: "§GClick§! чтобы вычесть §Y1§!" #NT!
+ PRODUCTION_SUB_5: "§GCtrl + щелчок §!, чтобы вычесть §Y5§!" #NT!
+ PRODUCTION_SUB_10: "§GShift + щелчок §!, чтобы вычесть §Y10§!" #NT!
+ PRODUCTION_ADD_NAVAL_FACTORIES_CLICK: "§GClick§! добавить §Y+1§!" #NT!
+ PRODUCTION_SUB_NAVAL_FACTORIES_CLICK: "§GClick§! чтобы вычесть §Y1§!" #NT!
+ PRODUCTION_CLICK_TO_APPEND_OR_INSERT: "§GClick§! чтобы добавить новую производственную линию в конце.\n§GShift+Click§! чтобы добавить новую производственную линию вверху." #NT!
+ PRODUCTION_NAVAL_DEPLOYMENT_STATE_NAME: "$STATE$ ($LVL|Y$)" #NT!
+ PRODUCTION_LINE_CONVERT_NO_EQUIPMENT_IN_STOCK: "§RНа данный момент на складе нет оборудования, которое мы могли бы использовать для конвертации в: $VARIANT|H$§!" #NT!
+ PRODUCTION_LINE_CONVERT_HEADER: "Конвертировать из склада" #NT!
+ PRODUCTION_LINE_CONVERT_ORDER_OF_CONVERSION: "Порядок конвертации:" #NT!
+ PRODUCTION_LINE_CONVERT_ORDER_OF_CONVERSION_ENTRY: "$NUM|Y0$ из $VARIANT|G$ (§H$TYPE$§!) со стоимостью:" #NT!
+ PRODUCTION_LINE_CONVERT_ORDER_OF_CONVERSION_ENTRY_NO_TYPE: "$NUM|Y0$ из $VARIANT|G$ со стоимостью:" #NT!
+ PRODUCTION_LINE_CONVERT_ORDER_OF_CONVERSION_FREE_ENTRY: "$NUM|Y0$ из $VARIANT|G$ (§H$TYPE$§!)" #NT!
+ PRODUCTION_LINE_CONVERT_ORDER_OF_CONVERSION_FREE_ENTRY_NO_TYPE: "$NUM|Y0$ из $VARIANT|G$" #NT!
+ PRODUCTION_LINE_CONVERT_RESOURCE_COST_ENTRY: "§H$NUM$§!£resources_strip|$FRAME$ " #NT!
+ PRODUCTION_LINE_CONVERT_DESC: "При преобразовании из склада будет использовано §Hустаревшее оборудование§! или §Hзахваченное оборудование§! из запаса и преобразовано в модифицированные транспортные средства, запрошенные с текущей производственной линии, по сниженной цене. Это будет продолжаться до тех пор, пока склад не опустеет." #NT!
+ PRODUCTION_LINE_CONVERT_SPEED_TOTAL: "Скорость конвертации: §G+§!$SPD|G%0$" #NT!
+ PRODUCTION_LINE_CONVERT_SPEED_BASE: "База: $VAL|=+%0$" #NT!
+ PRODUCTION_LINE_CONVERT_RES_NEED: "Ресурсы, необходимые для конвертации из $NAME|Y$:" #NT!
+ PRODUCTION_LINE_CONVERT_RES_NEED_ENTRY: "\n £resources_strip|$FRAME$: ($NEW|Y0$ - $OLD|G0$) = $SUM|R0$" #NT!
+ PRODUCTION_LINE_SHIP_NAME_ALLOCATE: "Это имя пока не присвоено ни одному кораблю. §GClick§! кнопку «Добавить», чтобы присвоить это имя этой производственной очереди." #NT!
+ PRODUCTION_LINE_RAILWAY_GUN_NAME_ALLOCATE: "Это имя пока не назначено ни одной другой железнодорожной пушке. §GClick§! добавьте кнопку, чтобы назначить это имя этой очереди производства." #NT!
+ LICENSED_EQUIPMENT_PRODUCTION_SPEED_TOTAL_SIMPLE: "Лицензионное производство: $VALUE|+%$" #NT!
+ LICENSED_EQUIPMENT_PRODUCTION_SPEED_TOTAL: "§HПроизводительность завода по лицензионному производству§!\nВсего: $VALUE|+%$\nРазбивка:" #NT!
+ LICENSED_EQUIPMENT_TECH_SPEED_REDUCTION: "§YРазница в лицензионных технологиях§!:\n База: $BASE|+%$\n Всего изменено: $TOTAL|+%$" #NT!
+ LICENSED_EQUIPMENT_PRODUCTION_SPEED_MODIFIER: "§YМодификатор лицензии§!:\n База: $BASE|+%$\n Всего изменено: $TOTAL|+%$" #NT!
+ LICENSED_EQUIPMENT_PRODUCTION_SPEED_NOT_FACTION: "§YНе во фракции с лицензиаром§!: $VALUE|+%$" #NT!
+ LICENSED_EQUIPMENT_PRODUCTION_SPEED_NO_LICENSE: "§YНет активной лицензии§!: $VALUE|+%$" #NT!
+ LICENSED_EQUIPMENT_UPGRADE_XP_COST_MODIFIER: "Лицензионное оборудование: $VAL$" #NT!
+ LICENSED_PURCHASE_CIC_COST: "§YЭта лицензия стоит§!: £civ_factory $AMOUNT|Y$" #NT!
+ PRODUCTION_NAVAL_REPAIRS_LABEL: "Очередь ремонта" #NT!
+ PRODUCTION_NAVAL_NAME_LIST: "Названия кораблей" #NT!
+ PRODUCTION_RAILWAY_GUN_NAME_LIST: "Названия железнодорожных пушек" #NT!
+ PRODUCTION_NAVAL_NAME_LIST_BUTTON_FALLBACK: "Названия кораблей" #NT!
+ PRODUCTION_RAILWAY_GUN_NAME_LIST_BUTTON_FALLBACK: "Названия железнодорожных пушек" #NT!
+ PRODUCTION_NAVAL_NAME_LIST_EMPTY_NOT_ALLOWED: "§RПустые имена не допускаются.§!" #NT!
+ PRODUCTION_NAVAL_NAME_LIST_TOO_FEW_PRODUCED: "§RИмена превысят количество кораблей в очереди на производство.§!" #NT!
+ PRODUCTION_NAVAL_NAME_LIST_REMOVE: "§GClick§! чтобы §Hудалить имя§!" #NT!
+ PRODUCTION_NAVAL_NAME_LIST_NAME_RESERVED: "$NAME|H$ уже используется." #NT!
+ PRODUCTION_NAVAL_NAME_LIST_ADD_NAME: "§GClick§! назвать следующий $EQUIPMENT|H$ из этой строки $NAME|H$." #NT!
+ PRODUCTION_NAVAL_NAME_LIST_BUTTON_NAME: "Следующий $EQUIPMENT|H$ в этой строке будет называться $NAME|H$." #NT!
+ PRODUCTION_NAVAL_NAME_LIST_BUTTON_CLICK: "§GClick§! изменить имя." #NT!
+ PRODUCTION_SHIP_REFIT_TOTAL_COSTS: "§HОбщая стоимость $COUNT|T$ кораблей:§!\n" #NT!
+ PRODUCTION_SHIP_REFIT_BASE_ICCOST: "Халл: $ICCOST|H2$" #NT!
+ PRODUCTION_SHIP_REFIT_MODULE_BUILD_ICCOST: "Новые модули: $ICCOST|H2$" #NT!
+ PRODUCTION_SHIP_REFIT_MODULE_CONVERT_ICCOST: "Конвертированные модули: $ICCOST|H2$" #NT!
+ PRODUCTION_SHIP_REFIT_MODULE_DISMANTLE_ICCOST: "Разобранные модули: $ICCOST|H2$" #NT!
+ PRODUCTION_SHIP_REFIT_QUICKEST_TIME: "Максимум §HDockyards§! назначено, это займет до $DAYS|H$ дня." #NT!
+ PRODUCTION_SHIP_REFIT_TOOLTIP_DIFF_HEADER: "§HЭффекты переоборудования§!" #NT!
+ PRODUCTION_SHIP_REFIT_TOOLTIP_FROM_VARIANT_HEADER: "Из $VARIANT$ (выбрано $SHIP_COUNT|H$)" #NT!
+ PRODUCTION_SHIP_REFIT_TOOLTIP_NO_STAT_CHANGES: "никаких изменений в статистике" #NT!
+ PRODUCTION_SHIP_REFIT_TOOLTIP_MORE_VARIANTS: "и другие варианты оборудования (выбрано $SHIP_COUNT|H$)" #NT!
+ PRODUCTION_TANK_REFIT_BASE_ICCOST: "Шасси: $ICCOST|H2$" #NT!
+ PRODUCTION_TANK_REFIT_QUICKEST_TIME: "При максимальной §HЭффективности производства§! каждая назначенная фабрика преобразует $NUM_UNITS_PER_TIME_PERIOD$." #NT!
+ PRODUCTION_SUB_UNIT_FILTER: "Показать только $SUBUNIT|H$ ($COUNT|H$ совпадение)" #NT!
+ PRODUCTION_EQUIPMENT_ROLE_NO_FILTER: "Показать все роли" #NT!
+ PRODUCTION_EQUIPMENT_ROLE_FILTER: "Показывать только оборудование с ролью $ROLE|H$" #NT!
+ PRODUCTION_COST_MODIFIERS: "§Y£production_cost£Стоимость производства изменена:§!" #NT!
+ PRODUCTION_COST_MODIFIER_ITEM: "$REASON$: $VALUE|-%$" #NT!
+  
+ BONUS_PRODUCTION_COST_FACTOR: "Себестоимость продукции" #NT!
+ BONUS_PRODUCTION_CAPACITY_FACTOR: "Объем производства" #NT!
+ BONUS_PRODUCTION_EFFICIENCY_CAP_FACTOR: "Ограничение эффективности производства" #NT!
+ BONUS_PRODUCTION_EFFICIENCY_GAIN_FACTOR: "Повышение эффективности производства" #NT!
+ BONUS_PRODUCTION_RESOURCE_NEED_FACTOR: "Потребность в производственных ресурсах" #NT!
+ BONUS_PRODUCTION_RESOURCE_PENALTY_FACTOR: "Штраф за производственные ресурсы" #NT!
+ BONUS_PRODUCTION_CONVERSION_SPEED_FACTOR: "Скорость конверсии производства" #NT!
+  

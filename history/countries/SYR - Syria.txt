@@ -49,6 +49,9 @@ set_convoys = 5
 
 recruit_character = SYR_bashar_al_assad
 add_ideas = {
+	SYR_Military_help_from_russia
+	SYR_Humanitarian_disaster
+	SYR_Destroyed_infrastructure
 	sunni
 	no_work_hour_limits
 	low_education_budget

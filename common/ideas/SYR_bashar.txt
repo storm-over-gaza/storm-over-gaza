@@ -1,0 +1,65 @@
+ideas = {
+	country = {
+		SYR_Military_help_from_russia = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ARG_military_government
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				defence = 0.05
+			}
+		}
+	}
+	country = {
+		SYR_Humanitarian_disaster = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = prc_low_popular_support
+			
+			modifier = {
+				recruitable_population_factor = -0.10
+				stability_factor = -0.15
+			}
+		}
+	}
+	country = {
+		SYR_Destroyed_infrastructure = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SPA_recovering_from_the_civil_war
+			
+			modifier = {
+				production_speed_infrastructure_factor = -0.20 
+				supply_factor = -0.10 
+			}
+		}
+	}
+}
