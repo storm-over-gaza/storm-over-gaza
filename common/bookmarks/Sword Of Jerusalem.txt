@@ -1,0 +1,163 @@
+bookmarks = {
+	bookmark = {
+		name = "The Calm Before The Storm"
+		desc = "SWORD_OF_JERUSALEM_DESC"
+		date = 2021.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "HAM"
+		default = yes
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+		"HAM"={
+			history = "HAM_SWORDOFJERUSALEM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				HAM_sword_of_jerusalem
+			}
+		}
+		"ISR"={
+			history = "ISR_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				ISR_sword_of_jerusalem
+			}
+		}
+		"PAL"={
+			history = "PAL_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				PAL_sword_of_jerusalem
+			}
+		}
+		"PIJ"={
+			history = "PIJ_SWORDOFJERUSALEM_DESC"
+			ideology = islamism
+			ideas = {
+				
+			}
+			focuses = {
+				PIJ_sword_of_jerusalem
+			}
+		}
+		"EGY"={
+			history = "EGY_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				EGY_sword_of_jerusalem
+			}
+		}
+		"SYR"={
+			history = "SYR_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				SYR_sword_of_jerusalem
+			}
+		}
+		"HEZ"={
+			history = "HEZ_SWORDOFJERUSALEM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				HEZ_sword_of_jerusalem
+			}
+		}
+		"FSA"={
+			history = "FSA_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			
+			focuses = {
+				FSA_sword_of_jerusalem
+			}
+		}
+        "JOR"={
+			history = "JOR_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			minor = yes
+			focuses = {
+				JOR_sword_of_jerusalem
+			}
+		}
+		"LEB"={
+			history = "LEB_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			minor = yes
+			focuses = {
+				LEB_sword_of_jerusalem
+			}
+		}
+		"SAU"={
+			history = "SAU_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			minor = yes
+			focuses = {
+				SAU_sword_of_jerusalem
+			}
+		}
+		"IRQ"={
+			history = "IRQ_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			minor = yes
+			focuses = {
+				IRQ_sword_of_jerusalem
+			}
+		}
+               "USA"={
+			history = "USA_SWORDOFJERUSALEM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			minor = yes
+			focuses = {
+				USA_sword_of_jerusalem
+			}
+		}
+               "RUS"={
+			history = "RUS_SWORDOFJERUSALEM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			minor = yes
+			focuses = {
+				RUS_sword_of_jerusalem
+			}
+		}
+		
+
+	}
+}

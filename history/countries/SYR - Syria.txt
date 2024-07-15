@@ -1,0 +1,101 @@
+﻿capital = 2
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "SYR_2021"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "SYR_2021_nsb"
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_at = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+
+set_convoys = 5
+
+recruit_character = SYR_bashar_al_assad
+add_ideas = {
+	sunni
+	no_work_hour_limits
+	low_education_budget
+	high_military_budget
+	basic_healthcare_system
+	basic_state_welfare
+	resource_exploration
+}
+set_politics = {
+	ruling_party = communism
+	last_election = "2014.6.3"
+	election_frequency = 84
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 50
+	fascism = 10
+	communism = 10
+	neutrality = 30
+}
+
+create_country_leader = {
+	name = "Saadeh El Ghazi"
+	desc = ""
+	picture = GFX_portrait_Hashim_al_Atassi
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Antun Saadeh"
+	desc = ""
+	picture = GFX_portrait_Antun_Saadeh
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ghazi bin Faisal"
+	desc = ""
+	picture = GFX_portrait_Ghazi_bin_Faisal
+	ideology = despotism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,24 @@
+characters={
+	SAU_king_salman = {
+		name = "King Salman"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/SAU/portrait_large_king_salman.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/SAU/portrait_large_king_salman.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = despotism
+			desc = ""
+		}	
+	
+	
+	}
+}

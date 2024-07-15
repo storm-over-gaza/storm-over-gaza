@@ -1,0 +1,24 @@
+characters={
+	PAL_mahmoud_abbas = {
+		name = "Mahmoud Abbas"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/PAL/portrait_large_mahmoud_abbas.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/PAL/portrait_large_mahmoud_abbas.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = liberalism
+			desc = ""
+		}	
+	
+	
+	}
+}

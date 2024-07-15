@@ -1,0 +1,24 @@
+characters={
+	SYR_bashar_al_assad = {
+		name = "Bashar El-Assad"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/SYR/portrait_large_bashar_al_assad.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/SYR/portrait_large_bashar_al_assad.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = anarchist_communism
+			desc = ""
+		}	
+	
+	
+	}
+}

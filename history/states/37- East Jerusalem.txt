@@ -1,0 +1,17 @@
+state={
+	id=37
+	name="East Jerusalem"
+	history = {
+        owner = PAL
+		add_core_of = PAL
+		add_core_of = HAM
+		victory_points = { 7873 15 }
+
+	}
+	provinces={ 
+		10431 10664 12320 2324 7873 12251 4583  
+	}  
+	buildings_max_level_factor=5.000
+        manpower= 754256
+        state_category = large_city
+}

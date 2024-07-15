@@ -1,0 +1,94 @@
+﻿capital = 23
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "SAU_2021"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "SAU_2021_nsb"
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+		infantry_at = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+		}
+	}
+}
+set_convoys = 5
+add_ideas = {
+	sunni
+	eight_hour_workday
+	high_education_budget
+	medium_military_budget
+	comprehensive_healthcare_system
+	moderate_state_welfare
+	resource_exploration
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2015.1.23"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+recruit_character =  SAU_king_salman
+
+create_country_leader = {
+	name = "Amin al-Husseini"
+	desc = ""
+	picture = GFX_portrait_Amin_al_Husseini
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bulus Farah"
+	desc = ""
+	picture = GFX_portrait_Bulus_Farah
+	ideology = leninism
+	traits = {
+		#
+	}
+}

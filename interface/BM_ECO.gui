@@ -1,0 +1,156 @@
+guiTypes = {
+	containerWindowType = {
+		name = "view_GDP_container"
+		position = { x = -20 y = -310 }
+		size = { width = 30 height = 20 }
+		orientation = lower_right
+		
+		buttonType = {
+			name = "view_GDP_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_minimap_handle_default"
+			pdx_tooltip = "view_GDP_button_tt"
+			shortcut = "shift+g"
+		}
+	}
+	containerWindowType = {
+		name = "GDP_main_container"
+		position = { x = 0 y = 0 }
+		size = { width = 950 height = 770 }
+		orientation = center
+		origo = center
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "close_GDP_button"
+			position = { x = 903 y = 5 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		instantTextBoxType = {
+			name ="GDP_main_title"
+			position = { x = 140 y = 40 }
+			font = "hoi_36header"
+			text = GDP_main_title
+			format = centre
+			maxWidth = 700
+		}
+		instantTextBoxType = {
+			name ="GDP_main_text"
+			position = { x = 26 y = 75 }
+			font = "hoi_18mbs"
+			text = GDP_main_text
+			format = left
+			maxWidth = 250
+		}
+		instantTextBoxType = {
+			name ="GDP_main_text3"
+			position = { x = 26 y = 335 }
+			font = "hoi_30header"
+			text = GDP_main_text3
+			format = left
+			maxWidth = 250
+		}
+		instantTextBoxType = {
+			name ="GDP_main_text4"
+			position = { x = 26 y = 430 }
+			font = "hoi_18mbs"
+			text = GDP_main_text4
+			format = left
+			maxWidth = 250
+		}
+	    instantTextBoxType = {
+			name ="GDP_main_text2"
+			position = { x = 26 y = 380 }
+			font = "hoi_18mbs"
+			text = GDP_main_text2
+			format = left
+			maxWidth = 250
+		}
+		
+
+		instantTextBoxType = {
+			name ="GDP_main_text5"
+			position = { x = 26 y = 570 }
+			font = "hoi_30header"
+			text = GDP_main_text5
+			format = left
+			maxWidth = 250
+		}
+		instantTextBoxType = {
+			name ="GDP_main_text6"
+			position = { x = 26 y = 615 }
+			font = "hoi_18mbs"
+			text = GDP_main_text6
+			format = left
+			maxWidth = 250
+		}
+        buttonType = {
+			name = "pay_debt_button"
+			position = { x = 115 y = 370 }
+			quadTextureSprite = "GFX_icon_button_32x32"
+			pdx_tooltip = "pay_debt"
+			clicksound = click_close
+		}
+		containerWindowType = {
+			name = "GDP_selected_country_grid_container"
+			position = {x = 20 y = 120}
+			size = {width = 300 height = 200 } 
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			background = {
+				name = "GDP_selected_country_grid_background"
+				quadTextureSprite = "GFX_tiled_bg"
+			}
+			
+			gridboxtype = {
+				name = "GDP_selected_country_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 150 height = 30 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "GDP_selected_country_entry"
+		position = { x = 0 y = 0 }	
+		size = { width = 150 height = 30 }
+		
+		instantTextBoxType = {
+			name ="GDP_selected_country_title"
+			position = { x = -100 y = 25 }
+			font = "hoi_24header"
+			text = "[THIS.GetName]"
+			format = centre
+			maxWidth = 350
+			maxHeight = 24
+		}
+		iconType = {
+			name = "GDP_selected_country_flag_icon"
+			position = { x = 35 y = 65 }
+			spriteType = "GFX_shield_medium"
+			pdx_tooltip = "GDP_selected_country_flag_icon_tt"
+		}
+		instantTextBoxType = {
+			name ="GDP_selected_country_rank"
+			position = { x = -100 y = 130 }
+			font = "hoi_24header"
+			text = GDP_selected_country_rank
+			format = centre
+			maxWidth = 350
+			maxHeight = 24
+		}
+	}
+}

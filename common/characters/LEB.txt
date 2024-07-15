@@ -1,0 +1,24 @@
+characters={
+	LEB_michel_aoun = {
+		name = "Michel Aoun"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/LEB/portrait_large_michel_aoun.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/LEB/portrait_large_michel_aoun.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = liberalism
+			desc = ""
+		}	
+	
+	
+	}
+}

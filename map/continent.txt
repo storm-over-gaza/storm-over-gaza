@@ -1,0 +1,5 @@
+continents = {
+	africa
+	asia
+	middle_east
+}

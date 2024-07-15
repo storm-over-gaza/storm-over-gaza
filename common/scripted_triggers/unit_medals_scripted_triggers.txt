@@ -1,0 +1,61 @@
+#scripted triggers for Division Medals feature
+
+should_have_saudi_medals_trigger = {
+	original_tag = SAU
+}
+
+should_have_egyptian_medals_trigger = {
+	original_tag = EGY
+}
+
+should_have_israeli_medals_trigger = {
+	original_tag = ISR
+}
+
+should_have_palestinian_medals_trigger = {
+	original_tag = PAL
+}
+
+should_have_hamasi_medals_trigger = {
+	original_tag = HAM
+}
+
+should_have_pij_medals_trigger = {
+	original_tag = PIJ
+}
+
+should_have_jordanian_medals_trigger = {
+	original_tag = JOR
+}
+
+should_have_hezbollah_medals_trigger = {
+	original_tag = HEZ
+}
+
+should_have_lebnani_medals_trigger = {
+	original_tag = LEB
+}
+
+should_have_syrian_medals_trigger = {
+	original_tag = SYR
+}
+
+should_have_iraqi_medals_trigger = {
+	original_tag = IRQ
+}
+
+should_have_any_unique_medals_trigger = {
+	OR = {
+		should_have_saudi_medals_trigger = yes
+		should_have_egyptian_medals_trigger = yes
+		should_have_israeli_medals_trigger = yes
+		should_have_palestinian_medals_trigger = yes
+		should_have_hamasi_medals_trigger = yes
+		should_have_pij_medals_trigger = yes
+		should_have_jordanian_medals_trigger = yes
+		should_have_hezbollah_medals_trigger = yes
+		should_have_lebnani_medals_trigger = yes
+		should_have_syrian_medals_trigger = yes 
+		should_have_iraqi_medals_trigger = yes 
+	}
+}

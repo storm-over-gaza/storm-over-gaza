@@ -1,0 +1,227 @@
+spriteTypes = {
+
+	#bm_labour_laws #5slots
+
+    spriteType = {
+		name = "GFX_idea_eight_hour_workday"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_labour_laws/_eight_hour_workday.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_twelve_hour_workday"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_labour_laws/_twelve_hour_workday.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fourteen_hour_workday"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_labour_laws/_fourteen_hour_workday.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_eighteen_hour_workday"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_labour_laws/_eighteen_hour_workday.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_work_hour_limits"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_labour_laws/_no_work_hour_limits.dds"
+	}
+
+
+	#bm_healthcare_policy #4slots
+
+    
+	spriteType = {
+		name = "GFX_idea_comprehensive_healthcare_system"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_healthcare_policy/_comprehensive_healthcare_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_standard_healthcare_system"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_healthcare_policy/_standard_healthcare_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_basic_healthcare_system"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_healthcare_policy/_basic_healthcare_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_national_healthcare_system"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_healthcare_policy/_no_national_healthcare_system.dds"
+	}
+
+	#bm_benefits_policy #4slots
+
+    
+	spriteType = {
+		name = "GFX_idea_generous_state_welfare"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_benefits_policy/_generous_state_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_moderate_state_welfare"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_benefits_policy/_moderate_state_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_basic_state_welfare"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_benefits_policy/_basic_state_welfare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_state_welfare"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_benefits_policy/_no_state_welfare.dds"
+	}
+
+
+	#bm_education_spending #3slots
+
+    spriteType = {
+		name = "GFX_idea_no_education_budget"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_education_policy/_no_official_education_system.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_low_education_budget"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_education_policy/_basic_education_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_medium_education_budget"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_education_policy/_subsidized_basic_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_high_education_budget"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_education_policy/_subsidized_higher_education.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_free_education_budget"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_education_policy/_left_to_the_market.dds"
+	}
+	#bm_military_spending #3slots
+
+
+    spriteType = {
+		name = "GFX_idea_low_military_budget"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_military_spending/_low_military_budget.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_medium_military_budget"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_military_spending/_medium_military_budget.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_high_military_budget"
+		texturefile = "gfx/interface/ideas/laws/welfare_policies/bm_military_spending/_high_military_budget.dds"
+	}
+	
+    #religion
+	spriteType ={
+		name = "GFX_idea_buddism_idea"
+		texturefile = "gfx/interface/ideas/religion/buddism_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_cheondo_idea"
+		texturefile = "gfx/interface/ideas/religion/cheondo_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_christian_idea"
+		texturefile = "gfx/interface/ideas/religion/christian_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_eastern_church_arm"
+		texturefile = "gfx/interface/ideas/religion/eastern_church_arm.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_eastern_church_eth"
+		texturefile = "gfx/interface/ideas/religion/eastern_church_eth.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_hindu_idea"
+		texturefile = "gfx/interface/ideas/religion/hindu_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_ibadi_idea"
+		texturefile = "gfx/interface/ideas/religion/ibadi_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_islamic_world"
+		texturefile = "gfx/interface/ideas/religion/islamic_world.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_islamist_media"
+		texturefile = "gfx/interface/ideas/religion/islamist_media.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_judaism_idea"
+		texturefile = "gfx/interface/ideas/religion/judaism_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_mosque_funding"
+		texturefile = "gfx/interface/ideas/religion/mosque_funding.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_muslim1"
+		texturefile = "gfx/interface/ideas/religion/muslim1.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_muslim2"
+		texturefile = "gfx/interface/ideas/religion/muslim2.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_muslim3"
+		texturefile = "gfx/interface/ideas/religion/muslim3.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_orthodox"
+		texturefile = "gfx/interface/ideas/religion/orthodox.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_orthodox_christian_idea"
+		texturefile = "gfx/interface/ideas/religion/orthodox_christian_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_pluralist_religion_idea"
+		texturefile = "gfx/interface/ideas/religion/pluralist_religion_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_seize_church_assets"
+		texturefile = "gfx/interface/ideas/religion/seize_church_assets.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_shia_idea"
+		texturefile = "gfx/interface/ideas/religion/shia_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_shinto_idea"
+		texturefile = "gfx/interface/ideas/religion/shinto_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_state_religion_buddhism"
+		texturefile = "gfx/interface/ideas/religion/state_religion_buddhism.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_sufi_islam"
+		texturefile = "gfx/interface/ideas/religion/sufi_islam.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_sunni_idea"
+		texturefile = "gfx/interface/ideas/religion/sunni_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_ummah_focus"
+		texturefile = "gfx/interface/ideas/religion/ummah_focus.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_uniate_idea"
+		texturefile = "gfx/interface/ideas/religion/uniate_idea.dds"
+	}
+	spriteType ={
+		name = "GFX_idea_zoroastrianism_idea"
+		texturefile = "gfx/interface/ideas/religion/zoroastrianism_idea.dds"
+	}
+	
+}

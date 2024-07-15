@@ -1,0 +1,105 @@
+division_template = {
+	name = "Katebet Al-Qasam"
+	division_names_group = HAM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+    priority = 2
+
+}
+division_template = {
+	name = "Liwa Al-Qasam"
+	division_names_group = HAM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+	}
+    priority = 0
+
+}
+
+units = {
+	#HAMAS Fighters
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 4028
+		division_template = "Katebet Al-Qasam"
+		start_experience_factor = 0.4
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3730
+		division_template = "Katebet Al-Qasam"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12772
+		division_template = "Katebet Al-Qasam"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12633
+		division_template = "Katebet Al-Qasam"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2734
+		division_template = "Katebet Al-Qasam"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 18722
+		division_template = "Katebet Al-Qasam"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10290
+		division_template = "Liwa Al-Qasam"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 4125
+		division_template = "Liwa Al-Qasam"
+		start_experience_factor = 0.3
+	}
+}

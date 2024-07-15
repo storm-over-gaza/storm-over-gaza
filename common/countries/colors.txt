@@ -1,0 +1,56 @@
+EGY = {
+	color = rgb { 192 147 0 }
+	color_ui = rgb { 230 230 70 }
+}
+HAM = {
+	color = rgb { 0 131 0 }
+	color_ui = rgb { 0 131 0 }
+}
+ISR = {
+	color = rgb { 0 56 184 }
+	color_ui = rgb { 20 40 100 }
+}
+PAL = {
+	color = rgb { 169  255  104 }
+	color_ui = rgb { 169  255  104 }
+}
+LEB = {
+	color = rgb { 255 247 129 }
+	color_ui = rgb { 255 247 129 }
+}
+JOR = {
+	color = rgb { 147 0 25 }
+	color_ui = rgb { 147 0 25 }
+}
+SYR = {
+	color = rgb { 255  101  86 }
+	color_ui = rgb { 255  101  86 }
+}
+SAU = {
+	color = rgb { 0 108 53 }
+	color_ui = rgb { 10 100 10 }
+}
+IRQ = {
+	color = rgb { 102 175 139 }
+	color_ui = rgb { 231 148 129 }
+}
+HEZ = {
+	color = rgb { 255 209 1 }
+	color_ui = rgb { 255 209 1 }
+}
+PIJ = {
+	color = rgb { 140 120 210 }
+	color_ui = rgb { 140 120 210 }
+}
+FSA = {
+	color = rgb { 102  200  69 }
+	color_ui = rgb { 102  200  69 }
+}
+USA = {
+	color = rgb { 67  123  237 }
+	color_ui = rgb { 67  123  237 }
+}
+RUS = {
+	color = rgb { 125  13  24 }
+	color_ui = rgb { 125  13  24 }
+}

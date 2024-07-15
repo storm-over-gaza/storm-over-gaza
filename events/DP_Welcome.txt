@@ -1,0 +1,26 @@
+add_namespace = welcome
+
+country_event = {
+
+    id = welcome.1
+    title = "welcome"
+    desc = "welcome.1.d"
+    picture = "GFX_Welcome"
+    
+    trigger = {
+        
+    }
+	
+	immediate = {
+
+	}
+    
+    fire_only_once = yes # L'événement ne se déclenche qu'une seule fois
+
+	option = {
+		name = "welcome.1.a"	
+		trigger = { is_ai = no }
+		}  
+	}
+
+

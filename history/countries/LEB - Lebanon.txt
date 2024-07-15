@@ -1,0 +1,98 @@
+﻿capital = 1
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "LEB_2021"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "LEB_2021_nsb"
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+		infantry_at = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+		}
+	}
+}
+set_convoys = 5
+add_ideas = {
+	sunni
+	no_work_hour_limits
+	low_education_budget
+	low_military_budget
+	basic_healthcare_system
+	no_state_welfare
+	resource_exploration
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "2016.10.31"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 50
+	fascism = 10
+	communism = 10
+	neutrality = 30
+}
+recruit_character = LEB_michel_aoun
+
+create_country_leader = {
+	name = "Pierre Gemayel"
+	desc = ""
+	picture = GFX_portrait_Pierre_Gemayel
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Melick Yarad"
+	desc = ""
+	picture = GFX_portrait_Melick_Yarad
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rami Sarraff"
+	desc = ""
+	picture = GFX_portrait_Rami_Sarraff
+	ideology = leninism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+        name = "GFX_ideology_hamas"
+        texturefile = "gfx/interface/ideologies/subideologies/hamas.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_salafi_jihadism"
+        texturefile = "gfx/interface/ideologies/subideologies/salafi_jihadism.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_conservatism"
+        texturefile = "gfx/interface/ideologies/subideologies/conservatism.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_national_conservatism"
+        texturefile = "gfx/interface/ideologies/subideologies/conservatism.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_liberalism"
+        texturefile = "gfx/interface/ideologies/subideologies/conservatism.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_socialism"
+        texturefile = "gfx/interface/ideologies/subideologies/socialism.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_anarchist_communism"
+        texturefile = "gfx/interface/ideologies/subideologies/anarchist_communism.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_anarchist_liberalism"
+        texturefile = "gfx/interface/ideologies/subideologies/conservatism.dds"
+    }
+}

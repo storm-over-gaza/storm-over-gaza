@@ -1,0 +1,24 @@
+characters={
+	USA_trump = {
+		name = "Donald Trump"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/USA/portrait_large_trump.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/USA/portrait_large_trump.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = national_conservatism
+			desc = ""
+		}	
+	
+	
+	}
+}

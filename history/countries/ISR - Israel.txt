@@ -1,0 +1,130 @@
+﻿capital = 34
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "ISR_2021"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "ISR_2021_nsb"
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	fuel_silos = 1
+	infantry_at = 1
+	tech_engineers = 1
+experimental_rockets = 1
+rocket_engines = 1
+	infantry_at2 = 1
+        motorised_infantry = 1
+	gw_artillery = 1
+	basic_train = 1
+	electronic_mechanical_engineering = 1
+jet_engines = 1
+
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "ISR_2021_nsb"
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_medium_airframe = 1
+			improved_medium_airframe = 1
+			basic_small_airframe = 1
+			improved_small_airframe = 1
+			air_torpedoe_1 = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
+set_convoys = 5
+add_ideas = {
+	judaism
+	eight_hour_workday
+	high_education_budget
+	high_military_budget
+	standard_healthcare_system
+	basic_state_welfare
+	education_and_science
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "2020.5.17"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 80
+	communism = 20
+}
+recruit_character = ISR_netanyahu
+
+
+create_country_leader = {
+	name = "Itzhak Gaster"
+	desc = ""
+	picture = GFX_portrait_Itzhak_Gaster
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf Szabó"
+	desc = ""
+	picture = GFX_portrait_Rudolf_Szabo
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Shmuel Mikunis"
+	desc = ""
+	picture = GFX_portrait_Shmuel_Mikunis
+	ideology = leninism
+	traits = {
+		#
+	}
+}

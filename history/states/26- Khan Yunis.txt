@@ -1,0 +1,19 @@
+state={
+	id=26
+	name="Khan Yunis"
+	provinces={
+		12772 8350 18768 18790
+	}
+        manpower= 406254rocket_site = 2
+        state_category = city
+		history = {
+			owner = HAM
+			add_core_of = HAM
+                buildings = {
+                        rocket_site = 2
+		}
+			victory_points = { 8350 3}
+			victory_points = { 12772 20}
+			victory_points = { 18790 5}
+		}
+}

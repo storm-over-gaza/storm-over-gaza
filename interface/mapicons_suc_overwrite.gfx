@@ -1,0 +1,105 @@
+
+spriteTypes = {
+
+	spriteType = {		#
+		name = "GFX_onmap_unit_counter_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_unit_counter_cm.dds"
+		noOfFrames = 3
+	}
+	spriteType = {		#
+		name = "GFX_onmap_unit_counter_selected_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_unit_counter_selected_cm.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_unit_attrition_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_unit_attrition_cm.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_mapicon_unit_no_orders_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_mapicon_unit_no_orders_cm.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_mapicon_unit_area_defense_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_mapicon_unit_area_defense_cm.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_mapicon_unit_invalid_orders_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_mapicon_unit_invalid_orders_cm.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_onmap_digin_icon_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_digin_icon_cm.dds"
+		noOfFrames = 2
+		
+	}
+	spriteType = {
+		name = "GFX_onmap_action_icon_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_action_icon_cm.dds"
+		noOfFrames = 12
+		
+	}
+	spriteType = {		#
+		name = "GFX_onmap_naval_unit_counter_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_naval_unit_counter_cm.dds"
+		noOfFrames = 3
+		
+	}
+	spriteType = {	#
+		name = "GFX_onmap_mission_unit_counter_selected_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_mission_unit_counter_selected_cm.dds"
+		
+	}
+	spriteType = {		#
+		name = "GFX_spotting_bar_bg_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_spotting_bar_bg_cm.dds"
+		
+	}
+	spriteType = {	#
+		name = "GFX_NV_icon_pride_small_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_NV_icon_pride_small_cm.dds"
+		
+	}
+	spriteType = {		
+		name = "GFX_onmap_unit_counter_air_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_unit_counter_air_cm.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_onmap_unit_counter_overlay_air_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_unit_counter_overlay_air_cm.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_onmap_unit_counter_selected_air_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_unit_counter_selected_air_cm.dds"
+		
+	}
+	spriteType = {	#
+		name = "GFX_mapicon_air_training_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_mapicon_air_training_cm.dds"
+		 
+	}
+	spriteType = {	#
+		name = "GFX_onmap_unit_counter_overlay_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_onmap_unit_counter_overlay_cm.dds"
+		
+	}
+	spriteType = {	#
+		name = "GFX_supply_strip_cm"
+		texturefile = "gfx/interface/cmcounters/GFX_supply_strip_cm.dds"
+		noOfFrames = 3
+	}
+	
+	#spriteType = {
+	#	name = "GFX_onmap_mission_unit_counter"
+	#	texturefile = "gfx/interface/GFX_onmap_mission_unit_counter_cm.dds"
+	#}
+	
+
+	
+}

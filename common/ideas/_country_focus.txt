@@ -1,0 +1,111 @@
+ideas = {
+
+    country_focus = {
+        law = yes
+        use_list_view = yes
+
+        local_military_industrialization = {
+
+            available = {
+                NOT = {
+                    has_idea = disarmed_nation
+                }
+            }
+	        level = 1
+
+            cost = 450
+            removal_cost = 10
+
+            modifier = {
+                monthly_population = -0.01
+                research_speed_factor = 0.02
+                industrial_capacity_factory	= 0.10
+                industrial_capacity_dockyard = 0.10
+                production_speed_arms_factory_factor = 0.05
+                production_speed_dockyard_factor = 0.05
+                license_purchase_cost = 0.2
+                license_production_speed = -0.05		
+            }
+
+            ai_will_do = {
+                base = 40
+
+
+
+                modifier = {
+                    has_government = fascism
+                    add = 20
+                }
+                
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        resource_exploration = {
+
+            available = {
+                
+            }
+
+            cost = 450
+            removal_cost = 10
+
+            modifier = {
+                monthly_population = -0.01
+                research_speed_factor = 0.02
+                local_resources_factor = 0.125
+
+            }
+
+            ai_will_do = {
+                base = 40
+
+                modifier = {
+                    has_government = communism
+                    add = 40
+                }
+
+                modifier = {
+                    has_government = democratic
+                    add = 20
+                }   
+            }
+
+            cancel_if_invalid = yes
+        }
+
+        education_and_science = {
+
+            available = {
+
+            }
+            
+            cost = 450
+            removal_cost = 10
+
+            modifier = {
+                monthly_population = -0.01
+                research_speed_factor = 0.08
+                production_speed_buildings_factor = 0.08 
+                consumer_goods_factor = -0.01
+            }
+
+            ai_will_do = {
+                base = 40
+
+                modifier = {
+                    has_government = democratic
+                    add = 10
+                }
+
+                modifier = {
+                    has_government = communism
+                    add = 20
+                }
+            }
+            
+            cancel_if_invalid =yes
+        }
+    }
+}

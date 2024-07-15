@@ -1,0 +1,24 @@
+characters={
+	PIJ_ziyad_nakhalah = {
+		name = "Ziyad Al-Nakhaleh"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/PIJ/portrait_large_ziyad_nakhalah.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/PIJ/portrait_large_ziyad_nakhalah.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = khomeinist_islamism
+			desc = ""
+		}	
+	
+	
+	}
+}

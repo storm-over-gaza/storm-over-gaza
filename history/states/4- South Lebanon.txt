@@ -1,0 +1,20 @@
+state={
+	id=4
+	name="South Lebanon"
+	history = {
+                owner = HEZ
+		add_core_of = HEZ
+                buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = { 588 2}
+	}
+	provinces={
+		83 118 588 2197 3171 4457 4552 4711 5899 7442 8133 9475 11684 11702 
+	}
+	buildings_max_level_factor=2.000
+        manpower= 6503
+        state_category = town
+}

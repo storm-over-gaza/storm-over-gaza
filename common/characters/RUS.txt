@@ -1,0 +1,24 @@
+characters={
+	RUS_putin = {
+		name = "Vladimir Putin"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/RUS/portrait_large_putin.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/RUS/portrait_large_putin.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = despotism
+			desc = ""
+		}	
+	
+	
+	}
+}

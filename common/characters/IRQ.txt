@@ -1,0 +1,24 @@
+characters={
+	IRQ_barham_salih = {
+		name = "Barham Salih"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/IRQ/portrait_large_barham_salih.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/IRQ/portrait_large_barham_salih.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = liberalism
+			desc = ""
+		}	
+	
+	
+	}
+}

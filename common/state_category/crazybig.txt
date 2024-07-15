@@ -1,0 +1,8 @@
+state_categories={
+	crazybig = {
+		local_building_slots = 150
+	
+		color = { 0 200 0 }
+
+	}
+}

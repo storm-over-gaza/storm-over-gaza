@@ -1,0 +1,38 @@
+
+division_template = {
+	name = "Liwa Police Force"
+	division_names_group = PAL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+    priority = 0
+
+}
+units = {
+	#Palestine Police
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2324
+		division_template = "Liwa Police Force"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7873
+		division_template = "Liwa Police Force"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+}

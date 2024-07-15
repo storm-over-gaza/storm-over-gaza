@@ -1,0 +1,22 @@
+
+state={
+	id=41
+	name="Jenin"
+
+	history={
+		owner = PIJ
+		add_core_of = PAL
+		add_core_of = HAM
+		add_core_of = PIJ
+		victory_points = { 18797 5 }
+
+	}
+
+	provinces={
+		1304 4171 18796 18797 18798
+	}
+	manpower=151251
+	buildings_max_level_factor=3.000
+	state_category=city
+	local_supplies=0.000
+}

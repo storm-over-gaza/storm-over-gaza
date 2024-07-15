@@ -1,0 +1,102 @@
+﻿capital = 30	
+
+recruit_character = HAM_yehia_sinwar
+recruit_character = HAM_ismail_haniyeh
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "HAM_2021"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "HAM_2021_nsb"
+}
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	infantry_at = 1
+experimental_rockets = 1
+rocket_engines = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+		}
+	}
+}
+set_convoys = 10
+add_ideas = {
+	sunni
+	no_work_hour_limits
+	low_education_budget
+	high_military_budget
+	basic_healthcare_system
+	no_state_welfare
+	local_military_industrialization
+}
+set_popularities = { 
+	democratic = 36
+	communism = 15
+	islamism = 49
+}
+create_faction = "Palestine Liberation Movement"
+add_to_faction = PIJ
+
+set_politics = {
+	ruling_party = islamism
+	last_election = "2017.5.10"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Amin al-Husseini"
+	desc = ""
+	picture = GFX_portrait_Amin_al_Husseini
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Prince Henry"
+	desc = ""
+	picture = GFX_portrait_Prince_Henry
+	ideology = despotism
+	traits = {
+		#
+	}
+}

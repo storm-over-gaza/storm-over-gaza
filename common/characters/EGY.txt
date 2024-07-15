@@ -1,0 +1,24 @@
+characters={
+	EGY_el_sisi = {
+		name = "Abdel Fattah El-Sisi"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/EGY/portrait_large_el_sisi.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/EGY/portrait_large_el_sisi.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = liberalism
+			desc = ""
+		}	
+	
+	
+	}
+}

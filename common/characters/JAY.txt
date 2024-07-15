@@ -1,0 +1,24 @@
+characters={
+	JAY_abu_hafs_maqdisi = {
+		name = "Abu Hafs Al-Maqdisi"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/JAY/portrait_large_abu_hafs_maqdisi.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/JAY/portrait_large_abu_hafs_maqdisi.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = salafi_jihadism
+			desc = ""
+		}	
+	
+	
+	}
+}

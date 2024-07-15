@@ -1,0 +1,31 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+# Marco Polo Bridge I
+news_event = {
+	id = news.1
+	title = news.1.t	
+	desc = news.1.d	#
+    picture = GFX_news_event_001
+
+	fire_only_once = yes
+	
+	trigger = {
+	 always = yes	
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = news.1.a
+	}
+}

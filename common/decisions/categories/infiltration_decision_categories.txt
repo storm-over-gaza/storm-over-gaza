@@ -1,0 +1,12 @@
+communist_infiltration = {
+	allowed = {
+		
+	}
+
+	visible = {
+		is_subject = no
+		
+		NOT = { has_government = communism }
+		
+	}
+}

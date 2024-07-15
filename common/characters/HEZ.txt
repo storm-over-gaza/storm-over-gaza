@@ -1,0 +1,24 @@
+characters={
+	HEZ_hassan_nasrallah = {
+		name = "Hassan Nasrallah"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/HEZ/portrait_large_hassan_nasrallah.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/HEZ/portrait_large_hassan_nasrallah.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = khomeinist_islamism
+			desc = ""
+		}	
+	
+	
+	}
+}

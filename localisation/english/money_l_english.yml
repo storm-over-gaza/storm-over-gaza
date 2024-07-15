@@ -1,0 +1,287 @@
+﻿l_english:
+ #Money Text and events#
+ MONEY_TOOLTIP_BASE:0 "You Have §G[?dx] B§! Money\n\nYou Gain §G[?nmn]§! B Dollars Per Week \n\n §RDebt§! \n Interest on Debt [?debtexp] B Per Week\n\nTotal Debt §R[?debttotal] B§!"
+ MONEY_MAIN:0       "§G[?dx]§!"
+ MONEY_DEBT:0       "§YYou Have [?debttotal] Debt§!"
+ MONEY_TOOLTIP:0    "[Root.GetMoneyTooltip]"
+ 
+ #Loan Decision Options#
+ economic_decision:0            "Loan Options!"
+ economic_decision_desc:0       "Current Money $[?dx]. \nWe can request local or international loans to help in our country development but we need to be carefull some decisions will make us dependent to other countries. Force us to choose a side. We can become a mere puppet."
+ humanitary_assistance:0        "IMF Free Loan (Humanitary Assistance)"
+ humanitary_assistance_desc:0   "We can request a $7B loan through The League Of Nation once with the purpose of improving our economy."
+ league_ass1:0              "Special League Of Nations Loan.(10% rate)"
+ league_ass1_desc:0         "The League Of Nation is always willing to give us a loan of $200M to fix our small debt but we do not have to be at war with any nation."
+ sov_assistance:0           "One Time Soviet Loan"
+ sov_assistance_desc:0      "USSR is willing to give us a $250M loan for some political settlement in their favor.We must take it to boost our nation comrade."
+ ger_assistance:0           "One Time German Loan"
+ ger_assistance_desc:0      "Germany is willing to give us a $250M Loan for some political settlement in their favor.We must take it to boost our nation my Führer"
+ usa_assistance:0           "One Time USA Loan"
+ usa_assistance_desc:0      "USA is willing to give us a $250M Loan for some political settlement in their favor. Mr president we must take this opportunity"
+ swi_assistance:0           "Switzerland Loan.(20% rate)"
+ swi_assistance_desc:0      "Switzerland is always open to give us loan of $250M even when their rates are high they don´t have any special condition."
+ sau_assistance:0           "Saudi Arabia Loan.(20% rate)"
+ sau_assistance_desc:0      "Saudi Arabia is always willing to give us loan of $200M even when their rates are high they don´t have any special condition."
+ com_assistance:0           "Internal Communism Loan.(15% rate)"
+ com_assistance_desc:0      "As long as there are communism members in our country we can use them as an excuse to request an international loan of $150M but be careful this will influence our contry"
+ fas_assistance:0           "Internal Fascism Loan.(15% rate)"
+ fas_assistance_desc:0      "As long as there are fascism members in our country we can use them as an excuse to request an international loan of $150M but be careful this will influence our contry"
+ dem_assistance:0           "Internal Democratic Loan.(15% rate)"
+ dem_assistance_desc:0      "As long as there are democratic members in our country we can use them as an excuse to request an international loan of $150M but be careful this will influence our contry"
+ neu_assistance:0           "Internal Authoritarian Loan.(15% rate)"
+ neu_assistance_desc:0      "As long as there are authoritarian members in our country we can use them as an excuse to request an international loan of $150M but be careful this will influence our contry"
+ priv_assistance0:0         "Private Loan.(15% rate)"
+ priv_assistance0_desc:0    "Private investors are willing to give us $150M loan with a normal rate but we have to wait some time to do it again."
+ priv_assistance1:0         "Private Loan.(20% rate)"
+ priv_assistance1_desc:0    "Private investors are willing to give us $200M loan with a 20%rate but we can take it again faster."
+ usa_puppet:0               "USA Financial Rescue(Puppet)"
+ usa_puppet_desc:0          "USA is willing to give us $450M to resolve our economic crisis with the condition of becoming their puppet. At this time we don´t have many options!"
+ sov_puppet:0               "Soviet Financial Rescue(Puppet)"
+ sov_puppet_desc:0          "The USSR is willing to give us $450M to save our economy from our financial collapse but we need to become in their puppet. Comrade we don´t have many options!"
+ ger_puppet:0               "German Financial Rescue(Puppet)"
+ ger_puppet_desc:0          "Germany is willing to give us a rescue of $450M but we have to join their cause. We have to follow the leader to greatness!"
+ 
+ #Currency Reserves Bonus#
+ normal_money:0          "Currency Reserves"
+ normal_money_desc:0     "Our budget is positive. we should keep an eye on it and seek economic oportunities"
+ low_money:0             "We have a small debt"
+ low_money_desc:0        "Our nation is getting afected for this small crisis. we should start working on it before get worse"
+ bad_money:0             "We have a medium debt"
+ bad_money_desc:0        "Our debt is growing and its effects are started to get notice. we should make new economic policies"
+ very_low_money:0        "We have a high debt"
+ very_low_money_desc:0   "Our nation is deeply affected by this debt. We must do something before a revolution takes place!"
+ 
+ 
+ #Currency Reserves Bonus(not used)#
+ boost_money:0          "No Debt"
+ boost_money_desc:0     "We have no debt"
+ very_high_money:0       "High Currency Reserves"
+ very_high_money_desc:0  "We have a great amount of currency in our reserves"
+ medium_money:0          "Medium Currency Reserves"
+ medium_money_desc:0     "Our Reserves are good and helpful"
+
+ 
+ #Ideas Bonus#
+ CB_15:0        "Medium subsidy on Construction Industry"
+ CB_15_desc:0   "We did a medium investment in our construction area to speed up our projects"
+ 
+ CB_30:0        "Heavy Subsidy on Construction Industry"
+ CB_30_desc:0   "We did a big investment in construction industry to accelarate our projects"
+ 
+ IB_10:0        "Researchers Salary Increased"
+ IB_10_desc:0   "We increased the salary of our researchers. they should be more motivated to work"
+ 
+ #IB_10:0        "Researchers Salary Increased"
+ #IB_10_desc:0   "We increased the salary of our researchers. they should be more motivated to work"
+ 
+ IB_20:0        "Heavy Investment on Research Centers"
+ IB_20_desc:0   "We have invested in a better equipment to improve the efficiency of researchers"
+ 
+ MB_3:0         "Medium Draft"
+ MB_3_desc:0    "We succesfully implemented a draft system to increase our manpower"
+ 
+ MB_7:0         "Heavy Draft"
+ MB_7_desc:0    "We expanded our automatic draft system to maximize our manpower"
+ 
+ GB_3:0         "Small Investment in Consumer Goods"
+ GB_3_desc:0    "We Subsidy a small part of civilian items.consumer goods factories are good"
+ 
+ GB_5:0         "Medium Invesment in Consumer Goods"
+ GB_5_desc:0    "We Subsidy a consider part of civilian equipment.consumer goods factories are grateful"
+ 
+ MB_10:0        "Small Investment in Mining Production"
+ MB_10_desc:0   "We Subsidy a small part of our mining industry. we need resources"
+ 
+ MB_20:0        "Medium Invesment in Mining Production"
+ MB_20_desc:0   "We Subsidy a big part of our mining industry.We need resource as soon as possible. the economy need it!"
+ 
+ JFB_25:0       "Fast Justification War"
+ JFB_25_desc:0  "We have accelarated our policy and now we can declare war faster"
+ 
+ JFB_60:0       "Faster Justification War"
+ JFB_60_desc:0  "We have removed temporary any all who can stop us to declare war and now we can do it really fast"
+ 
+ 
+ #Ideas On Menu#
+ CB15_200_200:0 "Buy 15% Construction Bonus for 200 days for $200M!" 
+ 
+ CB30_400_350:0 "Buy 30% Construction Bonus for 400 days for $350M!"
+ 
+ IB10_200_200:0 "Buy 10% Investigation Bonus for 200 days for $200M!"
+ 
+ IB20_400_350:0 "Buy 20% Investigation Bonus for 400 days for $350M!"
+ 
+ MB3_200_150:0  "Buy 3% Manpower Bonus for 200 days for $150M!"
+ 
+ MB7_400_250:0  "Buy 7% Manpower Bonus for 400 days for $250M!"
+ 
+
+ #Militar Menu Composition#
+ money_headline_0:0 "Equipment And Investment Menu"
+ current_money:0    "Current Money"
+
+ infantry_h_0:0  "10000 Infantry Equipment   Stock : [?global.infantrystock]" 
+ infantry_h_1:0  "$200M"
+ infantry_h_2:0  "$70M"
+ 
+
+ support_h_0:0   "1000 Support Equipment    Stock : [?global.supportstock]"
+ support_h_1:0   "$160M"
+ support_h_2:0   "$50M"
+ 
+ artillery_h_0:0 "1000 Artillery Equipment  Stock : [?global.artillerystock]"
+ artillery_h_1:0 "$140M"
+ artillery_h_2:0 "$50M"
+ 
+ motorized_h_0:0 "1000 Motorized Equipment  Stock : [?global.motorizedstock]"
+ motorized_h_1:0 "$200M"
+ motorized_h_2:0 "$70M"
+ 
+ anti_tank_h_0:0 "1000 Anti Tank Equipment  Stock : [?global.antitankstock]"
+ anti_tank_h_1:0 "$160M"
+ anti_tank_h_2:0 "$56M"
+ 
+ anti_air_h_0:0 "1000 Anti Air Equipment    Stock : [?global.antiairstock]"
+ anti_air_h_1:0 "$160M"
+ anti_air_h_2:0 "$56M"
+ 
+ light_tank_headline0:0  "500 Light Tank For $200M   Stock : [?global.lighttankstock]"
+ 
+ medium_tank_headline0:0 "500 Medium Tank For $340M Stock : [?global.mediumtankstock]"
+ 
+ heavy_tank_headline0:0  "500 Heavy Tank For $500M   Stock : [?global.heavytankstock]"
+ 
+ convoy_headline0:0      "50 Convoys For $150M       Stock : [?global.convoystock]"
+
+ civil_factory1:0       "Buy Civilian Factory For $50M"
+ 
+ military_factory1:0    "Buy Military Factory For $100M"
+ 
+ steel_factory:0        "Buy 8 Of Steel For $50M"
+ 
+ tungsten_factory:0     "Buy 8 of Tungsten for $50M"
+ 
+ oil_pump:0             "Buy 8 of oil for $75M"
+ 
+ aluminium_factory:0    "Buy 8 of aluminium for $50M"
+ 
+ rubber_pump:0          "Buy 8 of rubber for 75M"
+ 
+ chromium_factory:0     "Buy 8 of Chromium for $75M"
+ 
+ Buy:0      "Buy"
+ Sell:0     "Sell"
+ 
+ ##########Diplomatic action(send money)###########
+ 
+ 
+ MONEY_DIPLOMATIC_ACTION_TITLE:0 "Sent 300M(30% rate)"
+ MONEY_DIPLOMATIC_ACTION_ACTION_DESC:0 "We can loan money to this nation so it can be used to develop them but the rate is high"
+ MONEY_DIPLO_ACTION_LOC:0 "We are going to send them some money\n so they can develop quickly.\n $210M will be deliver."
+ MONEY_DIPLO_ACTION_RECIEVER_LOC:0 "$210M will be sent to this nation so it can be used to develop that nation."
+ MONEY_DIPLO_ACTION_ACCEPTED_TITLE:0 "They accepted our loan"
+ MONEY_DIPLO_ACTION_ACCEPTED_DESC:0 "They received $210M"
+ MONEY_DIPLO_ACTION_REJECTED_TITLE:0 "They rejected our loan"
+ MONEY_DIPLO_ACTION_REJECTED_DESC:0 "Our money was sent back"
+ base_desire:0 "Base Desire"
+ 
+ 
+ 
+ ###################decisions gui##########
+ 
+ money_gui_open:0  "Open Economic Screen"
+ religion: "Religion"
+ sunni: "Sunni"
+ sunni_desc: "Sunni Islam is the largest denomination of Islam. Its name comes from the word Sunnah, referring to the exemplary behavior of the Islamic prophet Muhammad. The differences between Sunni and Shia Muslims arose from a disagreement over the choice of Muhammad's successor and subsequently acquired broader political significance, as well as theological and juridical dimensions."
+ sufi_islam: "Sufi"
+ sufi_islam_desc: "Sufi Islam is often defined as \"Islamic mysticism\". It formed very early in Islamic history, as a reaction against the politicization of Islam. They believe that, through constant reciting of the Qur'an, singing and deep meditation, a spiritual connection - ecstasy - is created between the seeker and Muhammad. Through Muhammad, Sufis aim to understand, connect with, and experience Allah. Historically, Sufi missionaries were the main spreaders of Islam to Africa and the Sub-Indian continent."
+ ibadi: "Ibadi"
+ ibadi_desc: "The Ibadi religious movement separated from the main branch of Islam 20 years after the death of the prophet Muhammad, and thus predates both Sunni and Shia Islam. The movement co-originated with the Kharijite secession, where it is believed that Ali's acceptance of arbitration at the Battle of Siffin rendered him unfit for leadership - as Allah's judgement on the battlefield - not negotiations, should determine who the rightful Caliph is. It is, however considered an much more tolerant branch than the extremist Kharijites, and Ibadism shares several distinct beliefs with both Sunnis and Shias."
+ shia: "Shia"
+ shia_desc: "Shia (followers of Ali) is a branch of Islam which holds that the Islamic prophet Muhammad designated Ali ibn Abi Talib as his successor (Imam). Shia Islam primarily contrasts with Sunni Islam, whose adherents believe that Muhammad did not appoint a successor and consider Abu Bakr (who was appointed Caliph through a shura, i.e. community consensus) to be the correct Caliph."
+ judaism: "Judaism"
+ judaism_desc: "§YSpecial Rule:§! §WCan ban moderate islamist parties.§!\n\nJudaism is an ancient monotheistic Abrahamic religion with the Torah as its foundational text. It encompasses the religion, philosophy and culture of the Jewish people. Judaism is considered by religious Jews to be the expression of the covenant that God established with the Children of Israel."
+ cheondo: "Cheondo"
+ cheondo_desc: "§YSpecial Rule:§! §WCan ban moderate islamist parties.§!\n\nCheondoism (\"Religion of the Heavenly Way\") is a 20th-century Korean religious movement, based on the 19th-century Donghak neo-Confucian movement founded by Choe Je-u and codified under Son Byeong-hui. Cheondoism has its origins in the peasant rebellions which arose starting in 1812 during the Joseon dynasty."
+ shinto: "Shinto"
+ shinto_desc: "§YSpecial Rule:§! §WCan ban moderate islamist parties.§!\n\nShinto is the ethnic religion of Japan that focuses on ritual practices to be carried out diligently, to establish a connection between present-day Japan and its ancient past."
+ buddism: "Buddhist"
+ buddism_desc: "§YSpecial Rule:§! §WCan ban moderate islamist parties.§!\n\nBuddhism is a religion and dharma that encompasses a variety of traditions, beliefs and spiritual practices largely based on teachings attributed to the Buddha. Buddhism originated in Ancient India sometime between the 6th and 4th centuries BCE, from where it spread throughout much of Asia, and declined in India during the Middle Ages."
+ hindu: "Hinduism"
+ hindu_desc: "§YSpecial Rule:§! §WCan ban moderate islamist parties.§!\n\nHinduism is a religion, or a way of life, widely practiced in the Indian subcontinent. Hinduism has been called the oldest religion in the world, and some practitioners and scholars refer to it as Sanātana Dharma, \"the eternal tradition,\" or the \"eternal way,\" beyond human history."
+ christian: "Christian"
+ christian_desc: "§YSpecial Rule:§! §WCan ban moderate islamist parties.§!\n\nChristianity is an Abrahamic monotheistic religion based on the life and teachings of Jesus Christ, who serves as the focal point of the Christian faith. It is the world's largest religion, with over 2.4 billion followers, or 33% of the global population, known as Christians."
+ orthodox_christian: "Orthodox Christian"
+ orthodox_christian_desc: "§YSpecial Rule:§! §WCan ban moderate islamist parties.§!\n\nThe Eastern Orthodox Church, also known as the Orthodox Church, or officially as the Orthodox Catholic Church, is the second-largest Christian Church and one of the oldest extant religious institutions in the world. The Eastern Orthodox Church teaches that it is the One, Holy, Catholic and Apostolic Church established by Jesus Christ in his Great Commission to the apostles. It practices what it understands to be the original Christian faith and maintains the sacred tradition passed down from the apostles."
+ zoroastrian: "Zoroastrian"
+ zoroastrian_desc: "Zoroastrianism is the worlds oldest monotheistic religion, and it's teachings are based on the Iranian prophet Zoroaster, as it preaches about the duality of good and evil in the world. The three core principles of Zoroastrianism are Good thoughts, Good deeds, and Good words."
+ pluralist: "Pluralist"
+ pluralist_desc: "As the name of the worldview according to which one's religion is not the sole and exclusive source of truth, and thus the acknowledgment that at least some truths and true values exist in other religions."
+ EU_member: "European Union Member"
+ welfare_policies:  "Budget Policies"
+ bm_labour_budget:  "Labour Workday Hours Law"
+ bm_education_spending: "Education Spending"
+ bm_benefits_policy: "Benefits"
+ bm_healthcare_spending: "Healthcare Spending"
+ bm_military_spending: "Military Spending"
+ country_focus:  "Country Focus"
+ local_military_industrialization: "Local Military Industrialization"
+ resource_exploration: "Resource Exploration"
+ education_and_science: "Education & Science"
+ government2: "Cabinet"
+#bm_labour_laws
+
+eight_hour_workday:0 "Eight Hour Workday"
+eight_hour_workday_desc:0 "A maximum limit of eight hours is placed on the workday."
+twelve_hour_workday:0 "Twelve Hour Workday"
+twelve_hour_workday_desc:0 "A maximum limit of twelve hours is placed on the workday."
+fourteen_hour_workday:0 "Fourteen Hour Workday"
+fourteen_hour_workday_desc:0 "A maximum limit of fourteen hours is placed on the workday."
+eighteen_hour_workday:0 "Eighteen Hour Workday"
+eighteen_hour_workday_desc:0 "A maximum limit of eighteen hours is placed on the workday."
+no_work_hour_limits:0 "No Work Hour Limits"
+no_work_hour_limits_desc:0 "No maximum limit is placed on the workday."
+
+#bm_healthcare_spending
+
+comprehensive_healthcare_system:0 "Advanced Healthcare System"
+comprehensive_healthcare_system_desc:0 "Citizens enjoy a Advanced healthcare system."
+standard_healthcare_system:0 "Standard Healthcare System"
+standard_healthcare_system_desc:0 "Citizens enjoy a good healthcare system."
+basic_healthcare_system:0 "Basic Healthcare System"
+basic_healthcare_system_desc:0 "Citizens enjoy the benefits of a healthcare system."
+no_national_healthcare_system:0 "No National Healthcare System"
+no_national_healthcare_system_desc:0 "The state possesses no nationally owned healthcare system."
+
+
+#bm_benefits_policy
+
+generous_state_welfare:0 "High Welfare Budget"
+generous_state_welfare_desc:0 "The state supports its citizens with a generous welfare system."
+moderate_state_welfare:0 "Medium Welfare Budget"
+moderate_state_welfare_desc:0 "The state supports its citizens with a moderately generous welfare system."
+basic_state_welfare:0 "Basic Welfare Budget"
+basic_state_welfare_desc:0 "The state supports its citizens with an adequate, but basic welfare system."
+no_state_welfare:0 "No State Welfare"
+no_state_welfare_desc:0 "The state offers no welfare programs to its citizens."
+
+#bm_military_spending
+
+low_military_budget:0 "Low Military Budget"
+low_military_budget_desc:0 "Priority in the healthcare sector is placed on the military affairs."
+medium_military_budget:0 "Medium Military Budget"
+medium_military_budget_desc:0 "Priority in the healthcare sector is placed on funding and facilitating research."
+high_military_budget:0 "High Military Budget"
+high_military_budget_desc:0 "Priority in the healthcare sector is placed on offering the best available service to the state's citizens."
+
+#bm_education_spending
+no_education_budget:0 "No Support For Education"
+no_education_budget_desc:0 "The education sector specializes in business and finance schools."
+low_education_budget:0 "Basic Support For Schools"
+low_education_budget_desc:0 "The education sector specializes in business and finance schools."
+medium_education_budget:0 "Medium Support for Schools & Universities"
+medium_education_budget_desc:0 "The education sector specializes in military academies of various kinds."
+high_education_budget:0 "Free Primary Education"
+high_education_budget_desc:0 "The education sector specializes in medical universities and research facilities."
+free_education_budget:0 "Total Free Education"
+free_education_budget_desc:0 "Highly sought after, prestigious schools dominate this nation's higher education."

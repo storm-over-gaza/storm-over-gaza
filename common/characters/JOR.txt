@@ -1,0 +1,24 @@
+characters={
+	JOR_abdullah_2 = {
+		name = "Abdullah II"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/JOR/portrait_large_abdullah_2.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/JOR/portrait_large_abdullah_2.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = liberalism
+			desc = ""
+		}	
+	
+	
+	}
+}

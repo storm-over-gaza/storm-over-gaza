@@ -1,0 +1,19 @@
+	state={
+	id=42
+	name="Green Line Areas"
+	history = {
+                owner = ISR
+		add_core_of = PAL
+		add_core_of = HAM
+		add_core_of = PIJ
+		add_core_of = ISR
+		victory_points = { 9865 2 }
+
+	}
+	provinces={
+		1485  2491 12051 12057 9865 3089 11554 4106 4332 10149 4211 11929 2795 7202 7279 3751 11918 9739 5081 2922
+	}
+	buildings_max_level_factor= 2.000
+        manpower= 72173
+        state_category = large_town
+}

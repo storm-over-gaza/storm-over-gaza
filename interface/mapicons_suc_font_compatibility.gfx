@@ -1,0 +1,100 @@
+bitmapfonts = {
+
+	###fonts compatibility###
+	
+	#default setup
+	bitmapfont = {
+
+		name = "hoi_20bs_compatible"
+
+		fontfiles = { 
+				
+			#OWB#
+			"gfx/fonts/futura_pt_cond_bold_yellow_24"
+			
+			#TNO#
+			"gfx/fonts/aldrich_24_outline"   	
+			
+			#Straetigic View Adjustment#
+			"gfx/fonts/hoi_20bsSVA"   		
+			"gfx/fonts/hoi_20bs_cryllic"
+						
+			####latin & cyrillic characters
+			"gfx/fonts/hoi_20bs_cryllic"
+			"gfx/fonts/hoi_20bs"
+				
+		}
+
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+
+	}
+	
+	#JPN
+	bitmapfont_override = {
+	
+		name = "hoi_20bs_compatible"
+
+		fontfiles = { 
+					
+			#OWB#
+			"gfx/fonts/futura_pt_cond_bold_yellow_24"
+			
+			#TNO#
+			"gfx/fonts/aldrich_24_outline"   	
+			
+			#Straetigic View Adjustment#
+			"gfx/fonts/hoi_20bsSVA"   		
+			"gfx/fonts/hoi_20bs_cryllic"
+			
+			####japanese vanilla
+			"gfx/fonts/japanese/hoi_20bs"
+			
+			####vanilla#
+			"gfx/fonts/hoi_20bs_cryllic"
+			"gfx/fonts/hoi_20bs"
+				
+		}
+		languages = { "l_japanese" } 
+	}
+	
+	#zhCN
+	bitmapfont_override = {
+
+		name = "hoi_20bs_compatible"
+
+		fontfiles = { 
+			
+			
+			#OWB#
+			"gfx/fonts/futura_pt_cond_bold_yellow_24"
+			
+			#TNO#
+			"gfx/fonts/aldrich_24_outline"   	
+			
+			#Straetigic View Adjustment#
+			"gfx/fonts/hoi_20bsSVA"   		
+			"gfx/fonts/hoi_20bs_cryllic"
+
+			####chinese vanilla
+			"gfx/fonts/chinese/hoi_20bs_1of4EX"	
+			"gfx/fonts/chinese/hoi_20bs_2of4EX"	
+			"gfx/fonts/chinese/hoi_20bs_3of4EX"	
+			"gfx/fonts/chinese/hoi_20bs_4of4EX"	
+			
+			####vanilla#
+			"gfx/fonts/hoi_20bs_cryllic"
+			"gfx/fonts/hoi_20bs"
+				
+		}
+		languages = { "l_simp_chinese" } 
+	}
+}
+

@@ -1,0 +1,46 @@
+characters={
+	ISR_bennett = {
+		name = "Naftali Bennett"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/ISR/portrait_large_bennett.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/ISR/portrait_large_bennett.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = national_conservatism
+			desc = ""
+		}	
+	
+	
+	}
+ISR_netanyahu = {
+		name = "Benjamin Netanyahu"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/ISR/portrait_large_netanyahu.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/ISR/portrait_large_netanyahu.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = conservatism
+			desc = ""
+		}	
+	
+	
+	}
+}

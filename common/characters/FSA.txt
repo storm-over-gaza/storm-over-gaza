@@ -1,0 +1,24 @@
+characters={
+	FSA_salem_turki_al_antari = {
+		name = "Salem Turki Al-Antari"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/FSA/portrait_large_salem_turki_al_antari.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/FSA/portrait_large_salem_turki_al_antari.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = national_conservatism
+			desc = ""
+		}	
+	
+	
+	}
+}

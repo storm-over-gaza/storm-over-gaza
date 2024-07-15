@@ -1,0 +1,99 @@
+﻿capital = 4
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "HEZ_2021"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "HEZ_2021_nsb"
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+		infantry_at = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+		}
+	}
+}
+set_convoys = 5
+add_ideas = {
+	shia
+	no_work_hour_limits
+	low_education_budget
+	medium_military_budget
+	basic_healthcare_system
+	no_state_welfare
+	local_military_industrialization
+}
+recruit_character = HEZ_hassan_nasrallah
+set_politics = {
+	ruling_party = islamism
+	last_election = "1992.2.18"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	fascism = 20
+	communism = 20
+	neutrality = 30
+}
+
+create_country_leader = {
+	name = "Hashimi"
+	desc = ""
+	picture = GFX_portrait_Hashim_al_Atassi
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pierre Gemayel"
+	desc = ""
+	picture = GFX_portrait_Pierre_Gemayel
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Melick Yarad"
+	desc = ""
+	picture = GFX_portrait_Melick_Yarad
+	ideology = despotism
+	traits = {
+		#
+	}
+}
