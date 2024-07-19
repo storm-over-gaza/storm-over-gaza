@@ -1,0 +1,8 @@
+#request assets
+ISR_HEZ_Conflict = {
+	icon = GFX_
+	#check all of these
+	war_stability_factor = ISR_HEZ_WAR_SUPPORT
+	war_support_factor = ISR_HEZ_WAR_SUPPORT
+	stability_factor = ISR_HEZ_WAR_IMPACT 
+}

@@ -1,0 +1,116 @@
+#Mechanic Begins. 
+HEZ_begin_conflict_with_israel = {
+#add flag that gives decisions
+#add variables to ISR and HEZ 
+## AA Health (ISR higher - iron dome) 
+	ISR = { 
+		set_variable = { var = ISR_HEZ_WAR_SUPPORT val = 0.3 }
+		set_variable = { var = ISR_HEZ_WAR_IMPACT val = -0.05 }
+		add_dynamic_modifier = { modifier = ISR_HEZ_Conflict }
+		
+		set_variable = { var = AA_HEALTH_VAR value = 100 }}#higher-iron dome
+	
+		HEZ = { set_variable = { var = AA_HEALTH_VAR value = 50 }}
+}
+#Strikes
+GEN_launch_small_strike = {
+	ROOT.owner = {
+		set_variable = { var = LAST_LAUNCH val = 2}
+		set_variable = { var = MISSLES val = 20}
+	}
+}
+GEN_launch_medium_strike = {
+	ROOT.owner = {
+		set_variable = { var = LAST_LAUNCH val = 3}
+		set_variable = { var = MISSLES val = 50}
+	}
+}
+GEN_launch_large_strike = {
+	ROOT.owner = {
+		set_variable = { var = LAST_LAUNCH val = 4}
+		set_variable = { var = MISSLES val = 100}
+	}
+}
+GEN_target_aa_sites = {
+	set_variable = { var = LAST_LAUNCH val = 4}
+	set_variable = { var = MISSLES val = 10}
+}
+
+GEN_strike = {
+	GEN_calculate_effectiveness = yes
+	GEN_destroy_buildings = yes
+	GEN_calculate_esclation = yes
+	ROOT.owner = { if = { limit = { original_tag = ISR }
+						remove_ideas = { ISR_recently_struck }
+						add_timed_idea = {
+							idea = ISR_recently_struck
+							days = 14
+						}
+					}
+
+	}
+}
+#math #calcs effectiness based on an AA_health Variable
+GEN_calculate_effectiveness = {
+	if = { limit = { ROOT = { check_variable = { var = LAST_LAUNCH #if aa
+													value = 4
+													compare = equals }}}
+
+		set_variable = { var = EFFECTIVENESS_VAR val = 100 }
+		
+		if = { 		limit = { ROOT.owner = { original_tag = ISR }}
+					subtract_from_variable = { 	var = EFFECTIVENESS_VAR 
+												value = HEZ.AA_HEALTH_VAR }
+			}
+		else = {
+					subtract_from_variable = { 	var = EFFECTIVENESS_VAR 
+												value = ISR.AA_HEALTH_VAR }
+		}
+			
+		if = { 	limit = { OR = { 	check_variable = { EFFECTIVENESS_VAR = 0 } #if either extreme occurs
+									ROOT.owner = { if = { limit = { check_variable = { 	var = AA_HEALTH_VAR
+																						value = 0
+																						compare = equals}}}}
+																					}}
+		}
+		else = {
+			random_list = {
+				30 = { 
+					multiply_variable = {
+						var = EFFECTIVENESS_VAR
+						val = 0.2
+					}
+				}
+				40 = { 
+					multiply_variable = {
+						var = EFFECTIVENESS_VAR
+						val = 0.1
+					}
+				} 
+				30 = {} #no change			
+			}
+		}
+	}
+}	
+
+GEN_destroy_buildings = {
+	if = { limit = { ROOT = { check_variable = { 	var = LAST_LAUNCH #if aa
+													value = 4
+													compare = equals }}}
+
+}
+
+
+	#after checking it!
+#destroy buildings of ROOT(state)proportionally
+}
+GEN_calculate_esclation = {
+	if = { limit = { original_tag = ISR }
+			if = { limit = { ISR = { has_idea = ISR_recently_struck }}}
+	}
+	else = {
+
+	}
+#calculates ecalation based on RNG and effectiveness vatiables (+add overreaction penalty)
+}
+#when escalation hits 100 = war goes boom, tag with 100 is the aggresor in the war
