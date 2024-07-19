@@ -448,14 +448,14 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "mainmenu_social_buttons"
-		position = { x=-50 y=0 }	
+		position = { x = 250 y = 0 }	
 		size = { width = 240 height = 90 }
 		Orientation = center_left	
 		origo = center_left
 		
 		positionType = {
 			name = "position_without_social_gui"
-			position = { x = 840 y = 980 }
+			position = { x = 840 y = 400 }
 		}
 
 		positionType = {
@@ -515,7 +515,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "homepage_button"
-			position = { x=-24 y=0 }
+			position = { x=-999 y=999 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
@@ -523,7 +523,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x=12 y=0 }
+			position = { x=999 y=999 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
@@ -532,7 +532,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x=48 y=0 }
+			position = { x=999 y=999 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
@@ -541,7 +541,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "twitter_button"
-			position = { x=84 y=0 }
+			position = { x=999 y=999 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
@@ -550,7 +550,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "instagram_button"
-			position = { x=120 y=0 }
+			position = { x=999 y=999 }
 			quadTextureSprite ="instagram"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_INSTAGRAM"
@@ -559,17 +559,17 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "discord_button"
-			position = { x=156 y=0 }
+			position = { x=-20 y=0 }
 			quadTextureSprite ="discord"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_DISCORD"
-			web_link = "https://discord.gg/hoi4"
+			web_link = "https://discord.gg/JE6svuZPfB"
 			scale = 0.9
 		}
 
 		ButtonType = {
 			name = "youtube_button"
-			position = { x=192 y=0 }
+			position = { x=999 y=999 }
 			quadTextureSprite ="youtube"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_YOUTUBE"
@@ -578,7 +578,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x=228 y=0 } 
+			position = { x=999 y=999 } 
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
