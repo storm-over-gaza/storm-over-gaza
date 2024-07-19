@@ -12,11 +12,13 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = ARG_military_government
+			picture = GFX_idea_SYR_Military_help_from_russia
 			
 			modifier = {
 				industrial_capacity_factory = 0.05
 				defence = 0.05
+				intelligence_agency_defense = 0.08
+				experience_gain_army_factor = 0.02
 			}
 		}
 	}
