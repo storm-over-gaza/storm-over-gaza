@@ -1,6 +1,6 @@
 	state={
 	id=33
-	name="Jenin Outskirts"
+	name="JeninOutskirts"
 	history = {
         owner = PAL
 		add_core_of = PAL

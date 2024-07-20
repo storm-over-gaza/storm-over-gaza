@@ -16,6 +16,7 @@ characters={
 			
 		country_leader = {
 			ideology = anarchist_communism
+			traits={ dictator }
 			desc = ""
 		}	
 	

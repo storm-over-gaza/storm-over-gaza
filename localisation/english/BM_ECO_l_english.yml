@@ -58,3 +58,4 @@ MAPMODE_TWR_GDP_PER_CAPITA_MAP_MODE_DESCRIPTION:0 "Updates Monthly"
 
 TWR_GDP_per_capita_map_mode_tooltip:0 "§Y[FROM.controller.GetName]§!: $§Y[?FROM.controller:country_GDP_per_capita|Y0]§!"
 TWR_GDP_per_capita_map_mode_tooltip_delayed:0 "§Y[FROM.controller.GetName]§! has a GDP per capita of $§Y[?FROM.controller:country_GDP_per_capita|Y0]§!"
+MENU_DISCORD: "Gaza mod Discord"

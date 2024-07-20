@@ -58,6 +58,10 @@ if = {
 }
 set_convoys = 10
 add_ideas = {
+	HAM_resistance
+	HAM_Total_propaganda
+	HAM_Feud_with_clans
+	HAM_Fight_to_the_last_man
 	sunni
 	no_work_hour_limits
 	low_education_budget

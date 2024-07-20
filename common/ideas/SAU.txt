@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		SYR_Military_help_from_russia = {
+		SAU_a_successor_to_the_heir = {
 			
 			allowed = {
 				always = yes
@@ -12,18 +12,16 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = GFX_idea_SYR_Military_help_from_russia
+			picture = SAU_a_successor_to_the_heir
 			
 			modifier = {
 				industrial_capacity_factory = 0.05
-				defence = 0.05
-				intelligence_agency_defense = 0.08
-				experience_gain_army_factor = 0.02
+				recruitable_population_factor = 0.03
 			}
 		}
 	}
 	country = {
-		SYR_Humanitarian_disaster = {
+		SAU_oil_dominant_country = {
 			
 			allowed = {
 				always = yes
@@ -35,16 +33,15 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = "GFX_idea_SYR_Humanitarian_disaster"
+			picture = SAU_oil_dominant_country
 			
 			modifier = {
-				recruitable_population_factor = -0.10
-				stability_factor = -0.15
+
 			}
 		}
 	}
 	country = {
-		SYR_Destroyed_infrastructure = {
+		SAU_controller_of_the_holiest_places = {
 			
 			allowed = {
 				always = yes
@@ -56,12 +53,11 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = SPA_recovering_from_the_civil_war
+			picture = SAU_controller_of_the_holiest_places
 			
 			modifier = {
-				production_speed_infrastructure_factor = -0.20 
-				supply_factor = -0.10 
+				stability_weekly = 0.01
 			}
 		}
 	}
-	}
+}
