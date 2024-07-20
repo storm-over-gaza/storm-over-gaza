@@ -1,8 +1,8 @@
 ISR_HEZ_war_decisions = {
 	icon = GFX_
-	# scripted_gui = ISR_HEZ_Conflict_gui
+	scripted_gui = ISR_HEZ_Conflict_Decicion_ui
 	visible = {
-		AND = {	has_country_flag = ISR_HEZ_Conflict_ongoing
+		AND = {	has_dynamic_modifier = { modifier = ISR_HEZ_Conflict }
 				OR = { 	tag = ISR
 						tag = HEZ }}
 	}
