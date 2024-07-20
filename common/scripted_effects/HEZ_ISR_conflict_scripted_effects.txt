@@ -1,51 +1,62 @@
 #Mechanic Begins. 
+#will be launched via an event, depening on when war with hamas begins
+#in debug mode has a cheat command
 HEZ_begin_conflict_with_israel = { 
 	ISR = { 
+
 		set_variable = { var = ISR_HEZ_WAR_SUPPORT val = 0.3 }
 		set_variable = { var = ISR_HEZ_WAR_IMPACT val = -0.05 }
 		add_dynamic_modifier = { modifier = ISR_HEZ_Conflict }
 
-		set_variable = { var = AA_HEALTH_VAR value = 100 }}#higher-iron dome
-	
+		set_variable = { var = AA_HEALTH_VAR value = 100 }#higher-iron dome
+		set_variable = { var = MISSLE_STOCKPILE value = 200 }
+	}
 	HEZ = { 
 		set_variable = { var = ISR_HEZ_WAR_SUPPORT val = 0.3 }
 		set_variable = { var = ISR_HEZ_WAR_IMPACT val = -0.05 }
 		add_dynamic_modifier = { modifier = ISR_HEZ_Conflict }
 		
 		set_variable = { var = AA_HEALTH_VAR value = 50 }}
+		set_variable = { var = MISSLE_STOCKPILE value = 200 }
 }
 #Strikes
 # set these in decisions when clicked. 
-# GEN_launch_small_strike = {
-# 		set_variable = { var = LAST_LAUNCH val = 1}
-# 		set_variable = { var = MISSLES val = 20}
-# 	}
+GEN_launch_small_strike = {
+		set_variable = { var = LAST_LAUNCH val = 1}
+		set_variable = { var = MISSLES val = 20}
+		GEN_strike = yes
+	}
 
-# GEN_launch_medium_strike = {
-# 	ROOT.owner = {
-# 		set_variable = { var = LAST_LAUNCH val = 2}
-# 		set_variable = { var = MISSLES val = 50}
-# 	}
-# }
-# GEN_launch_large_strike = {
-# 	ROOT.owner = {
-# 		set_variable = { var = LAST_LAUNCH val = 3}
-# 		set_variable = { var = MISSLES val = 100}
-# 	}
-# }
-# GEN_target_aa_sites = {
-# 	set_variable = { var = LAST_LAUNCH val = 4}
-# 	set_variable = { var = MISSLES val = 10}
-# }
+GEN_launch_medium_strike = {
+	ROOT.owner = {
+		set_variable = { var = LAST_LAUNCH val = 2}
+		set_variable = { var = MISSLES val = 50}
+		GEN_strike = yes
+	}
+}
+GEN_launch_large_strike = {
+	ROOT.owner = {
+		set_variable = { var = LAST_LAUNCH val = 3}
+		set_variable = { var = MISSLES val = 100}
+		GEN_strike = yes
+	}
+}
+GEN_target_aa_sites = {
+	set_variable = { var = LAST_LAUNCH val = 4}
+	set_variable = { var = MISSLES val = 10}
+	GEN_strike = yes
+}
 
 GEN_strike = {
 	GEN_calculate_effectiveness = yes
 	GEN_destroy_buildings = yes
 	ROOT.owner = { 	if = { 	limit = { original_tag = ISR }
+							HEZ = { subtract_from_variable = { var = MISSLE_STOCKPILE value = MISSLES }}
 							ISR_Strike_ideas = yes
 						}
 					else = {
 							HEZ_Strike_ideas = yes
+							ISR = {subtract_from_variable = { var = MISSLE_STOCKPILE value = MISSLES }}
 					}
 					GEN_cleanup_strike = yes
 	}
@@ -193,4 +204,8 @@ GEN_calculate_esclation = { #TODO TEST
 				multiply_variable = { var = EFFECTIVENESS_VAR value = 1.5 }					
 			}
 	clear_variable = AGGRESSIONDIFF
+}
+GEN_End_The_Conflict = {
+	clear_variable = LAST_LAUNCH
+	clear_variable = MISSLE_STOCKPILE	
 }

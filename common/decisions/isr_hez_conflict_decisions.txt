@@ -1,0 +1,115 @@
+ISR_HEZ_war_decisions = {
+	#TODO write onmap decisions for strikes of vaarious types
+	# each needs a small (ESCALATIONLEVEL 1), 
+	# medium after retaliation (ESCALATIONLEVEL 2)
+	# high after that was retaliated too (ESCALATIONLEVEL 3)
+	# will have VAR of ESCALATION LEVEL 
+	# 1 
+	# ISR
+	# 4 (HEZ)
+	# 1 (Lebanon) (ESCALATIONLEVEL 3) (AA less than 50)
+	# Add Special Operations/strikes based on conflict wiki page
+	# Hez
+	# 5 (Golan) 3 (gallilee)
+	# 6 28 (haifa) (ESCALATIONLEVEL 3) (AA less than 50)
+	CHEAT_ADD_MISSLES = {
+		icon = GEN_
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = {
+			add_to_variable = { var = MISSLE_STOCKPILE value = 200 }
+		}
+	}
+	CHEAT_ADD_AA_HEALTH_SELF = {
+		icon = GEN_
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = {
+			add_to_variable = {  var = AA_HEALTH_VAR val = 10 }
+		}
+		
+
+	}
+	CHEAT_REM_AA_HEALTH_SELF = {
+		icon = GEN_
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = {
+			subtract_from_variable = { var = AA_HEALTH_VAR val = 10 }
+		}
+
+	}
+	CHEAT_ADD_AA_HEALTH_FOE = {
+		icon = GEN_
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = {
+			if = { limit = { original_tag = ISR }
+				HEZ = { add_to_variable = { var = AA_HEALTH_VAR val = 10 }}
+			}
+			else = { 
+				ISR = { add_to_variable = { var = AA_HEALTH_VAR val = 10 }}
+			}
+		}
+
+	}
+	CHEAT_REM_AA_HEALTH_FOE = {
+		icon = GEN_
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = {
+			if = { limit = { original_tag = ISR }
+				HEZ = { subtract_from_variable = { var = AA_HEALTH_VAR val = 10 }}
+			}
+			else = { 
+				ISR = { subtract_from_variable = { var = AA_HEALTH_VAR val = 10 }}
+			}
+		}
+		
+	}
+	CHEAT_RESET_MECHANIC = {
+		icon = GEN_
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = {
+			GEN_End_The_Conflict = yes
+			HEZ_begin_conflict_with_israel = yes
+		}
+	}
+}

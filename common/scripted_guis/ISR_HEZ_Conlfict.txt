@@ -1,0 +1,28 @@
+guiTypes = {
+	containerWindowType = {
+		name = "serbia_decision_category_ui_window"
+		size = { width = 525 height = 600 }
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name ="serbia_decision_category_ui_icon"
+			spriteType = "GFX_decision_cat_long_picture_global_space_decision_category" #this is your picture
+			pdx_tooltip = "gserbia_decision_category_tt"
+			position = { x= 10	 y = -10 }
+			#format = left
+		}
+		
+		instantTextboxType = {
+			name = "serbia_decision_category_text"
+			position = { x = 10 y = 120 }
+			font = "hoi_16mbs"
+			text = serbia_decision_category_desc
+			maxWidth = 470
+			maxHeight = 600
+			format = left
+			fixedsize = yes
+		}
+	}
+	
+}
+}
