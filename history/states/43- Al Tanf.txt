@@ -1,7 +1,7 @@
 
 state={
 	id=43
-	name="Al Tanf"
+	name="AlTanf"
 
 	history={
 		owner = FSA

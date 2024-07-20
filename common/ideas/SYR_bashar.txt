@@ -35,7 +35,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = prc_low_popular_support
+			picture = "GFX_idea_SYR_Humanitarian_disaster"
 			
 			modifier = {
 				recruitable_population_factor = -0.10
@@ -64,4 +64,4 @@ ideas = {
 			}
 		}
 	}
-}
+	}

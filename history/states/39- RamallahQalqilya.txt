@@ -1,6 +1,6 @@
 state={
 	id=39
-	name="Ramallah & Qalqilya"
+	name="RamallahQalqilya"
 resources={
 		oil=1 # was: 8
                 steel=1

@@ -1,6 +1,6 @@
 state={
 	id=4
-	name="South Lebanon"
+	name="SouthLebanon"
 	history = {
                 owner = HEZ
 		add_core_of = HEZ
