@@ -1,6 +1,6 @@
 state={
 	id=5
-	name="Golan Heights"
+	name="GolanHeights"
 	history = {
                 owner = ISR
 		add_core_of = ISR

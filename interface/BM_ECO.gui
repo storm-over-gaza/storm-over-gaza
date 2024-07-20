@@ -79,7 +79,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="GDP_main_text5"
-			position = { x = 26 y = 570 }
+			position = { x = 29 y = 595 }
 			font = "hoi_30header"
 			text = GDP_main_text5
 			format = left
@@ -95,7 +95,7 @@ guiTypes = {
 		}
         buttonType = {
 			name = "pay_debt_button"
-			position = { x = 115 y = 370 }
+			position = { x = 115 y = 395 }
 			quadTextureSprite = "GFX_icon_button_32x32"
 			pdx_tooltip = "pay_debt"
 			clicksound = click_close

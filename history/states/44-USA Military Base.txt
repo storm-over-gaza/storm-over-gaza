@@ -1,6 +1,6 @@
 state={
 	id=44
-	name="USA Military Base"
+	name="USAMilitaryBase"
         history={
 		owner = USA
 		add_core_of = USA
