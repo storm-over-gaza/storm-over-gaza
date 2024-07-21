@@ -1,0 +1,63 @@
+ideas = {
+	country = {
+		SAU_a_successor_to_the_heir = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SAU_a_successor_to_the_heir
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				recruitable_population_factor = 0.03
+			}
+		}
+	}
+	country = {
+		SAU_oil_dominant_country = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SAU_oil_dominant_country
+			
+			modifier = {
+
+			}
+		}
+	}
+	country = {
+		SAU_controller_of_the_holiest_places = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SAU_controller_of_the_holiest_places
+			
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+	}
+}
