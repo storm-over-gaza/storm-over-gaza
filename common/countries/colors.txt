@@ -51,6 +51,6 @@ USA = {
 	color_ui = rgb { 67  123  237 }
 }
 RUS = {
-	color = rgb { 125  13  24 }
-	color_ui = rgb { 125  13  24 }
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
 }

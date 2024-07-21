@@ -1,18 +1,23 @@
 state={
 	id=34
-	name="WestJerusalem"
+	name="STATE_34"
+        manpower= 354840
+
+        state_category = large_city
+
 	history = {
                 owner = ISR
+		victory_points = { 
+			9849 15 
+		}
 		add_core_of = PAL
 		add_core_of = HAM
 		add_core_of = ISR
-		victory_points = { 9849 15 }
 
 	}
 	provinces={ 
 		12374 18792 5377 9849 18794 10987 2434 10899 11541 6853 11529 18793
 	}
+	local_supplies=0.0 
 	buildings_max_level_factor=5.000
-        manpower= 354840
-        state_category = large_city
 }

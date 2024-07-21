@@ -8917,4 +8917,8 @@ spriteTypes = {
 		name = "GFX_idea_SYR_Humanitarian_disaster"
 		texturefile = "gfx/interface/ideas/SYR_crisis.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_HAM_Fight_to_the_last_man"
+		texturefile = "gfx/interface/ideas/HAM_Fight_to_the_last_man.dds"
+	}
 }

@@ -4,7 +4,7 @@ state={
 	provinces={
 		12772 8350 18768 18790
 	}
-        manpower= 406254rocket_site = 2
+        manpower= 406254
         state_category = city
 		history = {
 			owner = HAM

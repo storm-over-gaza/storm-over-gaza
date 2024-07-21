@@ -34,7 +34,7 @@ add_ideas = {
 	basic_state_welfare
 	resource_exploration
 }
-recruit_character = IRQ_barham_salih
+recruit_character = IRQ_Abdul_Latif_Rashid
 set_politics = {
 	ruling_party = democratic
 	last_election = "2018.10.2"

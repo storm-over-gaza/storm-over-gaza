@@ -1,4 +1,4 @@
-capital = 22
+capital = 45
 if = {
 	limit = {
 		NOT = {
@@ -59,20 +59,22 @@ if = {
 set_convoys = 20
 
 add_ideas = {
-	sunni
+	low_economic_mobilisation
+	limited_conscription
+	orthodox_christian
 	no_work_hour_limits
 	low_education_budget
 	medium_military_budget
-	basic_healthcare_system
+	standard_healthcare_system
 	basic_state_welfare
 	resource_exploration
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "2018.3.28"
 	election_frequency = 72
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
 	democratic = 50

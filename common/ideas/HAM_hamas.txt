@@ -78,7 +78,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = citizen_militia_2
+			picture = GFX_idea_HAM_Fight_to_the_last_man
 			
 			modifier = {
 				army_core_attack_factor = 0.1

@@ -148,7 +148,7 @@ bookmarks = {
 		}
                "RUS"={
 			history = "RUS_SWORDOFJERUSALEM_DESC"
-			ideology = neutrality
+			ideology = democratic
 			ideas = {
 				
 			}

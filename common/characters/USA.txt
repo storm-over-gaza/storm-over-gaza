@@ -1,4 +1,26 @@
 characters={
+	USA_biden = {
+		name = "Joe Biden"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/USA/portrait_large_biden.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/USA/portrait_large_biden.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = national_conservatism
+			desc = ""
+		}	
+	
+	
+	}
 	USA_trump = {
 		name = "Donald Trump"
 		portraits = {
@@ -11,12 +33,6 @@ characters={
 		}
 		allowed_civil_war = {
 			always = yes
-		}
-			
-			
-		country_leader = {
-			ideology = national_conservatism
-			desc = ""
 		}	
 	
 	

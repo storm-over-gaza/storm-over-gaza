@@ -81,6 +81,7 @@ set_popularities = {
 	neutrality = 15
 }
 recruit_character = USA_trump
+recruit_character = USA_biden
 
 create_country_leader = {
 	name = "Ahmed Tantawi"

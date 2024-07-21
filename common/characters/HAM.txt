@@ -1,26 +1,4 @@
 characters={
-        HAM_yehia_sinwar = {
-		name = "Yahya Sinwar"
-		portraits = {
-		army = { 
-				large = "gfx/leaders/HAM/portrait_large_yehia_sinwar.dds"
-			}
-		civilian = {
-				small = "gfx/leaders/HAM/portrait_large_yehia_sinwar.dds"
-			}
-		}
-		allowed_civil_war = {
-			always = yes
-		}
-			
-			
-		country_leader = {
-			ideology = hamas
-			desc = ""
-		}	
-	
-	
-	}
 	HAM_ismail_haniyeh = {
 		name = "Ismail Haniyeh"
 		portraits = {
@@ -41,6 +19,21 @@ characters={
 			desc = ""
 		}	
 	
+	
+	}
+        HAM_yehia_sinwar = {
+		name = "Yahya Sinwar"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/HAM/portrait_large_yehia_sinwar.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/HAM/portrait_large_yehia_sinwar.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}	
 	
 	}
 

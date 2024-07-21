@@ -8968,4 +8968,15 @@ leader_traits = {
 			}
 		}
 	}
+##############
+	retired_kgb_agent = {
+		random = no
+		encryption = 1
+		operation_cost = -0.2
+		operation_risk = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
