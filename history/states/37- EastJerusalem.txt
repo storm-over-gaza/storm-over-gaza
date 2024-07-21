@@ -1,6 +1,6 @@
 state={
 	id=37
-	name="EastJerusalem"
+	name="East Jerusalem"
 	history = {
         owner = PAL
 		add_core_of = PAL
