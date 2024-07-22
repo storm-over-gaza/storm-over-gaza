@@ -1,0 +1,126 @@
+ideas = {
+  country = {
+    IRQ_foreign_troops = {          # Присутсвие иностранных войск
+      
+      allowed = {
+        always = yes
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+      
+      picture = 
+      
+      modifier = {
+        stability_factor = 0.5
+        war_support_factor = -0.05
+        army_core_defence_factor = 0.15
+      }
+    }
+
+
+
+    IRQ_fight_against_ISIS = {          # Борьба с ИГИЛ
+      
+      allowed = {
+        always = yes
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+      
+      picture = 
+      
+      modifier = {
+          stability_factor = -0.05
+          war_support_factor = 0.15
+          army_attack_factor = 0.05
+          army_defence_factor = 0.05
+          army_morale_factor = 0.05
+          army_org_factor = 0.05
+          breakthrough_factor = 0.05
+          army_speed_factor = 0.025
+          experience_gain_army_factor = 0.2
+          experience_loss_factor = 0.05
+      }
+    }
+
+
+
+    IRQ_oil_wealth = {          # Нефтяное богатство
+      
+      allowed = {
+        always = yes
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+      
+      picture = 
+      
+      modifier = {
+        political_power_factor = 0.15
+        local_resources_factor 0.05
+        base_fuel_gain_factor = 0.15
+      }
+    }
+
+
+
+    IRQ_ethnic_and_religious_differences = {          # Этнические и религиозные разногласия
+      
+      allowed = {
+        always = yes
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+      
+      picture = 
+      
+      modifier = {
+        political_power_factor = -0.2
+        stability_factor = -0.15
+        monthly_population = -0.05
+        research_speed_factor = -0.05
+      }
+    }
+
+
+
+    IRQ_corrupt_government = {          # Коррупционная власть
+      
+      allowed = {
+        always = yes
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+      
+      picture = 
+      
+      modifier = {
+        political_power_factor = -0.05
+        stability_factor = -0.1
+        consumer_goods_factor = 0.05
+        production_speed_buildings_factor = -0.15
+        industrial_capacity_factor = -0.15
+      }
+    }
+  }
+}
