@@ -55,7 +55,7 @@ focus = {
 				}
 			}
 
-focus = { #STABILITY
+focus = {
 		id = LEB_deploy_security_forces
 		icon = GFX_focus_ARG_cut_ties_with_britain
 		prerequisite = { focus = LEB_division_at_the_parliament }
@@ -75,17 +75,17 @@ focus = { #STABILITY
 				}
 			}
 
-focus = { #STABILITY
+focus = {
 		id = LEB_work_for_a_peace_between_religions
 		icon = GFX_focus_ARG_cut_ties_with_britain
 		prerequisite = { focus = LEB_division_at_the_parliament }
-		x = 2
+		x = -2
 		y = 0
 		relative_position_id = LEB_deploy_security_forces
 		cost = 1
 
 		ai_will_do = {
-			factor = 2
+			factor = 1
 		}
 
 		search_filters = { FOCUS_FILTER_STABILITY   FOCUS_FILTER_MANPOWER }
@@ -99,5 +99,27 @@ focus = { #STABILITY
 				}
 			}
 
+focus = {
+		id = LEB_Government_promises_reforms
+		icon = GFX_focus_ARG_cut_ties_with_britain
+		prerequisite = { focus = LEB_division_at_the_parliament }
+		x = -4
+		y = 0
+		relative_position_id = LEB_deploy_security_forces
+		cost = 1
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY   FOCUS_FILTER_MANPOWER }
+
+		completion_reward = { 
+				add_stability = +0.05
+				add_popularity = {
+				ideology = democracy
+				popularity = 0.02
+				}
+			}
 	}
+}
