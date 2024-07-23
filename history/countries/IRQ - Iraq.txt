@@ -47,3 +47,10 @@ set_popularities = {
     democratic = 70
 }
 
+add_ideas = {
+	IRQ_foreign_troops
+	IRQ_fight_against_ISIS
+	IRQ_oil_wealth
+	IRQ_ethnic_and_religious_differences
+	IRQ_corrupt_government
+}
