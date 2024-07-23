@@ -1,6 +1,6 @@
 state={
 	id=23
-	name="Saudi Arabia"
+	name="SaudiArabia"
         resources={
 		oil=155 # was: 8
 	}

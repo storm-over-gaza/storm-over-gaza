@@ -15,7 +15,8 @@ characters={
 			
 			
 		country_leader = {
-			ideology = despotism
+			ideology = national_conservatism
+			traits={ retired_kgb_agent }
 			desc = ""
 		}	
 	

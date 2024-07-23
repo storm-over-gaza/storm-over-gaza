@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "The Calm Before The Storm"
 		desc = "SWORD_OF_JERUSALEM_DESC"
-		date = 2021.1.1.12
+		date = 2023.6.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "HAM"
 		default = yes
@@ -148,7 +148,7 @@ bookmarks = {
 		}
                "RUS"={
 			history = "RUS_SWORDOFJERUSALEM_DESC"
-			ideology = neutrality
+			ideology = democratic
 			ideas = {
 				
 			}

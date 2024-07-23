@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -20,19 +20,325 @@ focus_tree = {
 	
 	default = no
 
-	focus = {
-		id = SYR_sword_of_jerusalem
-		icon = GFX_goal_generic_construction
-		x = 6
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			add_war_support = 0.05
-		}
-		
-	}
+    continuous_focus_position = { x = 0 y = 0 }
+    focus = {
+        id = SYR_Rebuild_Infrastructure
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 5
+        y = 0
+        cost = 10
+        available = {
+            has_government = democratic
+        }
+        completion_reward = {
+            add_stability = 0.10
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        bypass = {
+            has_building = {
+                level = 1
+                type = infrastructure
+            }
+        }
+    }
+
+    focus = {
+        id = SYR_Revitalize_Agriculture
+        icon = GFX_goal_generic_agriculture
+        prerequisite = { focus = SYR_Rebuild_Infrastructure }
+        x = 3
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Industrial_Modernization
+        icon = GFX_goal_generic_industry
+        prerequisite = { focus = SYR_Rebuild_Infrastructure }
+        x = 7
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Develop_Oil_Fields
+        icon = GFX_goal_generic_oil
+        prerequisite = { focus = SYR_Industrial_Modernization }
+        x = 5
+        y = 2
+        cost = 10
+        completion_reward = {
+	random_owned_controlled_state = {
+            add_resource = {
+                type = oil
+                amount = 10
+            }
+        }
+    }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Expand_Manufacturing_Base
+        icon = GFX_goal_generic_construction
+        prerequisite = { focus = SYR_Industrial_Modernization }
+        x = 9
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_building = {
+                type = civ_factory
+                amount = 3
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Technological_Advancement
+        icon = GFX_goal_generic_research
+        prerequisite = { focus = SYR_Develop_Oil_Fields focus = SYR_Expand_Manufacturing_Base }
+        x = 7
+        y = 3
+        cost = 10
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.10
+                uses = 1
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Revive_Pan_Arab_Sentiment
+        icon = GFX_goal_generic_propaganda
+        x = 5
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Reclaim_the_Levant
+        icon = GFX_goal_generic_demand_territory
+        prerequisite = { focus = SYR_Revive_Pan_Arab_Sentiment }
+        x = 5
+        y = 1
+        cost = 10
+        completion_reward = {
+	SYR = {
+            create_wargoal = {
+                type = annex_everything
+                target = LEB
+            }
+}
+	SYR = {
+            create_wargoal = {
+                type = annex_everything
+                target = JOR
+            }
+}
+	SYR = {
+            create_wargoal = {
+                type = annex_everything
+                target = PAL
+            }
+        }
+}
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Diplomatic_Outreach
+        icon = GFX_goal_generic_allies_build
+        prerequisite = { focus = SYR_Reclaim_the_Levant }
+        x = 3
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_opinion_modifier = { target = LEB modifier = medium_increase }
+            add_opinion_modifier = { target = JOR modifier = medium_increase }
+            add_opinion_modifier = { target = PAL modifier = medium_increase }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Military_Preparations
+        icon = GFX_goal_generic_build_army
+        prerequisite = { focus = SYR_Reclaim_the_Levant }
+        x = 7
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_army_experience = 15
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Unify_the_Arab_States
+        icon = GFX_goal_generic_alliance
+        prerequisite = { focus = SYR_Diplomatic_Outreach focus = SYR_Military_Preparations }
+        x = 5
+        y = 3
+        cost = 10
+        completion_reward = {
+            SYR = {
+            add_core_of = LEB
+            add_core_of = JOR
+            add_core_of = PAL
+        }
+    }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Strengthen_the_Regime
+        icon = GFX_goal_generic_political_strengthen
+        x = 5
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_stability = 0.10
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Secure_International_Support
+        icon = GFX_goal_generic_foreign_investment
+        prerequisite = { focus = SYR_Strengthen_the_Regime }
+        x = 3
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Economic_Reforms
+        icon = GFX_goal_generic_economic_growth
+        prerequisite = { focus = SYR_Secure_International_Support }
+        x = 3
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Military_Modernization
+        icon = GFX_goal_generic_build_airforce
+        prerequisite = { focus = SYR_Economic_Reforms }
+        x = 3
+        y = 3
+        cost = 10
+        completion_reward = {
+            add_military_experience = 15
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Cement_Power
+        icon = GFX_goal_generic_political_unity
+        prerequisite = { focus = SYR_Military_Modernization }
+        x = 3
+        y = 4
+        cost = 10
+        completion_reward = {
+            add_stability = 0.10
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Revive_Nationalist_Sentiment
+        icon = GFX_goal_generic_propaganda
+        x = 5
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_stability = 0.10
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = SYR_Mobilize_the_Youth
+        icon = GFX_goal_generic_mobilize_youth
+        prerequisite = { focus = SYR_Revive_Nationalist_Sentiment }
+        x = 3
+        y = 1
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+}
 }

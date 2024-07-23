@@ -24,11 +24,11 @@
  GDP_per_capita_list_sort_button_text: "ВВП на душу населения" #NT!
  GDP_main_text: "ВВП страны:§Y [country_GDP_f] §! ВВП страны на душу населения: [?country_GDP_per_capita|Y0]" #NT!
  GDP_main_text2: "Долг: §R[?debttotal] Б§! Проценты по долгу: §R[?debtexp] Б§!/неделя" #NT!
- GDP_main_text3: "§RExpenses§!" #NT!
- GDP_main_text4: "Ваши общие расходы: §R[?allexpenses] Б§! в неделю \n §RРасходы§! \nВоенное содержание: §R[?ms] Б§! в неделю\nВоенные расходы: §R[?nf] Б§! в неделю\nСодержание военно-морского флота: ☻ _0[?allexpenses]1 Б§! в неделю\nСодержание состояния: §R[?allexpenses]4 Б§! в неделю\nИмпорт ресурсов: §R[?allexpenses]7 Б§! в неделю" #NT!
+ GDP_main_text3: "§RРасходы§!" #NT!
+ GDP_main_text4: "Ваши общие расходы: §R[?allexpenses] Б§! в неделю \n §RРасходы§! \nВоенное содержание: §R[?ms] Б§! в неделю\nВоенные расходы: §R[?nf] Б§! в неделю\nСодержание военно-морского флота: [?allexpenses]1 Б§! в неделю\nСодержание состояния: §R[?allexpenses]4 Б§! в неделю\nИмпорт ресурсов: §R[?allexpenses]7 Б§! в неделю" #NT!
   
- GDP_main_text5: "§GIncome§!" #NT!
- GDP_main_text6: "Ваш общий доход: §G[?nmnw] Б§! в неделю \n §GДоходы§! \nНалоги на население: §G[?tax] Б§! в неделю\nКорпоративные налоги: §G[?cfff] Б§! в неделю\nЭкспорт ресурсов: ☻ _0[?nmnw]1 Б§!/неделя\n" #NT!
+ GDP_main_text5: "§GДоход§!" #NT!
+ GDP_main_text6: "Ваш общий доход: §G[?nmnw] Б§! в неделю \n §GДоходы§! \nНалоги на население: §G[?tax] Б§! в неделю\nКорпоративные налоги: §G[?cfff] Б§! в неделю\nЭкспорт ресурсов: [?nmnw]1 Б§!/неделя\n" #NT!
   
  APMODE_TWR_GOVERNMENT_TYPE_MAP_MODE: "§YСброс отображения режима карты ВВП§!" #NT!
  MAPMODE_TWR_GOVERNMENT_TYPE_MAP_MODE_NAME: "Сброс дисплея" #NT!
@@ -58,3 +58,4 @@
   
  TWR_GDP_per_capita_map_mode_tooltip: "§Y[FROM.controller.GetName]§!: $§Y[?FROM.controller:country_GDP_per_capita|Y0]§!" #NT!
  TWR_GDP_per_capita_map_mode_tooltip_delayed: "§Y[FROM.controller.GetName]§! ВВП на душу населения составляет §Y[?FROM.controller:country_GDP_per_capita|Y0]§ доллар!" #NT!
+ MENU_DISCORD: "Дискорд мода про газу"
