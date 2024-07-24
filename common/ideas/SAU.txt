@@ -61,6 +61,26 @@ ideas = {
 		}
 	}
 	country = {
+		SAU_isis_insurgency = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SAU_isis_insurgency
+			
+			modifier = 
+ 
+			}
+		}
+	}
+	country = {
 		SAU_controller_of_the_holiest_places = {
 			
 			allowed = {
