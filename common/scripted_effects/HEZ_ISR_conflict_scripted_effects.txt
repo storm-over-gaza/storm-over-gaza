@@ -26,7 +26,7 @@ HEZ_begin_conflict_with_israel = {
 		set_variable = { var = CONST_ESCLATION_LEVEL value = 1 } #determines allowed strikes,
 }
 #Strikes
-# set these in decisions when clicked. 
+##TODO Write (after map update) set these in decisions when clicked. 
 GEN_launch_small_strike = {
 		set_variable = { var = temp_ESCALATION val = 1}
 		set_variable = { var = temp_MISSLES val = 20}
@@ -50,8 +50,8 @@ GEN_target_aa_sites = {
 	set_variable = { var = temp_MISSLES val = 10}
 	GEN_strike = yes
 }
-
-GEN_strike = {
+##
+GEN_strike = { ##TODO TEST
 	GEN_calculate_effectiveness = yes
 	GEN_destroy_buildings = yes
 	ROOT.owner = { 	if = { 	limit = { original_tag = ISR }
@@ -84,7 +84,7 @@ GEN_cleanup_strike = {
 	clear_variable = temp_AGGRESSIONDIFF
 }
 
-ISR_Strike_ideas = {
+ISR_Strike_ideas = { ##TODO TEST
 	remove_ideas = { ISR_recently_struck }
 	add_timed_idea = {
 		idea = ISR_recently_conducted_strikes
@@ -97,7 +97,7 @@ ISR_Strike_ideas = {
 		}
 	}
 }
-HEZ_Strike_ideas = {
+HEZ_Strike_ideas = { ##TODO TEST
 	remove_ideas = { HEZ_recently_struck }
 	add_timed_idea = {
 		idea = HEZ_recently_conducted_strikes
@@ -112,7 +112,7 @@ HEZ_Strike_ideas = {
 	}
 }
 #math #calcs effectiness based on an AA_health Variable
-GEN_calculate_effectiveness = {
+GEN_calculate_effectiveness = { ##TODO TEST
 
 	set_variable = { var = temp_EFFECTIVENESS val = 100 }
 	
@@ -147,7 +147,7 @@ GEN_calculate_effectiveness = {
 	}
 }
 
-GEN_destroy_buildings = {
+GEN_destroy_buildings = { ##TODO TEST
 	set_variable = { var = temp_DESTROYED_INFRA value = 0 }
 	multiply_variable = { var = temp_DESTROYED_INFRA value = 0.4 }
 	set_variable = { var = temp_DESTROYED_CIVS value = 0 }
@@ -158,15 +158,15 @@ GEN_destroy_buildings = {
 	ROOT = { 
 		damage_building = {
 			type = infrastructure
-			damage = [?temp_DESTROYED_INFRA]
+			damage = [?temp_DESTROYED_INFRA] ##malformed token
 		}
 		damage_building = {
 			type = industrial_complex
-			damage = [?temp_DESTROYED_CIVS]
+			damage = [?temp_DESTROYED_CIVS] ##malformed token
 		}
 		damage_building = {
 			type = arms_factory
-			damage = [?temp_DESTROYED_MILS]
+			damage = [?temp_DESTROYED_MILS] ##malformed token
 		}
 	}
 
@@ -178,15 +178,15 @@ GEN_destroy_buildings = {
 	GEN_calculate_escalation = yes
 }
 
-GEN_calculate_escalation = {
+GEN_calculate_escalation = { ##TODO TEST
 	if = { 	limit = { check_variable = { var = HEZ.CONST_ESCLATION_LEVEL
-										value = [?ROOT.owner.temp_ESCALATION]
+										value = [?ROOT.temp_ESCALATION]
 										compare = less_than}}
-			set_variable = { var = HEZ.CONST_ESCLATION_LEVEL value = [?ROOT.owner.temp_ESCALATION]}
+			set_variable = { var = HEZ.CONST_ESCLATION_LEVEL value = [?ROOT.temp_ESCALATION]}
 		}
 }
 
-GEN_calculate_aggression = { #TODO TEST
+GEN_calculate_aggression = { ##TODO TEST
 	#RNG
 	random_list = {
 		30 = { 
@@ -233,9 +233,8 @@ GEN_calculate_aggression = { #TODO TEST
 	multiply_variable = { var = temp_AGGRESSIONDIFF value = 10 }
 }
 
-
-
-GEN_End_The_Conflict = {
+GEN_End_The_Conflict = { ##TODO TEST
+	## remove modifier
 	clear_variable = CONST_LAST_LAUNCH
 	clear_variable = CONST_MISSLE_STOCKPILE	
 }

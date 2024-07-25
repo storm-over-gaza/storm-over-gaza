@@ -1,0 +1,51 @@
+guiTypes = {
+	## Missle Display
+	## TODO make only visible under during ISR HEZ conflict (dynamic modifier)
+	containerWindowType = {
+		name = "missle_counter"
+		position = { x = 975 y = 5 }	
+		
+		iconType ={
+			name ="missle_counter_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=0 y=0 }
+		}
+		iconType = { ##TODO
+			name ="missle_counter_icon"
+			spriteType = "GFX_money" #need new icon
+			position = { x= 3 y = 6 }
+		}
+		instantTextBoxType = {
+			name ="missle_counter_text"
+			position = { x= 23 y = 4 }
+			font = "hoi_18mbs"
+			text = [?CONST_MISSLE_STOCKPILE]
+			format = left
+			maxWidth = 150
+			maxHeight = 24
+			fixedsize = yes	
+		}
+	}
+	## TODO make some gui for missle pdouction (Keep It Simple)
+	#decisions
+	containerWindowType = {
+		name = "ISR_HEZ_Conflict_container"
+		size = { width = 525 height = 600 }
+		position = { x = 0 y = 0 }
+		#first row = height 150
+		#second row
+		iconType = {
+			name = "HEZ_Flag" ##TODO Troublehoot
+			position = { x = 25 y = 25 } ##TODO work on positioning
+			spriteType = "GFX_shield_medium"
+		}
+		#add an icon here for escalation level
+		iconType = {
+			name = "ISR_Flag" ##TODO Troubleshoot
+			position = { x = 275 y = 25 } ##TODO work on positioning
+			spriteType = "GFX_shield_medium"
+		}
+		##TODO add loading bar (CONFLICT)
+		##TODO add loading bar for each AA health
+	}
+}
