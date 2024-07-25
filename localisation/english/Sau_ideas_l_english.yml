@@ -1,15 +1,12 @@
 ﻿l_english:
 #ideas
-SAU_a_successor_to_the_heir:0 "A Successor To The Heir"
-SAU_oil_dominant_country:0 "Oil Reliant Country"
 SAU_king_faisal:0 "King Faisal"
-SAU_controller_of_the_holiest_places:0 "Controller Of The Holiest Places"
-#
 SAU_king_faisal_desc:0 "Faisal bin Abdulaziz Al Saud (1906–1975) was a Saudi Arabian leader who served as King from 1964 until his assassination in 1975. He was also Crown Prince from 1953 to 1964 and briefly regent in 1964. Faisal was a statesman and diplomat, serving as prime minister from 1954 to 1960 and again from 1962 to 1975. He was the third son of King Abdulaziz, the founder of modern Saudi Arabia."
-#
+SAU_a_successor_to_the_heir:0 "A Successor To The Heir"
 SAU_a_successor_to_the_heir_desc:0 "Saudi Arabia has a system to name a successor to the king, ensuring steady leadership. The current monarch designates a crown prince from the descendants of King Abdulaziz Al Saud. This choice considers factors like experience and family agreement. This succession plan aims to maintain stability, allowing smooth transitions of power when needed. It ensures Saudi Arabia can handle political, economic, and social challenges under a prepared leader, safeguarding the monarchy's authority."
-#
+SAU_oil_dominant_country:0 "Oil Reliant Country"
 SAU_oil_dominant_country_desc:0 "Saudi Arabia's economy thrives on its vast oil reserves, fueling rapid industrial growth and strategic influence. Though If We Keep Relying On Oil , We Are Bound To Be Doomed."
-#
-SAU_controller_of_the_holiest_places_desc:0 "Saudi Arabia controls Medina and Mecca because these cities hold immense religious significance in Islam. Medina is where the Prophet Muhammad lived and is buried, while Mecca is his birthplace and houses the Kaaba, Islam's most sacred site.
-The Saudi control began in the early 20th century with the establishment of the modern Saudi state. The ruling monarchy follows Wahhabi Islam, a conservative movement that considers Mecca and Medina central to their religious authority.
+SAU_controller_of_the_holiest_places:0 "Controller Of The Holiest Places"
+SAU_controller_of_the_holiest_places_desc:0 "Saudi Arabia controls Medina and Mecca because these cities hold immense religious significance in Islam. Medina is where the Prophet Muhammad lived and is buried, while Mecca is his birthplace and houses the Kaaba, Islam's most sacred site."
+SAU_isis_insurgency:0 "ISIS Insurgency"
+SAU_isis_insurgency_desc:0 "The ISIS insurgency in Saudi Arabia involved militant activities by the Islamic State of Iraq and Syria (ISIS) within the kingdom. ISIS militants carries out numerous attacks targeting security forces, Shia Muslims, and Western interests in Saudi Arabia. The Saudi government needs to respond with counter-terrorism measures, including military operations, arrests, and efforts to prevent the spread of extremist ideology."
