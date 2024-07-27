@@ -16,6 +16,7 @@ characters={
 			
 		country_leader = {
 			ideology = national_conservatism
+			traits={ old_figurehead defeatist }
 			desc = ""
 		}	
 	

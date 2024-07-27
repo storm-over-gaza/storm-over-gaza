@@ -4682,4 +4682,10 @@ spriteTypes = {
 		texturefile = "gfx/texticons/speed_bicycle_texticon.dds"
 		legacy_lazy_load = no
 	}
+###########
+	spriteType = {
+		name = "GFX_SYR_texticon_russians_in_syria"
+		texturefile = "gfx/texticons/SYR_russians_in_syria.dds"
+		legacy_lazy_load = no
+	}
 }

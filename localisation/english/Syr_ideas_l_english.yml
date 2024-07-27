@@ -1,7 +1,7 @@
 ﻿l_english:
 # Ideas
 SYR_Military_help_from_russia:0 "Military help from Russia"
-SYR_Military_help_from_russia_desc:0 "Russia provides military assistance to Syria, supporting the government in its fight against extremist groups."
+SYR_Military_help_from_russia_desc:0 "\n£GFX_SYR_texticon_russians_in_syria\n\n\n Russia provides military assistance to Syria, supporting the government in its fight against extremist groups."
 SYR_Humanitarian_disaster: "Humanitarian disaster"
 SYR_Humanitarian_disaster_desc: "The prolonged war has led to numerous civilian casualties and a humanitarian catastrophe."
 SYR_Destroyed_infrastructure: "Destroyed infrastructure"

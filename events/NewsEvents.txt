@@ -29,3 +29,29 @@ news_event = {
 		name = news.1.a
 	}
 }
+# shooting in brussels (attack on sweden footballers)
+news_event = {
+	id = news.2
+	title = news.2.t	
+	desc = news.2.d
+    picture = GFX_news_event_shooting_in_brussels
+
+	major = yes
+	
+	trigger = {
+	date > 2023.10.16
+	date < 2023.10.31
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+
+	}
+	
+	option = {
+		name = news.2.a
+	}
+}

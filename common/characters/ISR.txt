@@ -1,26 +1,4 @@
 characters={
-	ISR_bennett = {
-		name = "Naftali Bennett"
-		portraits = {
-		army = { 
-				large = "gfx/leaders/ISR/portrait_large_bennett.dds"
-			}
-		civilian = {
-				small = "gfx/leaders/ISR/portrait_large_bennett.dds"
-			}
-		}
-		allowed_civil_war = {
-			always = yes
-		}
-			
-			
-		country_leader = {
-			ideology = national_conservatism
-			desc = ""
-		}	
-	
-	
-	}
 ISR_netanyahu = {
 		name = "Benjamin Netanyahu"
 		portraits = {
@@ -43,4 +21,301 @@ ISR_netanyahu = {
 	
 	
 	}
+	# President (WIP DONT USE)
+	ISR_Isaac_Herzog = {
+		name = "Isaac Herzog"
+		portraits = {
+		army = { 
+				large = "gfx/leaders/ISR/portrait_large_Isaac_Herzog.dds"
+			}
+		civilian = {
+				small = "gfx/leaders/ISR/portrait_large_Isaac_Herzog.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+			
+		country_leader = {
+			ideology = conservatism
+			desc = ""
+		}	
+	
+	
+	}
+	ISR_Joaf_Gallant = {
+		name = "Joaf Gallant"
+		portraits = {
+			army = {
+				small = "gfx/leaders/ISR/portrait_large_Joaf_Gallant.dds"
+				large = "gfx/leaders/ISR/portrait_large_Joaf_Gallant.dds"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = ISR_Joaf_Gallant
+			allowed = {
+				original_tag = ISR
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+	ISR_Yaniv_Asor = {
+		name = "Yaniv Asor"
+		portraits = {
+			army = {
+				small = "gfx/leaders/ISR/portrait_large_Yaniv_Asor.dds"
+				large = "gfx/leaders/ISR/portrait_large_Yaniv_Asor.dds"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			idea_token = ISR_Yaniv_Asor
+			allowed = {
+				original_tag = ISR
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+	ISR_eli_cohen = {
+		name = "Eli Cohen"
+			portraits={
+				army={
+					small = "gfx/leaders/ISR/portrait_large_Eli_Cohen.dds"
+					large = "gfx/leaders/ISR/portrait_large_Eli_Cohen.dds"
+				}
+			}
+
+			advisor={
+				slot = political_advisor
+				idea_token = ISR_eli_cohen
+				allowed  = {
+						original_tag  = ISR
+					}
+				available = {
+						has_government = democratic
+					}
+					traits  = {
+						udenrigsminister
+					}
+					cost = 100
+					ai_will_do = {
+						base = 1.000
+					}
+				}
+		}
+		ISR_Ezra_Mor = {
+			name = "Ezra Mor"
+				portraits={
+					army={
+						small = "gfx/leaders/ISR/portrait_large_Ezra_Mor.dds"
+						large = "gfx/leaders/ISR/portrait_large_Ezra_Mor.dds"
+					}
+				}
+	
+				advisor={
+					slot = political_advisor
+					idea_token = ISR_Ezra_Mor
+					allowed  = {
+							original_tag  = ISR
+						}
+					available = {
+							has_government = democratic
+						}
+						traits  = {
+							propaganda_expert
+						}
+						cost = 100
+						ai_will_do = {
+							base = 1.000
+						}
+					}
+			}
+			ISR_Bezalel_Smotrich = {
+				name = "Bezalel Smotrich"
+					portraits={
+						army={
+							small = "gfx/leaders/ISR/portrait_large_Bezalel_Smotrich.dds"
+							large = "gfx/leaders/ISR/portrait_large_Bezalel_Smotrich.dds"
+						}
+					}
+		
+					advisor={
+						slot = political_advisor
+						idea_token = ISR_Bezalel_Smotrich
+						allowed  = {
+								original_tag  = ISR
+							}
+						available = {
+								has_government = democratic
+							}
+							traits  = {
+								economy_reformer
+							}
+							cost = 100
+							ai_will_do = {
+								base = 1.000
+							}
+						}
+				}
+				ISR_David_Saar_Salama = {
+					name = "David Saar Salama"
+						portraits={
+							army={
+								small = "gfx/leaders/ISR/portrait_large_David_Saar_Salama.dds"
+								large = "gfx/leaders/ISR/portrait_large_David_Saar_Salama.dds"
+							}
+						}
+			
+						advisor={
+							slot = navy_chief
+							idea_token = ISR_David_Saar_Salama
+							allowed  = {
+									original_tag  = ISR
+								}
+							available = {
+									has_government = democratic
+								}
+								traits  = {
+									navy_chief_decisive_battle_1
+								}
+								cost = 100
+								ai_will_do = {
+									base = 1.000
+								}
+							}
+					}
+					ISR_Tomer_Bar = {
+						name = "Tomer Bar"
+							portraits={
+								army={
+									small = "gfx/leaders/ISR/portrait_large_Tomer_Bar.dds"
+									large = "gfx/leaders/ISR/portrait_large_Tomer_Bar.dds"
+								}
+							}
+				
+							advisor={
+								slot = air_chief
+								idea_token = ISR_Tomer_Bar
+								allowed  = {
+										original_tag  = ISR
+									}
+								available = {
+										has_government = democratic
+									}
+									traits  = {
+										air_air_superiority_1
+									}
+									cost = 100
+									ai_will_do = {
+										base = 1.000
+									}
+								}
+						}
+						ISR_Itzik_Cohen = {
+							name = "Itzik Cohen"
+								portraits={
+									army={
+										small = "gfx/leaders/ISR/portrait_large_Itzik_Cohen.dds"
+										large = "gfx/leaders/ISR/portrait_large_Itzik_Cohen.dds"
+									}
+								}
+								corps_commander = {
+									traits = { army_armored_1 }
+									skill = 1
+									attack_skill = 2
+									defense_skill = 3
+									planning_skill = 4
+									logistics_skill = 5
+								}
+							}
+							ISR_Dado_Bar_Kalifa = {
+								name = "Dado Bar Califa"
+									portraits={
+										army={
+											small = "gfx/leaders/ISR/portrait_large_Dado_Bar_Kalifa.dds"
+											large = "gfx/leaders/ISR/portrait_large_Dado_Bar_Kalifa.dds"
+										}
+									}
+									corps_commander = {
+										traits = { army_infantry_1 }
+										skill = 1
+										attack_skill = 2
+										defense_skill = 3
+										planning_skill = 4
+										logistics_skill = 5
+									}
+								}
+								ISR_Avi_Rosendelph = {
+									name = "Avi Rosendelph"
+										portraits={
+											army={
+												small = "gfx/leaders/ISR/portrait_large_Avi_Rosendelf.dds"
+												large = "gfx/leaders/ISR/portrait_large_Avi_Rosendelf.dds"
+											}
+										}
+										corps_commander = {
+											traits = { army_regrouping_1 }
+											skill = 1
+											attack_skill = 2
+											defense_skill = 3
+											planning_skill = 4
+											logistics_skill = 5
+										}
+									}
+									ISR_Rogen_Bar = {
+										name = "Rogen Bar"
+											portraits={
+												army={
+													small = "gfx/leaders/ISR/portrait_large_Ronen_Bar.dds"
+													large = "gfx/leaders/ISR/portrait_large_Ronen_Bar.dds"
+												}
+											}
+											corps_commander = {
+												traits = { army_artillery_1 }
+												skill = 1
+												attack_skill = 2
+												defense_skill = 3
+												planning_skill = 4
+												logistics_skill = 5
+											}
+										}
+										ISR_Tamir_Yadai = {
+											name = "Tamir Yadai"
+												portraits={
+													army={
+														small = "gfx/leaders/ISR/portrait_large_Tamir_Yadai.dds"
+														large = "gfx/leaders/ISR/portrait_large_Tamir_Yadai.dds"
+													}
+												}
+												corps_commander = {
+													traits = { army_logistics_3 }
+													skill = 1
+													attack_skill = 2
+													defense_skill = 3
+													planning_skill = 4
+													logistics_skill = 5
+												}
+											}
 }

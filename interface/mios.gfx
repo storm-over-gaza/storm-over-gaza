@@ -1,0 +1,128 @@
+spriteTypes = { 
+
+	SpriteType = {
+		name = "GFX_idea_usa_portsmouth_naval_shipyard"
+		texturefile = "gfx/interface/ideas/idea_usa_portsmouth_naval_shipyard.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_sov_sestroretsk_tools_plant"
+		texturefile = "gfx/interface/ideas/idea_sov_sestroretsk_tools_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_sov_naz"
+		texturefile = "gfx/interface/ideas/idea_sov_naz.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_sov_izhora_plant"
+		texturefile = "gfx/interface/ideas/idea_sov_izhora_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_usa_chevrolet"
+		texturefile = "gfx/interface/ideas/idea_usa_chevrolet.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_egy_esrbc"
+		texturefile = "gfx/interface/ideas/idea_egy_esrbc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_egy_alexandria_shipyard"
+		texturefile = "gfx/interface/ideas/idea_egy_alexandria_shipyard.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_egy_armored_production_and_repair_factory"
+		texturefile = "gfx/interface/ideas/idea_egy_armored_production_and_repair_factory.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_egy_heliopolis_air_works"
+		texturefile = "gfx/interface/ideas/idea_egy_heliopolis_air_works.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_egy_helwan_air_works"
+		texturefile = "gfx/interface/ideas/idea_egy_helwan_air_works.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_egy_egao"
+		texturefile = "gfx/interface/ideas/idea_egy_egao.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_egy_abu_zaabal_engineering_industry"
+		texturefile = "gfx/interface/ideas/idea_egy_abu_zaabal_engineering_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_egy_shoubra_engineering_industry"
+		texturefile = "gfx/interface/ideas/idea_egy_shoubra_engineering_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_usa_bethlehem_shipbuilding"
+		texturefile = "gfx/interface/ideas/idea_usa_bethlehem_shipbuilding.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_usa_republic_aviation"
+		texturefile = "gfx/interface/ideas/idea_usa_republic_aviation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_usa_seversky_aircraft"
+		texturefile = "gfx/interface/ideas/idea_usa_seversky_aircraft.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_usa_savage_arms"
+		texturefile = "gfx/interface/ideas/idea_usa_savage_arms.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_usa_curtiss_wright"
+		texturefile = "gfx/interface/ideas/idea_usa_curtiss_wright.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_usa_detroit_arsenal"
+		texturefile = "gfx/interface/ideas/idea_usa_detroit_arsenal.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_usa_pressed_steel_car_company"
+		texturefile = "gfx/interface/ideas/idea_usa_pressed_steel_car_company.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_sau_saudi_railways_organization"
+		texturefile = "gfx/interface/ideas/idea_sau_saudi_railways_organization.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_sau_dammam_shipyard"
+		texturefile = "gfx/interface/ideas/idea_sau_dammam_shipyard.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_sau_jeddah_aircraft_factory"
+		texturefile = "gfx/interface/ideas/idea_sau_jeddah_aircraft_factory.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_sau_riyadh_artillery_plant"
+		texturefile = "gfx/interface/ideas/idea_sau_riyadh_artillery_plant.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_sau_military_industries_organization"
+		texturefile = "gfx/interface/ideas/idea_sau_military_industries_organization.dds"
+	}
+}
