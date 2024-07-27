@@ -6,31 +6,8 @@ scripted_gui = {
 		visible = {
 			ROOT = { has_dynamic_modifier = { modifier = ISR_HEZ_Conflict}}
 		}
-		effects = {
-			buy_icon_click = {
-				if = {
-					limit = { has_variable = show_GDP_main }
-					clear_variable = show_GDP_main
-				}
-				else = {
-					set_variable = { show_GDP_main = 1 }
-				}
-				clear_array = global.GDP_list_array
-				every_country = {
-					if = {
-						limit = {
-							NOT = { is_in_array = { global.GDP_list_array = THIS } }
-						}
-						add_to_array = { global.GDP_list_array = THIS }
-						calculate_GDP = yes
-					}
-				}
-				clear_array = GDP_selected_country_array
-				add_to_array = { GDP_selected_country_array = THIS }
-				update_position = yes
-			}
-		}
 	}	
+
 	ISR_HEZ_Conflict_Decicion_ui = {
 		context_type = decision_category
 		window_name = "ISR_HEZ_Conflict_container"
@@ -44,14 +21,14 @@ scripted_gui = {
 			ISR_Flag = {
 				image = "[ISR.GetFlag]"
 			}
-			aggression_progress_bar = {
+			aggression_progress_bar_container = {
 				frame = HEZ.CONST_AGGRESION_SCALE # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
 			}
-			HEZ_aa_health_progress_bar = {
+			HEZ_aa_health_progress_bar_container = {
 				frame = HEZ.CONST_AA_HEALTH_VAR
 			}
-			ISR_aa_health_progress_bar = {
-				frame = ISR.CONST_AA_HEALTH_VAR
+			ISR_aa_health_progress_bar_container = {
+				frame = 90 #ISR.CONST_AA_HEALTH_VAR
 			}
 		}
 	}

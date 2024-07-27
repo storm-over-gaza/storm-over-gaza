@@ -57,7 +57,7 @@ guiTypes = {
 		iconType = {		##TODO TEST (AGGRESSION)
 			name ="HEZ_aa_health_progress_bar_container"
 			position = { x = 50 y = 165 }
-			spriteType = "HEZ_aa_health_progress_bar"
+			spriteType = "aa_health_progress_bar"
 		}
 		instantTextBoxType = {
 			name = "ISR_aa_health_progress_bar_label"
@@ -66,8 +66,9 @@ guiTypes = {
 		}		
 		iconType = {		##TODO TEST (AGGRESSION)
 			name ="ISR_aa_health_progress_bar_container"
-			position = { x = 290 y = 165 }
-			spriteType = "ISR_aa_health_progress_bar"
+			position = { x = 440 y = 140 }
+			spriteType = "aa_health_progress_bar"
+			rotation = 3.14159
 		}
 	}
 }

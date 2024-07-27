@@ -6,29 +6,20 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "aggression_progress_bar"
-		color = { 120.0 120.0 120.0 }
+		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
-		textureFile1 = "gfx/interface/tiled_progress_bar_color.dds"
-		textureFile2 = "gfx/interface/progress_bar_background.dds"
+		textureFile1 = "gfx/interface/ISR_HEZ_assets/AGGRESSION_progress_bar.dds"
+		textureFile2 = "gfx/interface/ISR_HEZ_assets/AGGRESSION_progress_bar_background.dds"
 		size = { x = 400 y = 50 }
-		effectFile = "gfx/FX/progress.lua"    # this can be changed to have the progress bar fill up in a variety of ways like reverse and radial
+		effectFile = "gfx/FX/progress.lua" 
 	}
 	progressbartype = {
-		name = "HEZ_aa_health_progress_bar"
-		color = { 120.0 120.0 120.0 }
+		name = "aa_health_progress_bar"
+		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
-		textureFile1 = "gfx/interface/progress_bar_coloured_reverse.dds" #need a reversed version of this
-		textureFile2 = "gfx/interface/progress_bar_background.dds"
+		textureFile1 = "gfx/interface/ISR_HEZ_assets/AA_progress_bar.dds" 
+		textureFile2 = "gfx/interface/ISR_HEZ_assets/AA_progress_bar_background.dds"
 		size = { x = 150 y = 25 }
-		effectFile = "gfx/FX/progress.lua"    # this can be changed to have the progress bar fill up in a variety of ways like reverse and radial
-	}
-	progressbartype = {
-		name = "ISR_aa_health_progress_bar"
-		color = { 120.0 120.0 120.0 }
-		colortwo = { 0.0 0.0 0.0 }
-		textureFile1 = "gfx/interface/progress_bar_coloured.dds"
-		textureFile2 = "gfx/interface/progress_bar_background.dds"
-		size = { x = 150 y = 25 }
-		effectFile = "gfx/FX/progress_reverse.lua"
+		effectFile = "gfx/FX/progress.lua"   
 	}
 }
