@@ -4,6 +4,7 @@ ISR_HEZ_war_decisions = {
 	# medium after retaliation (ESCALATIONLEVEL 2)
 	# high after that was retaliated too (ESCALATIONLEVEL 3)
 	# will have VAR of ESCALATION LEVEL 
+	## STATES WILL CHANGE WITH NEW MAP, DONT BOTHER TILL THEN
 	# 1 
 	# ISR
 	# 4 (HEZ)
