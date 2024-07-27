@@ -4,7 +4,6 @@ guiTypes = {
 	containerWindowType = {
 		name = "missle_counter"
 		position = { x = 975 y = 5 }	
-		
 		iconType ={
 			name ="missle_counter_bg"
 			spriteType = "GFX_generic_box"
@@ -12,7 +11,7 @@ guiTypes = {
 		}
 		iconType = { ##TODO
 			name ="missle_counter_icon"
-			spriteType = "GFX_money" #need new icon
+			spriteType = "GFX_Rocket" #need new icon
 			position = { x= 3 y = 6 }
 		}
 		instantTextBoxType = {
@@ -30,22 +29,45 @@ guiTypes = {
 	#decisions
 	containerWindowType = {
 		name = "ISR_HEZ_Conflict_container"
-		size = { width = 525 height = 600 }
+		size = { width = 525 height = 300 }
 		position = { x = 0 y = 0 }
-		#first row = height 150
-		#second row
+		#first row
 		iconType = {
-			name = "HEZ_Flag" ##TODO Troublehoot
-			position = { x = 25 y = 25 } ##TODO work on positioning
+			name = "HEZ_Flag" 
+			position = { x = 50 y = 15 } 
 			spriteType = "GFX_shield_medium"
 		}
 		#add an icon here for escalation level
 		iconType = {
-			name = "ISR_Flag" ##TODO Troubleshoot
-			position = { x = 275 y = 25 } ##TODO work on positioning
+			name = "ISR_Flag" 
+			position = { x = 350 y = 15 } ##TODO work on positioning
 			spriteType = "GFX_shield_medium"
 		}
-		##TODO add loading bar (CONFLICT)
+		iconType = {		##TODO TEST (AGGRESSION)
+			name ="aggression_progress_bar_container"
+			position = { x = 45 y = 100 }
+			spriteType = "aggression_progress_bar"
+		}
 		##TODO add loading bar for each AA health
+		instantTextBoxType = {
+			name = "HEZ_aa_health_progress_bar_label"
+			text = "AA Health:[?HEZ.CONST_AA_HEALTH_VAR]"
+			position = {x = 50 y = 150 }
+		}
+		iconType = {		##TODO TEST (AGGRESSION)
+			name ="HEZ_aa_health_progress_bar_container"
+			position = { x = 50 y = 165 }
+			spriteType = "HEZ_aa_health_progress_bar"
+		}
+		instantTextBoxType = {
+			name = "ISR_aa_health_progress_bar_label"
+			text = "AA Health:[?ISR.CONST_AA_HEALTH_VAR]"
+			position = {x = 330 y = 150 }
+		}		
+		iconType = {		##TODO TEST (AGGRESSION)
+			name ="ISR_aa_health_progress_bar_container"
+			position = { x = 290 y = 165 }
+			spriteType = "ISR_aa_health_progress_bar"
+		}
 	}
 }
