@@ -8,11 +8,14 @@ ISR_HEZ_war_decisions = {
 	# 1 
 	# ISR
 	# 4 (HEZ)
-	# 1 (Lebanon) (ESCALATIONLEVEL 3) (AA less than 50)
+	# 1 (Lebanon) (ESCALATIONLEVEL 3) and (AA less than 50)
 	# Add Special Operations/strikes based on conflict wiki page
 	# Hez
-	# 5 (Golan) 3 (gallilee)
-	# 6 28 (haifa) (ESCALATIONLEVEL 3) (AA less than 50)
+	#border regions to debuff israel via GEN_ISR_HEZ_Conflict, ISR_misplaced_population
+	## AA strike 
+	## propaganda strike small (ESC 1)
+	## border raid (ESC 2)
+	## propaganda strike large (ESC 3)
 	CHEAT_ESCALATION_LEVEL_1 = {
 		icon = GEN_
 		visible = {
