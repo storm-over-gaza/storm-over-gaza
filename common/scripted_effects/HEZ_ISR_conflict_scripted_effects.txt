@@ -2,49 +2,47 @@
 #will be launched via an event, depening on when war with hamas begins
 #in debug mode has a cheat command
 HEZ_begin_conflict_with_israel = { 
-	ISR = { set_variable = { var = ISR_HEZ_WAR_SUPPORT value = 0.3 }
-			set_variable = { var = ISR_HEZ_WAR_IMPACT value = -0.05 }
+	ISR = { set_variable = { var = ISR_HEZ_WAR_SUPPORT 		value = 0.3 }
+			set_variable = { var = ISR_HEZ_WAR_IMPACT 		value = -0.05 }
 			add_dynamic_modifier = { modifier = ISR_HEZ_Conflict }
 		
-			set_variable = { var = CONST_AA_HEALTH_VAR value = 100 }#higher-iron dome
-			set_variable = { var = CONST_MISSLE_STOCKPILE value = 200 }
+			set_variable = { var = CONST_AA_HEALTH_VAR 		value = 100 }#higher-iron dome
+			set_variable = { var = CONST_MISSLE_STOCKPILE 	value = 200 }
 		}
-	HEZ = { set_variable = { var = ISR_HEZ_WAR_SUPPORT value = 0.3 }
-			set_variable = { var = ISR_HEZ_WAR_IMPACT value = -0.05 }
+	HEZ = { set_variable = { var = ISR_HEZ_WAR_SUPPORT 		value = 0.3 }
+			set_variable = { var = ISR_HEZ_WAR_IMPACT 		value = -0.05 }
 			add_dynamic_modifier = { modifier = ISR_HEZ_Conflict }
 
-			set_variable = { var = CONST_AA_HEALTH_VAR value = 50 }
-			set_variable = { var = CONST_MISSLE_STOCKPILE value = 200 }
+			set_variable = { var = CONST_AA_HEALTH_VAR 		value = 50 }
+			set_variable = { var = CONST_MISSLE_STOCKPILE 	value = 200 }
 
-			set_variable = { var = CONST_AGGRESION_SCALE value = 50 }
-			set_variable = { var = CONST_ESCALATION_LEVEL value = 1 }
+			set_variable = { var = CONST_AGGRESION_SCALE 	value = 50 }
+			set_variable = { var = CONST_ESCALATION_LEVEL 	value = 1 }
 	}
 }
 #Strikes
 ##TODO Write (after map update) set these in decisions when clicked. 
 GEN_launch_small_strike = {
-		set_variable = { var = temp_MISSLES val = 20}
-		GEN_strike = yes
-	}
-
+	set_variable = { var = temp_MISSLES val = 20}
+	GEN_strike = yes
+}
 GEN_launch_medium_strike = {
 	set_variable = { var = temp_MISSLES val = 50}
-	GEN_strike = yes
-	
+	GEN_strike = yes	
 }
 GEN_launch_large_strike = {
 	set_variable = { var = temp_MISSLES val = 100}
 	GEN_strike = yes
-	
 }
 GEN_target_aa_sites = {
 	set_variable = { var = temp_MISSLES val = 10}
 	GEN_strike = yes
 }
-##
 GEN_strike = { ##TODO TEST
 	GEN_calculate_effectiveness = yes
-	GEN_destroy_buildings = yes
+	GEN_strike_impact = yes
+	GEN_calculate_aggression = yes
+	# GEN_destroy_buildings = yes
 	ROOT.owner = { 	if = { 	limit = { original_tag = ISR }
 							HEZ = { 	subtract_from_variable = { var = CONST_MISSLE_STOCKPILE value = temp_MISSLES }
 									}
@@ -59,12 +57,9 @@ GEN_strike = { ##TODO TEST
 	}
 }
 
-GEN_cleanup_strike = {
+GEN_cleanup_strike = { ##TODO TEST
 	clear_variable = temp_MISSLES
 	clear_variable = temp_EFFECTIVENESS
-	clear_variable = temp_DESTROYED_INFRA
-	clear_variable = temp_DESTROYED_MILS
-	clear_variable = temp_DESTROYED_CIVS
 }
 
 ISR_Strike_ideas = { ##TODO TEST
@@ -113,46 +108,35 @@ GEN_calculate_effectiveness = { ##TODO TEST
 						min = 0
 						max = 10 }
 
-	random_list = {
-		30 = { 
-			multiply_variable = {
-				var = temp_EFFECTIVENESS
-				val = 0.2
+	if = { 	limit = { check_variable = { var = temp_EFFECTIVENESS
+										value = 0 
+										compare = equals  }}
+			random_list = { 
+				50 = {
+					set_variable = { var = temp_EFFECTIVENESS value = 1 }
+				50 = {}
 			}
-		}
-		40 = { 
-			multiply_variable = {
-				var = temp_EFFECTIVENESS
-				val = 0.1
-			}
-		} 
-		30 = {} #no change			
+									}		
 	}
 }
+GEN_strike_impact = {
+	if = { 	limit = { ROOT.owner = { original_tag = ISR }}
+		
+			divide_variable = {	var = temp_EFFECTIVENESS
+								value = 10}
+			subtract_from_variable = { var = ISR.ISR_HEZ_WAR_IMPACT value = temp_EFFECTIVENESS }
+			divide_variable = {	var = temp_EFFECTIVENESS
+								value = 2}
+			subtract_from_variable = { var = ISR.ISR_HEZ_WAR_IMPACT_DRIFT value = temp_EFFECTIVENESS }
 
-GEN_destroy_buildings = { ##TODO TEST
-	set_variable = { var = temp_DESTROYED_INFRA value = var:temp_EFFECTIVENESS }
-	multiply_variable = { var = temp_DESTROYED_INFRA value = 0.4 }
-	set_variable = { var = temp_DESTROYED_CIVS value = var:temp_EFFECTIVENESS }
-	multiply_variable = { var = temp_DESTROYED_CIVS value = 0.3 }
-	set_variable = { var = temp_DESTROYED_MILS value = var:temp_EFFECTIVENESS }
-	multiply_variable = { var = temp_DESTROYED_MILS value = 0.3 }
-
-	ROOT = { 
-		damage_building = {
-			type = infrastructure
-			damage = var:temp_DESTROYED_INFRA ##malformed token
-		}
-		damage_building = {
-			type = industrial_complex
-			damage = var:temp_DESTROYED_CIVS ##malformed token
-		}
-		damage_building = {
-			type = arms_factory
-			damage = var:temp_DESTROYED_MILS ##malformed token
-		}
+			#TODO when israeli mechanic built, add further consequences here
 	}
-	GEN_calculate_aggression = yes
+	if = { 	limit = { ROOT.owner = { original_tag = HEZ }}
+			
+			divide_variable = {	var = temp_EFFECTIVENESS value = 10}
+			subtract_from_variable = { var = ISR.ISR_HEZ_WAR_IMPACT value = temp_EFFECTIVENESS }
+			#TODO think of more consequences to add for hezbollah
+	}
 }
 
 GEN_calculate_aggression = { ##TODO TEST
