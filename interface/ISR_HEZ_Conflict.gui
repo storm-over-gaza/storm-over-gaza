@@ -39,6 +39,11 @@ guiTypes = {
 		}
 		#add an icon here for escalation level
 		iconType = {
+			name = "escalation_counter"
+			position = { x = 250 y = 15 }
+			spriteType = "GFX_escalation_bar"
+		}
+		iconType = {
 			name = "ISR_Flag" 
 			position = { x = 350 y = 15 } ##TODO work on positioning
 			spriteType = "GFX_shield_medium"

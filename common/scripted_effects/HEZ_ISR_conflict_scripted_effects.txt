@@ -16,7 +16,8 @@ HEZ_begin_conflict_with_israel = {
 			set_variable = { var = CONST_AA_HEALTH_VAR value = 50 }
 			set_variable = { var = CONST_MISSLE_STOCKPILE value = 200 }
 
-			set_variable = { var = CONST_AGGRESION_SCALE value = 50}
+			set_variable = { var = CONST_AGGRESION_SCALE value = 50 }
+			set_variable = { var = CONST_ESCALATION_LEVEL value = 1 }
 	}
 }
 #Strikes

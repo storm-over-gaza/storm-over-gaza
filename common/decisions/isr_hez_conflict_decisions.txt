@@ -13,6 +13,42 @@ ISR_HEZ_war_decisions = {
 	# Hez
 	# 5 (Golan) 3 (gallilee)
 	# 6 28 (haifa) (ESCALATIONLEVEL 3) (AA less than 50)
+	CHEAT_ESCALATION_LEVEL_1 = {
+		icon = GEN_
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = { set_variable = { var = CONST_ESCALATION_LEVEL value = 1 }}
+	}
+	CHEAT_ESCALATION_LEVEL_2 = {
+		icon = GEN_
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = {set_variable = { var = CONST_ESCALATION_LEVEL value = 2 }}
+	}
+	CHEAT_ESCALATION_LEVEL_3 = {
+		icon = GEN_
+		visible = {
+			is_debug = yes
+			is_ai = no
+		}
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = {set_variable = { var = CONST_ESCALATION_LEVEL value = 3 }}
+	}
 	CHEAT_ADD_MISSLES = {
 		icon = GEN_
 		visible = {

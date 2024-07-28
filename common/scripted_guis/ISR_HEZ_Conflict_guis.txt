@@ -18,6 +18,9 @@ scripted_gui = {
 			HEZ_Flag = {
 				image = "[HEZ.GetFlag]"
 			}
+			escalation_counter = {
+				frame = CONST_ESCALATION_LEVEL
+			}
 			ISR_Flag = {
 				image = "[ISR.GetFlag]"
 			}
@@ -28,7 +31,7 @@ scripted_gui = {
 				frame = HEZ.CONST_AA_HEALTH_VAR
 			}
 			ISR_aa_health_progress_bar_container = {
-				frame = 90 #ISR.CONST_AA_HEALTH_VAR
+				frame = ISR.CONST_AA_HEALTH_VAR
 			}
 		}
 	}
