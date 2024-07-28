@@ -5,7 +5,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_escalation_bar"
-		texturefile = "gfx/interface/ISR_HEZ_assets/escalation_counter_spritesheet.dds"
+		texturefile = "gfx/interface/ISR_HEZ_assets/ESCALATION_COUNTER_SPRITESHEET.png" #escalation_counter_spritesheet.dds"
 		noOfFrames = 3
 	}
 	progressbartype = {

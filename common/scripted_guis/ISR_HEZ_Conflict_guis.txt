@@ -18,9 +18,9 @@ scripted_gui = {
 			HEZ_Flag = {
 				image = "[HEZ.GetFlag]"
 			}
-			escalation_counter = {
-				frame = CONST_ESCALATION_LEVEL
-			}
+			# escalation_counter = {
+			# 	frame = HEZ.CONST_ESCALATION_LEVEL
+			# }
 			ISR_Flag = {
 				image = "[ISR.GetFlag]"
 			}
