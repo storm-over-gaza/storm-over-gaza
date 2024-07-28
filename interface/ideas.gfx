@@ -8922,8 +8922,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/HAM_Fight_to_the_last_man.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SAU_controller_of_the_holiest_places"
-		texturefile = "gfx/interface/ideas/SAU_controller_of_the_holiest_places.dds"
+		name = "GFX_idea_SAU_isis_insurgency"
+		texturefile = "gfx/interface/ideas/SAU_isis_insurgency.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SAU_king_faisal"
