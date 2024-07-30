@@ -37,41 +37,39 @@ guiTypes = {
 			position = { x = 50 y = 15 } 
 			spriteType = "GFX_shield_medium"
 		}
-		#add an icon here for escalation level
-		# iconType = {
-		# 	name = "escalation_counter"
-		# 	position = { x = 250 y = 15 }
-		# 	spriteType = "GFX_escalation_bar"
-		# }
+		iconType = {
+			name = "escalation_counter"
+			position = { x = 200 y = 15 }
+			spriteType = "GFX_escalation_bar"
+		}
 		iconType = {
 			name = "ISR_Flag" 
-			position = { x = 350 y = 15 } ##TODO work on positioning
+			position = { x = 350 y = 15 }
 			spriteType = "GFX_shield_medium"
 		}
-		iconType = {		##TODO TEST (AGGRESSION)
+		iconType = {
 			name ="aggression_progress_bar_container"
 			position = { x = 45 y = 100 }
 			spriteType = "aggression_progress_bar"
 		}
-		##TODO add loading bar for each AA health
 		instantTextBoxType = {
 			name = "HEZ_aa_health_progress_bar_label"
 			text = "AA Health:[?HEZ.CONST_AA_HEALTH_VAR]"
-			position = {x = 50 y = 150 }
+			position = {x = 50 y = 160 }
 		}
-		iconType = {		##TODO TEST (AGGRESSION)
+		iconType = {	
 			name ="HEZ_aa_health_progress_bar_container"
-			position = { x = 50 y = 165 }
+			position = { x = 50 y = 175 }
 			spriteType = "aa_health_progress_bar"
 		}
 		instantTextBoxType = {
 			name = "ISR_aa_health_progress_bar_label"
 			text = "AA Health:[?ISR.CONST_AA_HEALTH_VAR]"
-			position = {x = 330 y = 150 }
+			position = {x = 330 y = 160 }
 		}		
-		iconType = {		##TODO TEST (AGGRESSION)
+		iconType = {
 			name ="ISR_aa_health_progress_bar_container"
-			position = { x = 440 y = 140 }
+			position = { x = 440 y = 150 }
 			spriteType = "aa_health_progress_bar"
 			rotation = 3.14159
 		}
