@@ -53,30 +53,10 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = SAU_king_faisal
+			picture = SAU_oil_dominant_country
 			
 			modifier = 
- 
-			}
-		}
-	}
-	country = {
-		SAU_isis_insurgency = {
-			
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			picture = SAU_isis_insurgency
-			
-			modifier = 
- 
+			add_stability = 0.5
 			}
 		}
 	}

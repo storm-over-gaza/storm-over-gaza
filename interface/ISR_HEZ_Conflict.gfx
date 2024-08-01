@@ -1,0 +1,29 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Rocket"
+		texturefile = "gfx/interface/ISR_HEZ_assets/rocket.dds"
+	}
+	spriteType = {
+		name = "GFX_escalation_bar"
+		texturefile = "gfx/interface/ISR_HEZ_assets/ESCALATION_COUNTER_SPRITESHEET.png" #escalation_counter_spritesheet.dds"
+		noOfFrames = 3
+	}
+	progressbartype = {
+		name = "aggression_progress_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/ISR_HEZ_assets/aggression_progress_bar.dds"
+		textureFile2 = "gfx/interface/ISR_HEZ_assets/aggression_progress_bar_background.dds"
+		size = { x = 400 y = 50 }
+		effectFile = "gfx/FX/progress.lua" 
+	}
+	progressbartype = {
+		name = "aa_health_progress_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/ISR_HEZ_assets/aa_progress_bar.dds" 
+		textureFile2 = "gfx/interface/ISR_HEZ_assets/aa_progress_bar_background.dds"
+		size = { x = 150 y = 25 }
+		effectFile = "gfx/FX/progress.lua"   
+	}
+}

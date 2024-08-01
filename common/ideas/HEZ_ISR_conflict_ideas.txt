@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		#1 week
+		ISR_recently_conducted_strikes = {
+			allowed = { always = no }
+			modifier = {
+				war_support_weekly = 0.1
+			}
+		}
+		#2 weeks
+		ISR_recently_struck = {}
+		
+		#1 week
+		HEZ_recently_conducted_strikes = {}
+		
+		##2 weeks
+		HEZ_recently_struck = {}		
+	}
+}
