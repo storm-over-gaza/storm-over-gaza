@@ -97,19 +97,6 @@ set_popularities = {
 	communism = 20
 }
 recruit_character = ISR_netanyahu
-recruit_character = ISR_Isaac_Herzog
-recruit_character = ISR_Joaf_Gallant
-recruit_character = ISR_Yaniv_Asor
-recruit_character = ISR_eli_cohen
-recruit_character = ISR_Ezra_Mor
-recruit_character = ISR_Bezalel_Smotrich
-recruit_character = ISR_David_Saar_Salama
-recruit_character = ISR_Tomer_Bar
-recruit_character = ISR_Itzik_Cohen
-recruit_character = ISR_Dado_Bar_Kalifa
-recruit_character = ISR_Avi_Rosendelph
-recruit_character = ISR_Rogen_Bar
-recruit_character = ISR_Tamir_Yadai
 
 
 create_country_leader = {
