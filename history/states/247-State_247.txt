@@ -1,0 +1,12 @@
+state = {
+	id = 247
+	name = "STATE_247"
+	manpower = 100
+
+	state_category = rural
+
+	provinces = {
+		77 228 274 319 484 790 1088 1162 
+	}
+
+}
