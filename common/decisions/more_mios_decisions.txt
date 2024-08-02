@@ -16,10 +16,10 @@ rename_mios_decision_category = {
 		fire_only_once = yes
 
 		complete_effect = { 
-			mio:USA_seversky_aircraft_organization = {
-				set_mio_name_key = USA_republic_aviation_organization
-				set_mio_icon = GFX_idea_usa_republic_aviation
-			}
+			# mio:USA_seversky_aircraft_organization = {
+			# 	set_mio_name_key = USA_republic_aviation_organization
+			# 	set_mio_icon = GFX_idea_usa_republic_aviation
+			# }
 		}
 	}
 	
