@@ -80,18 +80,6 @@ SOV_morozov_design_bureau_organization = {
 	allowed = {	
 		OR = {
 			tag = RUS
-			AND = {
-				tag = MEX 
-				has_dlc = "Man the Guns"
-			}
-			AND = {
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-					tag = MEN
-				} 
-				has_dlc = "Waking the Tiger"
-			}
 			NOR_AAT = yes
 		}
 	}
@@ -103,31 +91,6 @@ SOV_morozov_design_bureau_organization = {
 				FROM = { NOT = { original_tag = RUS } }
 			}
 			FROM = { NOT = { has_war_with = RUS } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { tag = MEX }
-			}
-			FROM = { is_in_faction_with = RUS }
-		}
-		ELSE_IF = {
-			limit = {
-				FROM = {
-					OR = {
-						is_literally_china = yes
-						tag = MAN
-						tag = MEN
-					}
-				} 
-			}
-			FROM = { has_completed_focus = CHI_hire_soviet_designer }
-		}
-		ELSE_IF = {
-			limit = {
-				FROM = { original_tag = NOR }
-			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
 		}
 	}
 	
