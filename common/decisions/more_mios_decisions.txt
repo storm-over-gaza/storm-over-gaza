@@ -39,10 +39,10 @@ rename_mios_decision_category = {
 		fire_only_once = yes
 
 		complete_effect = { 
-			mio:SOV_gaz_organization = {
-				set_mio_name_key = SAF_naz_organization # was called that for a brief period before Nizhny Novgorod was renamed to Gorky
-				set_mio_icon = GFX_idea_sov_naz
-			}
+			# mio:SOV_gaz_organization = {
+			# 	set_mio_name_key = SAF_naz_organization # was called that for a brief period before Nizhny Novgorod was renamed to Gorky
+			# 	set_mio_icon = GFX_idea_sov_naz
+			# }
 		}
 	}
 
