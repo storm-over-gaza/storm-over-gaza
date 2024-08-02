@@ -1,0 +1,56 @@
+#DAYS VARS
+@1_day = 0.14
+@14_days = 2
+@15_days = 2.2
+@20_days = 2.9
+@25_days = 3.7
+@30_days = 4.4
+@35_days = 5
+
+shared_focus = {
+	id = GEN_focus_prosperity
+	icon = GFX_
+	x = 5
+	y = 0
+	cost = @14_days
+	ai_will_do = {
+		factor = 20
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	completion_reward = {
+		#TODO
+	}
+}
+shared_focus = {
+	id = GEN_army_matters
+	icon = GFX_
+	x = 15
+	y = 0
+	cost = @25_days
+	ai_will_do = {
+		factor = 10
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP
+						FOCUS_FILTER_AIR_XP 
+						FOCUS_FILTER_NAVY_XP }
+	completion_reward = {
+		army_experience = 100
+		navy_experience = 50
+		army_experience = 50
+	}
+}
+shared_focus = {
+	id = GEN_the_coming_storm
+	icon = GFX_
+	x = 25
+	y = 0
+	cost = @1_day
+	ai_will_do = {
+		factor = 30
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 100
+		#TODO EVENT 1
+	}
+}
