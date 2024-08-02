@@ -1918,12 +1918,6 @@ technologies = {
 				factor = 0.5
 				has_war = no
 			}
-
-
-			modifier = {
-				has_war_with = JAP
-				factor = 2
-			}
 		}
 
 		categories = {
