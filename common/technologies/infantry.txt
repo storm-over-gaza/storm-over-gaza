@@ -1006,7 +1006,7 @@ technologies = {
 		}
 		
 		categories = {
-			infantry_folder
+			infantry_weapons
 		}
 		
 		ai_will_do = {
