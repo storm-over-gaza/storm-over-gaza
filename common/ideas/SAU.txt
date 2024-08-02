@@ -56,7 +56,7 @@ ideas = {
 			picture = SAU_oil_dominant_country
 			
 			modifier = {
-				# add_stability = 0.5 - error, and 50% is pretty high 
+				 add_stability = 0.03
 			}
 		}
 	}
