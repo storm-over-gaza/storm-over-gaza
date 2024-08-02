@@ -1,0 +1,17 @@
+state={
+	id=38
+	name="Jericho"
+	history = {
+        owner = PAL
+		add_core_of = PAL
+		add_core_of = HAM
+		victory_points = { 11606 15 }
+
+	}
+	provinces={ 
+		7755 11606 12321 12332 8053 4629 11426 12246 1674 12260 12279 4762 1397 7536 3272 5036 12161 12203 12137 1634 12106 12082 9455
+	}    
+	buildings_max_level_factor=3.000
+        manpower=  61250
+        state_category = large_town
+}

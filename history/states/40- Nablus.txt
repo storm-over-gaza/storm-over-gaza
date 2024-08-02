@@ -1,0 +1,21 @@
+state={
+	id=40
+	name="Nablus"
+	history = {
+        owner = PAL
+		add_core_of = PAL
+		add_core_of = HAM
+                buildings = {
+			infrastructure = 1
+			industrial_complex = 5
+		}
+		victory_points = { 1153 2 }
+
+	}
+	provinces={ 
+		12038 10624 12010 3625 1153 9576 3131 12029 7754 199 1767 12054 18799 5672 11976 4907 11146 5568 9974 2673 2609 11966 6289 7693 11981 9961 11909 11967
+	}    
+	buildings_max_level_factor= 3.000
+        manpower=  590154
+        state_category = city
+}

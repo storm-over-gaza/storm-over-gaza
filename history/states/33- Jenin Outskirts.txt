@@ -1,0 +1,17 @@
+	state={
+	id=33
+	name="JeninOutskirts"
+	history = {
+        owner = PAL
+		add_core_of = PAL
+		add_core_of = HAM
+		victory_points = { 18795 15 }
+
+	}
+	provinces={
+		2121 4200 5784 6903 18795 11887 11551 4843                         
+	}
+	buildings_max_level_factor= 2.000
+        manpower= 304092
+        state_category = town
+}

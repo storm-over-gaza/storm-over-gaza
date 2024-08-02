@@ -1,0 +1,20 @@
+state={
+	id=31
+	name="Northern Cities"
+	
+	provinces={
+		18773 18785 18771 4125 18784 10290
+	}
+    manpower= 305651
+    state_category = city
+	history = {
+		owner = HAM
+		add_core_of = HAM
+		victory_points = { 18773 15 }
+		victory_points = { 18771 10 }
+		victory_points = { 4125 10 }
+		victory_points = { 18785 5 }
+		victory_points = { 18784 10 }
+		victory_points = { 10290 5 }
+	}
+}

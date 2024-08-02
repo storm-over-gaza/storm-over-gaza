@@ -1,0 +1,15 @@
+state={
+	id=27
+	name="Southern Desert Areas"
+	provinces={
+		18772 18776 18770 18769
+	}
+	buildings_max_level_factor= 1.000
+        manpower= 97840
+        state_category = town
+		history = {
+			owner = HAM
+			add_core_of = HAM
+		    victory_points = { 18776 2}
+	  }
+}

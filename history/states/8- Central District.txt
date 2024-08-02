@@ -1,0 +1,21 @@
+state={
+	id=8	
+	name="Central District"
+	history = {
+                owner = ISR
+		add_core_of = ISR
+                buildings = {
+			infrastructure = 1
+			arms_factory = 2
+			industrial_complex = 3
+                        air_base = 6
+		}
+		victory_points = { 1426 2}
+	}
+	provinces={
+		107 577 586 1426 2264 2635 12439 4049 4094 4127 4147 4897 5064 5160 5718 5775 6118 7363 8667 8740 9318 10148 10388 10488 10497 10725 11035 11088 12130 12188 12200 12262 12344 12362 12394 12467 12427 428 8574 3583 9079 5745 719 10097 12257 12350 6960 
+	}
+	buildings_max_level_factor = 2.000
+        manpower= 2413186
+        state_category = large_town
+}
