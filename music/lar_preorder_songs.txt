@@ -1,12 +1,12 @@
+#idk why this is broken
+# music_station = "base_music"
 
-music_station = "base_music"
+# music = {
+# 	song = "march_of_the_eagles"
 
-music = {
-	song = "march_of_the_eagles"
-
-	chance = {
-		factor = 1
+# 	chance = {
+# 		factor = 1
 		
-	}
+# 	}
 
-}
+# }
