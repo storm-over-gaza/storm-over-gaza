@@ -4,7 +4,7 @@ scripted_gui = {
 		parent_window_token = top_bar
 		window_name = "missle_counter"
 		visible = {
-			ROOT = { has_dynamic_modifier = { modifier = ISR_HEZ_Conflict}}
+			ROOT = { has_dynamic_modifier = { modifier = GEN_ISR_HEZ_Conflict}}
 		}
 	}	
 
