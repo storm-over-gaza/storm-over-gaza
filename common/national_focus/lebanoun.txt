@@ -20,7 +20,7 @@ focus_tree = {
 	
 	default = no
 
-	focus = {
+    focus = {
 		id = LEB_sword_of_jerusalem
 		icon = GFX_goal_generic_construction
 		x = 6
@@ -34,92 +34,5 @@ focus_tree = {
 			add_war_support = 0.05
 		}
 		
-	}
-
-focus = {
-		id = LEB_division_at_the_parliament
-		icon = GFX_focus_ARG_cut_ties_with_britain
-		prerequisite = { focus = LEB_sword_of:jerusalem }
-		x = 6
-		y = 2 
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		search_filters = { FOCUS_FILTER_STABILITY }
-
-		completion_reward = { 
-				add_stability = -0.20
-				}
-			}
-
-focus = {
-		id = LEB_deploy_security_forces
-		icon = GFX_focus_ARG_cut_ties_with_britain
-		prerequisite = { focus = LEB_division_at_the_parliament }
-		x = 8
-		y = 4
-		cost = 1
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		search_filters = { FOCUS_FILTER_STABILITY   FOCUS_FILTER_MANPOWER }
-
-		completion_reward = { 
-				add_stability = +0.05
-				add_manpower = -1500
-				}
-			}
-
-focus = {
-		id = LEB_work_for_a_peace_between_religions
-		icon = GFX_focus_ARG_cut_ties_with_britain
-		prerequisite = { focus = LEB_division_at_the_parliament }
-		x = -2
-		y = 0
-		relative_position_id = LEB_deploy_security_forces
-		cost = 1
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		search_filters = { FOCUS_FILTER_STABILITY   FOCUS_FILTER_MANPOWER }
-
-		completion_reward = { 
-				add_stability = +0.05
-				add_popularity = {
-				ideology = democratic
-				popularity = 0.02
-				}
-				}
-			}
-
-focus = {
-		id = LEB_Government_promises_reforms
-		icon = GFX_focus_ARG_cut_ties_with_britain
-		prerequisite = { focus = LEB_division_at_the_parliament }
-		x = -4
-		y = 0
-		relative_position_id = LEB_deploy_security_forces
-		cost = 1
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		search_filters = { FOCUS_FILTER_STABILITY   FOCUS_FILTER_MANPOWER }
-
-		completion_reward = { 
-				add_stability = +0.05
-				add_popularity = {
-				ideology = democracy
-				popularity = 0.02
-				}
-			}
 	}
 }
