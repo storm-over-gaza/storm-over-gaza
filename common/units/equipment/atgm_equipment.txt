@@ -14,8 +14,8 @@ equipments = {
 		interface_category = interface_category_land
 		
 		upgrades = {
-			inf_reliability_upgrade
-			inf_iccost_upgrade
+			# inf_reliability_upgrade # NOTE; needs fixed
+			# inf_iccost_upgrade
 		}
 		
 		#Misc Abilities
