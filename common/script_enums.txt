@@ -17,7 +17,6 @@ script_enum_advisor_slot_type = {
 
 script_enum_equipment_stat = {	
 								#Viktors note for modders and future CDs: If you want to use a stat in the MIOs it has to be in the equipment category itself, not on the battalion level. So stuff like defense works because its contained within the equipment, but stuff like recon will not work because its owned by the battalion. Adding stuff like recon will not throw an error, but it will _not_ work. Moving stats to the equipment level from the bat-level might fix this if you are brave enough, but it is very risk and might break other stuff. Ive commented what is currently on the battalion level below and should not be used with MIOs.
-
 	default_morale 					#Cannot be used with MIOS
 	defense
 	breakthrough
@@ -25,7 +24,7 @@ script_enum_equipment_stat = {
 	soft_attack
 	hard_attack
 	recon 							#Cannot be used with MIOS
-	entrenchment					# ONLY works for tanks with dozer blades, NOT infantry
+	entrenchment					#ONLY works for tanks with dozer blades, NOT infantry
 	initiative 						#Cannot be used with MIOS
 	casualty_trickleback 			#Cannot be used with MIOS
 	supply_consumption_factor 		#Cannot be used with MIOS
@@ -179,6 +178,12 @@ script_enum_equipment_bonus_type = {
 	flame
 
 	# Equipment archetypes & types
+	### StormOverGaza
+	anti_tank_guided_missile_equipment
+	anti_tank_guided_missile_equipment_0
+	anti_tank_guided_missile_equipment_1
+	anti_tank_guided_missile_equipment_2
+	### END 
 	destroyer
 	infantry_equipment
 	artillery_equipment
