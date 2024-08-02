@@ -58,17 +58,17 @@ if = {
 
 set_convoys = 20
 
-set_power_balance = {
-		id = RUS_putin_vs_prigozhin_balance
-    		left_side = default_left_side
-    		right_side = default_right_side
-    		set_value = 0
-		set_default = yes  # whether or not to reset the power balance to the initial value, default = no
-	}
+# set_power_balance = {
+# 		id = RUS_putin_vs_prigozhin_balance
+#     		left_side = default_left_side
+#     		right_side = default_right_side
+#     		set_value = 0
+# 		set_default = yes  # whether or not to reset the power balance to the initial value, default = no
+# 	}
 
 add_ideas = {
 	RUS_war_in_ukraine
-	RUS_pmc_wagner
+	# RUS_pmc_wagner
 	low_economic_mobilisation
 	limited_conscription
 	orthodox_christian

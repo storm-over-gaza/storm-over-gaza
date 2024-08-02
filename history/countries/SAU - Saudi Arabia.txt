@@ -54,7 +54,7 @@ if = {
 set_convoys = 5
 add_ideas = {
 	SAU_king_faisal
-	SAU_isis_insurgency
+	# SAU_isis_insurgency
 	SAU_controller_of_the_holiest_places
 	SAU_a_successor_to_the_heir
 	SAU_oil_dominant_country
