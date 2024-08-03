@@ -29,11 +29,13 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	completion_reward = {
 		add_tech_bonus = {
+			name = GEN_industrial_buff
 			bonus = 1
 			uses = 2
 			category = industry
 		}
 		add_tech_bonus = {
+			name = GEN_electronics_buff
 			bonus = 1
 			uses = 1
 			category = electronics
@@ -92,11 +94,13 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	completion_reward = {
 		add_tech_bonus = {
+			name = GEN_industrial_buff
 			bonus = 1
 			uses = 2
 			category = industry
 		}
 		add_tech_bonus = {
+			name = GEN_electronics_buff
 			bonus = 1
 			uses = 1
 			category = electronics
@@ -297,6 +301,7 @@ shared_focus = {
 	completion_reward = {
 		remove_ideas = GEN_economic_recovery
 		add_tech_bonus = {
+			name = GEN_industrial_buff
 			bonus = 2
 			uses = 1
 			category = industry
@@ -319,7 +324,7 @@ shared_focus = {
 	}
 }
 ################################
-### Military Tree - Generic  ### variable changes need better focus effect descriptions + localisation
+### Military Tree - Generic  ### 
 ################################
 shared_focus = {
 	id = GEN_army_matters
@@ -414,6 +419,7 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 	completion_reward = {
 		add_tech_bonus = {
+			name = GEN_artillery_buff
 			bonus = 1
 			uses = 2
 			category = artillery
@@ -436,6 +442,7 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 	completion_reward = {
 		add_tech_bonus = {
+			name = GEN_guns_buff
 			bonus = 1
 			uses = 3
 			category = support_tech
@@ -458,6 +465,7 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 	completion_reward = {
 		add_tech_bonus = {
+			name = GEN_industrial_buff
 			bonus = 0.5
 			uses = 5
 			category = industry
@@ -479,15 +487,17 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
-		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
-			set_variable = { var = military_industry_license_cost_var value = 0 }
-			set_variable = { var = military_industry_license_speed_var value = 0 }
-			set_variable = { var = military_industry_lor_var value = 0 }
-			set_variable = { var = military_industry_max_eff_var value = 0.2 }
-			set_variable = { var = military_industry_gain_eff_var value = 0.1 }
-			add_dynamic_modifier = { modifier = GEN_military_industry }	
-		}		
-		else = {
+		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry }}}
+			hidden_effect = {
+				set_variable = { var = military_industry_license_cost_var value = 0 }
+				set_variable = { var = military_industry_license_speed_var value = 0 }
+				set_variable = { var = military_industry_lor_var value = 0 }
+				set_variable = { var = military_industry_max_eff_var value = 0.2 }
+				set_variable = { var = military_industry_gain_eff_var value = 0.1 }
+				add_dynamic_modifier = { modifier = GEN_military_industry }	
+			}
+			custom_effect_tooltip = GEN_military_industrial_complex_effect_tt
+		} else = {
 			add_to_variable = { var = military_industry_max_eff_var value = 0.2 }
 			add_to_variable = { var = military_industry_gain_eff_var value = 0.1 }
 		}
@@ -508,14 +518,17 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_ARMY_XP }
 	completion_reward = {
-		set_variable = { var = army_sf_global_eff_var value = 0.1 }
-		set_variable = { var = army_sf_cap_var value = 0 }
-		set_variable = { var = army_sf_ter_red_var value = 0 }
-		set_variable = { var = army_sf_tt_var value = 0 }
-		set_variable = { var = army_sf_eff_var value = 0}
-		set_variable = { var = army_tf_eff_var value = 0 }
-		set_variable = { var = army_tf_spd_var value = 0 }
-		add_dynamic_modifier = { modifier = GEN_army_modifier }
+		hidden_effect = {
+			set_variable = { var = army_sf_global_eff_var value = 0.1 }
+			set_variable = { var = army_sf_cap_var value = 0 }
+			set_variable = { var = army_sf_ter_red_var value = 0 }
+			set_variable = { var = army_sf_tt_var value = 0 }
+			set_variable = { var = army_sf_eff_var value = 0}
+			set_variable = { var = army_tf_eff_var value = 0 }
+			set_variable = { var = army_tf_spd_var value = 0 }	
+			add_dynamic_modifier = { modifier = GEN_army_modifier }
+		}
+		custom_effect_tooltip = GEN_plans_for_the_army_effect_tt
 	}
 }
 shared_focus = {
@@ -555,6 +568,7 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 	completion_reward = {
 		add_tech_bonus = {
+			name = GEN_armor_buff
 			bonus = 1
 			uses = 3
 			category = armor
@@ -578,7 +592,8 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 	completion_reward = {
-		add_tech_bonus = { #TEST THIS UNSURE
+		add_tech_bonus = {
+			name = GEN_mech_buff
 			bonus = 1
 			uses = 2
 			category = cat_armored_cars
@@ -602,11 +617,13 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 	completion_reward = {
 		add_tech_bonus = {
+			name = GEN_special_forces_units
 			bonus = 1
 			uses = 1
 			category = cat_special_forces_generic
 		}
 		add_tech_bonus = {
+			name = GEN_special_forces_divison
 			bonus = 0.5
 			uses = 2
 			category = special_forces_doctrine
@@ -637,11 +654,13 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 	completion_reward = {
 		add_tech_bonus = {
+			name = GEN_special_forces_units
 			bonus = 3
 			uses = 1
 			category = cat_special_forces_generic
 		}
 		add_tech_bonus = {
+			name = GEN_special_forces_divison
 			bonus = 0.5
 			uses = 2
 			category = special_forces_doctrine
@@ -662,6 +681,9 @@ shared_focus = {
 						focus = GEN_ifv_effort
 						focus = GEN_a_new_battle_tank
 						focus = GEN_support_companies }
+	available = { check_variable = { var = num_of_factories
+									value = 100
+									compare = greater_than_or_equals }}
 	relative_position_id = GEN_a_tank_army
 	ai_will_do = {
 		factor = 0
@@ -674,7 +696,6 @@ shared_focus = {
 		add_ideas = GEN_regional_military_power
 	}
 }
-
 ###Navy Branch
 shared_focus = {
 	id = GEN_naval_reforms
@@ -706,7 +727,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = GEN_navalue_build_up_the_ports
+	id = GEN_naval_build_up_the_ports
 	icon = GFX_goal_generic_construct_naval_dockyard
 	x = -1
 	y = 1
@@ -778,9 +799,9 @@ shared_focus = {
 	y = 1
 	cost = @30_days
 	prerequisite = { 	focus = GEN_a_merchant_navy
-						focus = GEN_navalue_build_up_the_ports }
+						focus = GEN_naval_build_up_the_ports }
 	available = { any_owned_state = { is_coastal = yes }}
-	relative_position_id = GEN_navalue_build_up_the_ports
+	relative_position_id = GEN_naval_build_up_the_ports
 	ai_will_do = {
 		factor = 0
 		modifier = { has_war = yes factor = 200}
@@ -814,16 +835,19 @@ shared_focus = {
 	completion_reward = {
 		navy_experience = 30
 		add_tech_bonus = {
+			name = GEN_submarine_torpedoe
 			bonus = 1
 			uses = 2
 			category = cat_torpedoes
 		}
 		add_tech_bonus = {
+			name = GEN_submarine_radar
 			bonus = 0.5
 			uses = 2
 			category = radar_tech
 		}
 		add_tech_bonus = {
+			name = GEN_submarine_chassis
 			bonus = 1
 			uses = 2
 			category = ss_tech
@@ -854,19 +878,21 @@ shared_focus = {
 			uses = 2
 			category = submarine_doctrine
 		}
-		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
-			set_variable = { var = military_industry_license_cost_var value = -0.25 }
-			set_variable = { var = military_industry_license_speed_var value = -0.25 }
-			set_variable = { var = military_industry_lor_var value = 0 }
-			set_variable = { var = military_industry_max_eff_var value = 0 }
-			set_variable = { var = military_industry_gain_eff_var value = 0 }
-			add_dynamic_modifier = { modifier = GEN_military_industry }	
-		}		
+		if = { 	limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry }}}
+				hidden_effect = {
+					set_variable = { var = military_industry_license_cost_var value = -0.25 }
+					set_variable = { var = military_industry_license_speed_var value = -0.25 }
+					set_variable = { var = military_industry_lor_var value = 0 }
+					set_variable = { var = military_industry_max_eff_var value = 0 }
+					set_variable = { var = military_industry_gain_eff_var value = 0 }
+					add_dynamic_modifier = { modifier = GEN_military_industry }	
+				}
+				custom_effect_tooltip = GEN_purchase_subs_effect_tt
+		}
 		else = {
 			add_to_variable = { var = military_industry_license_cost_var value = -0.25 }
 			add_to_variable = { var = military_industry_license_speed_var value = -0.25 }
 		}
-
 	}
 }
 ###Air Branch
@@ -909,37 +935,40 @@ shared_focus = {
 			days = 365
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes
+			name = GEN_our_own_planes_chassis
 			bonus = 2
 			uses = 1
 			category = light_air
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes
+			name = GEN_our_own_planes_guns
 			bonus = 2
 			uses = 1
 			category = cat_air_guns
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes
+			name = GEN_our_own_planes_engine
 			bonus = 1
 			uses = 1
 			category = cat_air_engine
 		}
 		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
-			set_variable = { var = military_industry_license_cost_var value = 0 }
-			set_variable = { var = military_industry_license_speed_var value = 0 }
-			set_variable = { var = military_industry_lor_var value = -0.2 }
-			set_variable = { var = military_industry_max_eff_var value = 0.1 }
-			set_variable = { var = military_industry_gain_eff_var value = 0.3 }
-			add_dynamic_modifier = { modifier = GEN_military_industry }	
-		}		
-		else = {
-			add_to_variable = { var = military_industry_lor_var value = -0.2 }
-			add_to_variable = { var = military_industry_max_eff_var value = 0.1 }
-			add_to_variable = { var = military_industry_gain_eff_var value = 0.3 }
+			hidden_effect = {
+				set_variable = { var = military_industry_license_cost_var value = 0 }
+				set_variable = { var = military_industry_license_speed_var value = 0 }
+				set_variable = { var = military_industry_lor_var value = -0.2 }
+				set_variable = { var = military_industry_max_eff_var value = 0.1 }
+				set_variable = { var = military_industry_gain_eff_var value = 0.3 }
+				add_dynamic_modifier = { modifier = GEN_military_industry }	
+			}
+			custom_effect_tooltip = GEN_our_own_designs_effect_tt
 		}
-	}
+		else = {
+				add_to_variable = { var = military_industry_lor_var value = -0.2 }
+				add_to_variable = { var = military_industry_max_eff_var value = 0.1 }
+				add_to_variable = { var = military_industry_gain_eff_var value = 0.3 }			
+		}
+	}	
 }
 shared_focus = {
 	id = GEN_rely_on_allied_designs
@@ -967,13 +996,16 @@ shared_focus = {
 			add_extra_state_shared_building_slots = 3
 		}
 		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
-			set_variable = { var = military_industry_license_cost_var value = -0.25 }
-			set_variable = { var = military_industry_license_speed_var value = -0.25 }
-			set_variable = { var = military_industry_lor_var value = -0.2 }
-			set_variable = { var = military_industry_max_eff_var value = 0.1 }
-			set_variable = { var = military_industry_gain_eff_var value = 0.3 }
-			add_dynamic_modifier = { modifier = GEN_military_industry }	
-		}		
+				hidden_effect = {
+					set_variable = { var = military_industry_license_cost_var value = -0.25 }
+					set_variable = { var = military_industry_license_speed_var value = -0.25 }
+					set_variable = { var = military_industry_lor_var value = -0.2 }
+					set_variable = { var = military_industry_max_eff_var value = 0.1 }
+					set_variable = { var = military_industry_gain_eff_var value = 0.3 }
+					add_dynamic_modifier = { modifier = GEN_military_industry }	
+				}
+				custom_effect_tooltip = GEN_rely_on_allied_designs_effect_tt
+		}
 		else = {
 			add_to_variable = { var = military_industry_license_cost_var value = -0.25 }
 			add_to_variable = { var = military_industry_license_speed_var value = -0.25 }
@@ -1058,7 +1090,6 @@ shared_focus = {
 		}
 	}
 }
-
 shared_focus = {
 	id = GEN_modern_airforce
 	icon = GFX_focus_generic_aircraft_production
@@ -1082,26 +1113,25 @@ shared_focus = {
 			days = 365
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes
+			name = GEN_our_own_planes_chassis
 			bonus = 2
 			uses = 1
 			category = light_air
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes
+			name = GEN_our_own_planes_guns
 			bonus = 2
 			uses = 1
 			category = cat_air_guns
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes
+			name = GEN_our_own_planes_engine
 			bonus = 1
 			uses = 1
 			category = cat_air_engine
 		}
 	}
 }
-
 shared_focus = {
 	id = GEN_modern_bombers
 	icon = GFX_focus_generic_aircraft_production
@@ -1124,28 +1154,27 @@ shared_focus = {
 			days = 365
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes
+			name = GEN_our_own_planes_chassis
 			bonus = 2
 			uses = 1
 			category = light_air
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes
+			name = GEN_our_own_planes_guns
 			bonus = 2
 			uses = 1
 			category = cat_air_guns
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes
+			name = GEN_our_own_planes_engine
 			bonus = 1
 			uses = 1
 			category = cat_air_engine
 		}
 	}
 }
-
 #################################
-### Political Tree - Generic  ### variable changes need better focus effect descriptions + localisation
+### Political Tree - Generic  ### TODO waiting on dolleprint icons - REQUESTED
 #################################
 shared_focus = {
 	id = GEN_the_coming_storm
@@ -1159,7 +1188,9 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
 		add_political_power = 100
-		country_event = { id = GEN_TREE_EVENTS.1 days = 1}
+		hidden_effect = {
+			country_event = { id = GEN_TREE_EVENTS.1 days = 1}
+		}
 	}
 }
 ###Ideologies
@@ -1377,7 +1408,7 @@ shared_focus = { #TODOICON add icon from dolleprint when ready
 	}
 }
 ###shared branch between iranian/western influence
-shared_focus = { #DONE
+shared_focus = {
 	id = GEN_promote_unity
 	icon = GFX_goal_generic_national_unity
 	x = 3
@@ -1391,15 +1422,18 @@ shared_focus = { #DONE
 	}
 	relative_position_id = GEN_pro_iranian_policy
 	completion_reward = {
-		set_variable = { var = unity_idea_pp_var value = 0.05 }   #political_power_factor
-		set_variable = { var = unity_idea_pop_var value = 0.05 }  #recruitable_population_factor
-		set_variable = { var = unity_idea_stab_var value = 0.05 } #stability_weekly_factor
-		add_dynamic_modifier = {
-			modifier = GEN_unity_modifier
+		hidden_effect = {	
+			set_variable = { var = unity_idea_pp_var value = 0.05 }   #political_power_factor
+			set_variable = { var = unity_idea_pop_var value = 0.05 }  #recruitable_population_factor
+			set_variable = { var = unity_idea_stab_var value = 0.05 } #stability_weekly_factor
+			add_dynamic_modifier = {
+				modifier = GEN_unity_modifier
+			}	
 		}
+		custom_effect_tooltip = GEN_promote_unity_effect_tt
 	}
 }
-shared_focus = { #DONE
+shared_focus = { 
 	id = GEN_the_traditional_mother
 	icon = GFX_focus_SOV_womens_fascist_movement
 	cost = @14_days
@@ -1414,13 +1448,15 @@ shared_focus = { #DONE
 	}
 	relative_position_id = GEN_promote_unity
 	completion_reward = {
-		subtract_from_variable = { var = unity_idea_pp_var value = 0.05 }
-		subtract_from_variable = { var = unity_idea_pop_var value = 0.1}
-		add_to_variable = { var = unity_idea_stab_var value = 0.1 }
 		add_ideas = GEN_traditional_mothers
+		hidden_effect = {
+			subtract_from_variable = { var = unity_idea_pp_var value = 0.05 }
+			subtract_from_variable = { var = unity_idea_pop_var value = 0.1}
+			add_to_variable = { var = unity_idea_stab_var value = 0.1 }		
+		}
 	}
 }
-shared_focus = { #DONE
+shared_focus = { 
 	id = GEN_womens_equality
 	icon = GFX_focus_ICE_embrace_the_workers_revolution
 	cost = @14_days
@@ -1434,10 +1470,12 @@ shared_focus = { #DONE
 	}
 	relative_position_id = GEN_promote_unity
 	completion_reward = {
-		add_to_variable = { var = unity_idea_pp_var value = 0.05 }
-		add_to_variable = { var = unity_idea_pop_var value = 0.1}
-		subtract_from_variable = { var = unity_idea_stab_var value = 0.1 }
 		add_ideas = GEN_women_in_the_army
+		hidden_effect = {
+			add_to_variable = { var = unity_idea_pp_var value = 0.05 }
+			add_to_variable = { var = unity_idea_pop_var value = 0.1}
+			subtract_from_variable = { var = unity_idea_stab_var value = 0.1 }		
+		}
 	}
 }
 shared_focus = { #DONE
@@ -1456,9 +1494,11 @@ shared_focus = { #DONE
 	}
 	relative_position_id = GEN_the_traditional_mother
 	completion_reward = {
-		subtract_from_variable = { var = unity_idea_pp_var value = 0.1 }
-		subtract_from_variable = { var = unity_idea_pop_var value = 0.05}
-		add_to_variable = { var = unity_idea_stab_var value = 0.05 }		
+		hidden_effect = {
+			subtract_from_variable = { var = unity_idea_pp_var value = 0.1 }
+			subtract_from_variable = { var = unity_idea_pop_var value = 0.05}
+			add_to_variable = { var = unity_idea_stab_var value = 0.05 }					
+		}
 	}
 }
 shared_focus = { #DONE
@@ -1476,9 +1516,11 @@ shared_focus = { #DONE
 	}
 	relative_position_id = GEN_womens_equality
 	completion_reward = {
-		add_to_variable = { var = unity_idea_pp_var value = 0.1 }
-		add_to_variable = { var = unity_idea_pop_var value = 0.05}
-		subtract_from_variable = { var = unity_idea_stab_var value = 0.05 }		
+		hidden_effect = {
+			add_to_variable = { var = unity_idea_pp_var value = 0.1 }
+			add_to_variable = { var = unity_idea_pop_var value = 0.05}
+			subtract_from_variable = { var = unity_idea_stab_var value = 0.05 }					
+		}
 	}
 }
 ###Pro West Branch
@@ -1521,7 +1563,6 @@ shared_focus = {
 			add_building_construction = {
 				type = industrial_complex
 				level = 3
-				instant_build = yes
 				instant_build = yes
 			}
 			add_extra_state_shared_building_slots = 3
