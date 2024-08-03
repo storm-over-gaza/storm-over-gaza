@@ -6,6 +6,8 @@
 @25_days = 3.7
 @30_days = 4.4
 @35_days = 5
+@60_days = 8.6
+@100_days = 14.4
 @120_days = 17.2
 ##############################
 ### Economy Tree - Generic ### TODO finish branch, effects, etc
@@ -30,8 +32,8 @@ shared_focus = {
 ################################
 shared_focus = {
 	id = GEN_army_matters
-	icon = GFX_
-	x = 15
+	icon = GFX_focus_generic_combined_arms
+	x = 16
 	y = 0
 	cost = @25_days
 	ai_will_do = {
@@ -43,9 +45,646 @@ shared_focus = {
 	completion_reward = {
 		army_experience = 100
 		navy_experience = 50
+		air_experience  = 50
+	}
+}
+###Land Branch
+shared_focus = {
+	id = GEN_land_army_reforms
+	icon = GFX_goal_generic_army_doctrines
+	x = 0
+	y = 1
+	cost = @30_days
+	prerequisite = { focus = GEN_army_matters }
+	relative_position_id = GEN_army_matters
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.9
+			uses = 2
+			category = land_doctrine
+		}
 		army_experience = 50
 	}
 }
+shared_focus = {
+	id = GEN_training_effort
+	icon = GFX_focus_generic_military_academy
+	x = -3
+	y = 1
+	cost = @25_days
+	prerequisite = { focus = GEN_land_army_reforms}
+	relative_position_id = GEN_land_army_reforms
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		army_experience = 100
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			name = 2
+		}
+		if = { limit = { has_idea = GEN_military_reform }
+			modify_timed_idea = {
+				idea = GEN_military_reform
+				days = 90
+			}
+		} 
+		else = {
+			add_timed_idea = {
+				idea = GEN_military_reform
+				days = 90
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GEN_big_guns_focus
+	icon = GFX_goal_generic_army_artillery
+	x = -1
+	y = 1
+	cost = @60_days
+	prerequisite = { focus = GEN_training_effort }
+	relative_position_id = GEN_training_effort
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = artillery
+		}
+	}
+}
+shared_focus = {
+	id = GEN_support_companies
+	icon = GFX_goal_generic_construction2
+	x = 0
+	y = 2
+	cost = @60_days
+	prerequisite = { focus = GEN_training_effort }
+	relative_position_id = GEN_training_effort
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 3
+			category = support_tech
+		}
+	}
+}
+shared_focus = {
+	id = GEN_infantry_focus
+	icon = GFX_goal_generic_small_arms
+	x = 1
+	y = 1
+	cost = @60_days
+	prerequisite = { focus = GEN_training_effort }
+	relative_position_id = GEN_training_effort
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 5
+			category = industry
+		}
+	}
+}
+shared_focus = {
+	id = GEN_military_industrial_complex
+	icon = GFX_focus_generic_armored_air_support
+	x = 0
+	y = 1
+	cost = @25_days
+	prerequisite = { focus = GEN_land_army_reforms}
+	relative_position_id = GEN_land_army_reforms
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRIAL }
+	completion_reward = {
+		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
+			set_variable = { var = military_industry_license_cost_var val = 0 }
+			set_variable = { var = military_industry_license_speed_var val = 0 }
+			set_variable = { var = military_industry_lor_var val = 0 }
+			set_variable = { var = military_industry_max_eff_var val = 0.2 }
+			set_variable = { var = military_industry_gain_eff_var val = 0.1 }
+			add_dynamic_modifier = { modifier = GEN_military_industry }	
+		}		
+		else = {
+			add_to_variable = { var = military_industry_max_eff_var val = 0.2 }
+			add_to_variable = { var = military_industry_gain_eff_var val = 0.1 }
+		}
+	}
+}
+shared_focus = {
+	id = GEN_plans_for_the_army
+	icon = GFX_focus_generic_military_mission
+	x = 3
+	y = 1
+	cost = @25_days
+	prerequisite = { focus = GEN_land_army_reforms}
+	relative_position_id = GEN_land_army_reforms
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		set_variable = { var = army_sf_global_eff_var value = 0.1 }
+		set_variable = { var = army_sf_cap_var value = 0 }
+		set_variable = { var = army_sf_ter_red_var value = 0 }
+		set_variable = { var = army_sf_tt_var value = 0 }
+		set_variable = { var = army_sf_eff_var value = 0}
+		set_variable = { var = army_tf_eff_var value = 0 }
+		set_variable = { var = army_tf_spd_var value = 0 }
+		add_dynamic_modifier = { modifier = GEN_army_modifier }
+	}
+}
+shared_focus = {
+	id = GEN_a_tank_army
+	icon = GFX_focus_generic_tankette
+	x = 0
+	y = 1
+	cost = @25_days
+	mutually_exclusive = { focus = GEN_special_forces }
+	prerequisite = { 	focus = GEN_plans_for_the_army }
+	prerequisite = {	focus = GEN_military_industrial_complex }
+	relative_position_id = GEN_military_industrial_complex
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		add_to_variable = { var = army_tf_eff_var value = 0.15}
+		add_to_variable = { var = army_tf_spd_var value = 0.2}
+	}
+}
+shared_focus = {
+	id = GEN_a_new_battle_tank
+	icon = GFX_goal_generic_army_tanks
+	x = -1
+	y = 1
+	cost = @120_days
+	prerequisite = { focus = GEN_a_tank_army}
+	relative_position_id = GEN_a_tank_army
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 3
+			category = armor
+		}
+		
+	}
+}
+shared_focus = {
+	id = GEN_ifv_effort
+	icon = GFX_focus_SWE_lynx_armored_car
+	x = 1
+	y = 1
+	cost = @35_days
+	prerequisite = { 	focus = GEN_a_tank_army
+						focus = GEN_special_forces}
+	relative_position_id = GEN_a_tank_army
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_tech_bonus = { #TEST THIS UNSURE
+			bonus = 1
+			uses = 2
+			category = cat_armored_cars
+		}
+	}
+}
+shared_focus = {
+	id = GEN_special_forces
+	icon = GFX_goal_generic_special_forces
+	x = 0
+	y = 1
+	cost = @25_days
+	mutually_exclusive = { focus = GEN_a_tank_army }
+	prerequisite = { focus = GEN_plans_for_the_army}
+	relative_position_id = GEN_plans_for_the_army
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_special_forces_generic
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = special_forces_doctrine
+		}
+		add_timed_idea = {
+			idea = GEN_military_reform
+			days = 90
+		}
+		add_to_variable = { var = army_sf_cap_var value = 0.2 }
+		subtract_from_variable = { var = army_sf_tt_var value = -0.05 }
+		add_to_variable = { var = army_sf_eff_var value = 0.05}
+	}
+}
+shared_focus = {
+	id = GEN_special_forces_2
+	icon = GFX_focus_eng_special_air_service
+	x = 0
+	y = 1
+	cost = @120_days
+	prerequisite = { focus = GEN_special_forces }
+	available = { NOT = { has_idea = GEN_military_reform }}
+	relative_position_id = GEN_special_forces
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 3
+			uses = 1
+			category = cat_special_forces_generic
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = special_forces_doctrine
+		}
+		add_to_variable = { var = army_sf_cap_var value = 0.05 }
+		subtract_from_variable = { var = army_sf_ter_red_var value = 0.15 }
+		subtract_from_variable = { var = army_sf_tt_var value = 0.15 }
+		add_to_variable = { var = army_sf_eff_var value = 0.2}
+	}
+}
+shared_focus = {
+	id = GEN_modern_military
+	icon = GFX_focus_SWE_hedgehog_defense
+	x = 0 
+	y = 2
+	cost = @35_days
+	prerequisite = { 	focus = GEN_special_forces_2
+						focus = GEN_ifv_effort
+						focus = GEN_a_new_battle_tank
+						focus = GEN_support_companies }
+	relative_position_id = GEN_a_tank_army
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		add_to_variable = { var = army_sf_global_eff_var value = 0.1 }
+		add_ideas = GEN_regional_military_power
+	}
+}
+
+###Navy Branch
+shared_focus = {
+	id = GEN_naval_reforms
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	x = -6
+	y = 1
+	cost = @30_days
+	prerequisite = { focus = GEN_army_matters }
+	available = { any_owned_state = { is_coastal = yes }}
+	relative_position_id = GEN_army_matters
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		navy_experience = 100
+		random_owned_controlled_state = {
+			if = { limit = { is_coastal = yes }
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+}
+###Air Branch
+shared_focus = {
+	id = GEN_air_force_reforms
+	icon = GFX_goal_generic_build_airforce
+	x = 6
+	y = 1
+	cost = @30_days
+	prerequisite = { focus = GEN_army_matters }
+	relative_position_id = GEN_army_matters
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		air_experience = 100
+	}
+}
+shared_focus = {
+	id = GEN_our_own_designs
+	icon = GFX_focus_generic_jet_planes
+	x = 1
+	y = 1
+	cost = @100_days
+	mutually_exclusive = { focus = GEN_rely_on_allied_designs }
+	prerequisite = { focus = GEN_air_force_reforms}
+	relative_position_id = GEN_air_force_reforms
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	completion_reward = {
+		air_experience = 100
+		add_timed_idea = {
+			idea = GEN_our_own_design_idea
+			days = 365
+		}
+		add_tech_bonus = {
+			name = GEN_our_own_planes
+			bonus = 2
+			uses = 1
+			category = light_air
+		}
+		add_tech_bonus = {
+			name = GEN_our_own_planes
+			bonus = 2
+			uses = 1
+			category = cat_air_guns
+		}
+		add_tech_bonus = {
+			name = GEN_our_own_planes
+			bonus = 1
+			uses = 1
+			category = cat_air_engine
+		}
+		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
+			set_variable = { var = military_industry_license_cost_var val = -0.25 }
+			set_variable = { var = military_industry_license_speed_var val = -0.25 }
+			set_variable = { var = military_industry_lor_var val = -0.2 }
+			set_variable = { var = military_industry_max_eff_var val = 0.1 }
+			set_variable = { var = military_industry_gain_eff_var val = 0.3 }
+			add_dynamic_modifier = { modifier = GEN_military_industry }	
+		}		
+		else = {
+			add_to_variable = { var = military_industry_license_cost_var val = -0.25 }
+			add_to_variable = { var = military_industry_license_speed_var val = -0.25 }
+			add_to_variable = { var = military_industry_lor_var val = -0.2 }
+			add_to_variable = { var = military_industry_max_eff_var val = 0.1 }
+			add_to_variable = { var = military_industry_gain_eff_var val = 0.3 }
+		}
+	}
+}
+shared_focus = {
+	id = GEN_rely_on_allied_designs
+	icon = GFX_focus_generic_diplomatic_treaty
+	x = -1
+	y = 1
+	cost = @1_day
+	mutually_exclusive = { focus = GEN_our_own_designs }
+	prerequisite = { focus = GEN_air_force_reforms}
+	available = { OR = { 	has_completed_focus = GEN_pro_iranian_policy
+							has_completed_focus = GEN_pro_western_policy }}
+	relative_position_id = GEN_air_force_reforms
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	completion_reward = {
+		random_core_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+			add_extra_state_shared_building_slots = 3
+		}
+		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
+			set_variable = { var = military_industry_license_cost_var val = -0.25 }
+			set_variable = { var = military_industry_license_speed_var val = -0.25 }
+			set_variable = { var = military_industry_lor_var val = -0.2 }
+			set_variable = { var = military_industry_max_eff_var val = 0.1 }
+			set_variable = { var = military_industry_gain_eff_var val = 0.3 }
+			add_dynamic_modifier = { modifier = GEN_military_industry }	
+		}		
+		else = {
+			add_to_variable = { var = military_industry_license_cost_var val = -0.25 }
+			add_to_variable = { var = military_industry_license_speed_var val = -0.25 }
+			add_to_variable = { var = military_industry_lor_var val = -0.2 }
+			add_to_variable = { var = military_industry_max_eff_var val = 0.1 }
+			add_to_variable = { var = military_industry_gain_eff_var val = 0.3 }
+		}
+	}
+}
+shared_focus = {
+	id = GEN_defensive_airforce
+	icon = GFX_focus_FIN_coastal_defense
+	x = 0
+	y = 1
+	cost = @35_days
+	mutually_exclusive = { focus = pilot_training_programme }
+	prerequisite = {	focus = GEN_rely_on_allied_designs
+						focus = GEN_our_own_designs }
+	relative_position_id = GEN_our_own_designs 
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	completion_reward = {
+		#GEN_modern_airforce
+		set_variable = { var = modern_airforce_interception_var val = 0.5}
+		set_variable = { var = modern_airforce_supremacy_var val = 0}
+		add_timed_idea = {
+			idea = GEN_airforce_planning_def
+			days = 365
+		}
+		every_core_state = {
+			random_list = {
+				50 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 3
+					}
+				}
+				30 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 4
+					}
+				}
+				20 ={ 
+					add_building_construction = {
+						type = anti_air_building
+						level = 5
+					}
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GEN_pilot_training_programme
+	icon = GFX_focus_SMB_special_forces_option_3
+	x = 0
+	y = 1
+	cost = @35_days
+	mutually_exclusive = { focus = GEN_defensive_airforce }
+	prerequisite = {	focus = GEN_rely_on_allied_designs
+						focus = GEN_our_own_designs }
+	relative_position_id = GEN_rely_on_allied_designs 
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	completion_reward = {
+		#GEN_modern_airforce
+		set_variable = { var = modern_airforce_interception_var val = 0.5}
+		set_variable = { var = modern_airforce_supremacy_var val = 0}
+		add_timed_idea = {
+			idea = GEN_airforce_planning_off
+			days = 400
+		}
+	}
+}
+
+shared_focus = {
+	id = GEN_modern_airforce
+	icon = GFX_focus_generic_aircraft_production
+	x = 1
+	y = 1
+	cost = @30_days
+	prerequisite = { 	focus = GEN_pilot_training_programme
+						focus = GEN_defensive_airforce }
+	available = { NOT = { 	has_idea = GEN_airforce_planning_def
+							has_idea = GEN_airforce_planning_off }} 
+	relative_position_id = GEN_pilot_training_programme
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	completion_reward = {
+		add_dynamic_modifier = { modifier = GEN_modern_airforce }
+		add_timed_idea = {
+			idea = GEN_our_own_design_idea
+			days = 365
+		}
+		add_tech_bonus = {
+			name = GEN_our_own_planes
+			bonus = 2
+			uses = 1
+			category = light_air
+		}
+		add_tech_bonus = {
+			name = GEN_our_own_planes
+			bonus = 2
+			uses = 1
+			category = cat_air_guns
+		}
+		add_tech_bonus = {
+			name = GEN_our_own_planes
+			bonus = 1
+			uses = 1
+			category = cat_air_engine
+		}
+	}
+}
+
+shared_focus = {
+	id = GEN_modern_bombers
+	icon = GFX_focus_generic_aircraft_production
+	x = 1
+	y = 1
+	cost = @30_days
+	prerequisite = { focus = GEN_modern_airforce }
+	available = { NOT = { 	has_idea = GEN_airforce_planning_def
+							has_idea = GEN_airforce_planning_off }} 
+	relative_position_id = GEN_modern_airforce
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	completion_reward = {
+		add_dynamic_modifier = { modifier = GEN_modern_airforce }
+		add_timed_idea = {
+			idea = GEN_our_own_design_idea
+			days = 365
+		}
+		add_tech_bonus = {
+			name = GEN_our_own_planes
+			bonus = 2
+			uses = 1
+			category = light_air
+		}
+		add_tech_bonus = {
+			name = GEN_our_own_planes
+			bonus = 2
+			uses = 1
+			category = cat_air_guns
+		}
+		add_tech_bonus = {
+			name = GEN_our_own_planes
+			bonus = 1
+			uses = 1
+			category = cat_air_engine
+		}
+	}
+}
+
 #################################
 ### Political Tree - Generic  ###
 #################################
@@ -301,7 +940,7 @@ shared_focus = { #DONE
 		set_variable = { var = unity_idea_pop_var value = 0.05 }  #recruitable_population_factor
 		set_variable = { var = unity_idea_stab_var value = 0.05 } #stability_weekly_factor
 		add_dynamic_modifier = {
-			modifier = GEN_unity_modifer
+			modifier = GEN_unity_modifier
 		}
 	}
 }
@@ -405,7 +1044,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = GEN_free_market_reforms
-	icon = GFX_focus_usa_reestablish_the_gold_standard
+	icon = GFX_focus_mex_privatisation
 	x = 2
 	y = 1
 	cost = @30_days

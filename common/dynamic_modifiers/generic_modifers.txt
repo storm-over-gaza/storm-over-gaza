@@ -1,4 +1,46 @@
-GEN_unity_modifer = {
+GEN_military_industry = {
+	icon = generic_license_production
+	license_purchase_cost = military_industry_license_cost_var
+	license_production_speed = military_industry_license_speed_var
+	production_lack_of_resource_penalty_factor = military_industry_lor_var
+	production_factory_max_efficiency_factor = military_industry_max_eff_var
+	production_factory_efficiency_gain_factor = military_industry_gain_eff_var	
+}
+GEN_army_modifier = {
+	icon = eng_special_air_service
+	#GLOBAL
+	army_infantry_attack_factor = army_sf_global_eff_var
+	army_infantry_defence_factor = army_sf_global_eff_var
+	army_artillery_attack_factor = army_sf_global_eff_var
+	army_artillery_defence_factor = army_sf_global_eff_var
+	#SF BRANCH
+	special_forces_cap = army_sf_cap_var
+	terrain_penalty_reduction = army_sf_ter_red_var
+	special_forces_training_time_factor = army_sf_tt_var
+	special_forces_attack_factor = army_sf_eff_var
+	special_forces_defence_factor = army_sf_eff_var
+	
+	#ARMOR BRANCH
+	army_armor_attack_factor = army_tf_eff_var
+	army_armor_defence_factor = army_tf_eff_var
+	army_armor_speed_factor = army_tf_spd_var
+	
+}
+GEN_modern_airforce = {
+	icon = air_support_focus
+	air_ace_generation_chance_factor = 0.25
+	air_attack_factor = 0.1
+	air_agility_factor = 0.1
+	air_accidents_factor = -0.1
+	experience_gain_air_factor = 0.25
+	air_intercept_efficiency = modern_airforce_interception_var
+	air_interception_detect_factor = modern_airforce_interception_var
+	air_home_defence_factor = modern_airforce_interception_var
+	air_superiority_efficiency = modern_airforce_supremacy_var
+	air_superiority_detect_factor = modern_airforce_supremacy_var
+
+}
+GEN_unity_modifier = {
 	icon = generic_volunteer_expedition_bonus
 	political_power_factor = unity_idea_pp_var
 	recruitable_population_factor = unity_idea_pop_var
