@@ -1,6 +1,54 @@
 #TODO finish ideas
 ideas = {
 	country = {
+		GEN_unions_crushed = {
+			allowed = {
+				always = yes
+			}
+			picture = generic_communism_banned
+			modifier = {
+				
+			}
+		}
+		GEN_unions_tolerated = {
+			allowed = {
+				always = yes 
+			}
+			picture = generic_production_bonus
+			modifier = {
+				
+			}
+		}
+		#start of recovery
+		GEN_economic_recovery = {
+			allowed = {
+				always = yes
+			}
+			picture = generic_goods_red_bonus
+			modifier = {
+				
+			}
+		}
+		#growth condition
+		GEN_economic_growth = {
+			allowed = {
+				always = yes
+			}
+			picture = chi_hyper_inflation2
+			modifier = {
+				#TODO Economic = good
+			}
+		}
+		#not growth condition
+		GEN_stagnation = {
+			allowed = {
+				always = yes
+			}
+			picture = chi_hyper_inflation
+			modifier = {
+				#TODO Economic = bad
+			}
+		}
 		GEN_regional_military_power = {
 			allowed = {
 				always = yes
@@ -73,7 +121,7 @@ ideas = {
 			}
 			picture = generic_democratic_drift_bonus
 			modifier = {
-				democractic_acceptance = 50
+				democratic_acceptance = 50
 			}
 		}
 		GEN_traditional_mothers = {

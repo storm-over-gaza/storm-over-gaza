@@ -1,4 +1,4 @@
-opinion_modifier = {
+opinion_modifiers = {
 	friend_of_america = {
 		value = 50
 	}
