@@ -412,6 +412,169 @@ shared_focus = {
 		}
 	}
 }
+shared_focus = {
+	id = GEN_naval_build_up_the_ports
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = -1
+	y = 1
+	cost = @30_days
+	prerequisite = { focus = GEN_naval_reforms }
+	available = { any_owned_state = { is_coastal = yes }}
+	relative_position_id = GEN_naval_reforms
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		navy_experience = 100
+		random_owned_controlled_state = {
+			if = { limit = { is_coastal = yes }
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 5
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GEN_a_merchant_navy
+	icon = GFX_goal_generic_build_navy
+	x = 1
+	y = 1
+	cost = @30_days
+	prerequisite = { focus = GEN_naval_reforms }
+	available = { any_owned_state = { is_coastal = yes }}
+	relative_position_id = GEN_naval_reforms
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 100
+		}
+		random_owned_controlled_state = {
+			if = { limit = { is_coastal = yes }
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GEN_form_a_wolfpack
+	icon = GFX_focus_generic_midget_submarines
+	x = 1
+	y = 1
+	cost = @30_days
+	prerequisite = { 	focus = GEN_a_merchant_navy
+						focus = GEN_naval_build_up_the_ports }
+	available = { any_owned_state = { is_coastal = yes }}
+	relative_position_id = GEN_naval_build_up_the_ports
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = "Submarine Effort"
+			cost_reduction = 0.5
+			uses = 2
+			category = submarine_doctrine
+		}
+	}
+}
+shared_focus = {
+	id = GEN_our_own_subs
+	icon = GFX_goal_generic_navy_anti_submarine
+	x = 1
+	y = 1
+	cost = @120_days
+	mutually_exclusive = { focus = GEN_purchase_subs }
+	prerequisite = { 	focus = GEN_form_a_wolfpack  }
+	available = { any_owned_state = { is_coastal = yes }}
+	relative_position_id = GEN_form_a_wolfpack
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		navy_experience = 30
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = cat_torpedoes
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = radar_tech
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = ss_tech
+		}
+	}
+}
+shared_focus = {
+	id = GEN_purchase_subs
+	icon = GFX_goal_generic_navy_submarine
+	x = -1
+	y = 1
+	cost = @30_days
+	mutually_exclusive = { focus = GEN_our_own_subs }
+	prerequisite = { 	focus = GEN_form_a_wolfpack  }
+	available = { AND = { 	any_owned_state = { is_coastal = yes }}
+							OR = { 	has_completed_focus = GEN_pro_iranian_policy
+									has_completed_focus = GEN_pro_western_policy }}
+	relative_position_id = GEN_form_a_wolfpack
+	ai_will_do = {
+		factor = 0
+		modifier = { has_war = yes factor = 200}
+		modifier = { ISR = { has_war_with = HAM} add = 50 }
+	}
+	search_filters = { FOCUS_FILTER_ARMY_XP }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = "Submarine Effort"
+			cost_reduction = 0.5
+			uses = 2
+			category = submarine_doctrine
+		}
+		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
+			set_variable = { var = military_industry_license_cost_var val = -0.25 }
+			set_variable = { var = military_industry_license_speed_var val = -0.25 }
+			set_variable = { var = military_industry_lor_var val = 0 }
+			set_variable = { var = military_industry_max_eff_var val = 0 }
+			set_variable = { var = military_industry_gain_eff_var val = 0 }
+			add_dynamic_modifier = { modifier = GEN_military_industry }	
+		}		
+		else = {
+			add_to_variable = { var = military_industry_license_cost_var val = -0.25 }
+			add_to_variable = { var = military_industry_license_speed_var val = -0.25 }
+		}
+
+	}
+}
 ###Air Branch
 shared_focus = {
 	id = GEN_air_force_reforms
@@ -470,16 +633,14 @@ shared_focus = {
 			category = cat_air_engine
 		}
 		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
-			set_variable = { var = military_industry_license_cost_var val = -0.25 }
-			set_variable = { var = military_industry_license_speed_var val = -0.25 }
+			set_variable = { var = military_industry_license_cost_var val = 0 }
+			set_variable = { var = military_industry_license_speed_var val = 0 }
 			set_variable = { var = military_industry_lor_var val = -0.2 }
 			set_variable = { var = military_industry_max_eff_var val = 0.1 }
 			set_variable = { var = military_industry_gain_eff_var val = 0.3 }
 			add_dynamic_modifier = { modifier = GEN_military_industry }	
 		}		
 		else = {
-			add_to_variable = { var = military_industry_license_cost_var val = -0.25 }
-			add_to_variable = { var = military_industry_license_speed_var val = -0.25 }
 			add_to_variable = { var = military_industry_lor_var val = -0.2 }
 			add_to_variable = { var = military_industry_max_eff_var val = 0.1 }
 			add_to_variable = { var = military_industry_gain_eff_var val = 0.3 }
