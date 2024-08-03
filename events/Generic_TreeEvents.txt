@@ -7,7 +7,7 @@ country_event = {
 	desc = GEN_TREE_EVENTS.1.desc
 	is_triggered_only = yes
 	# picture = GFX_
-	option = {name = generic.1.a}
+	option = {name = GEN_TREE_EVENTS.1.a}
 }
 
 country_event = {
@@ -16,7 +16,7 @@ country_event = {
 	desc = GEN_TREE_EVENTS.2.desc
 	is_triggered_only = yes
 	# picture = GFX_
-	option = {name = generic.2.a}
+	option = {name = GEN_TREE_EVENTS.2.a}
 }
 
 country_event = {
@@ -25,5 +25,5 @@ country_event = {
 	desc = GEN_TREE_EVENTS.3.desc
 	is_triggered_only = yes
 	# picture = GFX_
-	option = {name = generic.3.a}
+	option = {name = GEN_TREE_EVENTS.3.a}
 }

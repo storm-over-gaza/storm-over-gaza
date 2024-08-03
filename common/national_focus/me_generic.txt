@@ -15,7 +15,7 @@
 @100_days = 14.4
 @120_days = 17.2
 ##############################
-### Economy Tree - Generic ### TODO finish branch, effects, etc
+### Economy Tree - Generic ### TODO Add ECO when ready
 ##############################
 shared_focus = {
 	id = GEN_economic_policy
@@ -145,7 +145,7 @@ shared_focus = {
 		add_ideas = GEN_economic_recovery
 	}
 }
-shared_focus = {#TODOECO - add effect 
+shared_focus = {#TODOECO
 	id = GEN_austerity
 	icon = GFX_goal_generic_intelligence_exchange
 	x = -1
@@ -160,10 +160,10 @@ shared_focus = {#TODOECO - add effect
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
 		add_to_variable = { var = tmp_strong_growth value = 1 }
-		#add reserve money/investments
+		#TODO add effects
 	}
 }
-shared_focus = {#TODOECO - add effect 
+shared_focus = {
 	id = GEN_welfare_state
 	icon = GFX_goal_generic_neutrality_focus
 	x = 1
@@ -193,7 +193,6 @@ shared_focus = {#TODOECO - add effect
 		}
 	}
 }
-
 shared_focus = {
 	id = GEN_civilian_industrial_projects
 	icon = GFX_goal_reichsautobahn
