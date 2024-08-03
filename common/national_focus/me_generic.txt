@@ -6,7 +6,7 @@
 @25_days = 3.7
 @30_days = 4.4
 @35_days = 5
-
+@120_days = 17.2
 ##############################
 ### Economy Tree - Generic ### TODO finish branch, effects, etc
 ##############################
@@ -20,7 +20,6 @@ shared_focus = {
 		factor = 30
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRIAL }
-	available = { has_completed_focus = GEN_the_coming_storm}
 	completion_reward = {
 		
 	}
@@ -38,7 +37,6 @@ shared_focus = {
 	ai_will_do = {
 		factor = 20
 	}
-	available = { has_completed_focus = GEN_the_coming_storm}
 	search_filters = { FOCUS_FILTER_ARMY_XP
 						FOCUS_FILTER_AIR_XP 
 						FOCUS_FILTER_NAVY_XP }
@@ -51,14 +49,14 @@ shared_focus = {
 #################################
 ### Political Tree - Generic  ###
 #################################
-shared_focus = { #DONE
+shared_focus = {
 	id = GEN_the_coming_storm
 	icon = GFX_focus_ETH_freedom_at_gunpoint
 	x = 30
 	y = 0
 	cost = @1_day
 	ai_will_do = {
-		factor = 30
+		factor = 100
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -67,7 +65,7 @@ shared_focus = { #DONE
 	}
 }
 ###Ideologies
-shared_focus = { #DONE
+shared_focus = { #TODOICON add icon from dolleprint when ready
 	id = GEN_the_islamic_revolution
 	icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 	x = -5
@@ -144,7 +142,7 @@ shared_focus = { #DONE
 	}
 }
 ### Geopolitical loyalty
-shared_focus = {
+shared_focus = { #TODOMAP uncomment opinion modifier when we get new map
 	id = GEN_pro_iranian_policy
 	icon = GFX_focus_spr_torchbearers_of_tomorrow
 	x = -3
@@ -161,9 +159,17 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
 		add_political_power = 100
+		# add_opinion_modifier = { add modifier
+		# 	target = Iran
+		# 	modifier = loyal_to_the_revolution
+		# }
+		add_opinion_modifier = {
+			target = USA
+			modifier = opposes_us
+		}
 	}
 }
-shared_focus = {
+shared_focus = { #TODOMAP uncomment opinion modifier when we get new map
 	id = GEN_pro_western_policy
 	icon = GFX_goal_support_democracy
 	x = 3
@@ -187,12 +193,20 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
 		add_political_power = 100
+		add_opinion_modifier = { 
+			target = USA
+			modifier = friend_of_america
+		}
+		# add_opinion_modifier = {
+		# 	target = Iran
+		# 	modifier = opposes_us
+		# }
 	}
 }
 ### islamic revolution branch
-shared_focus = { #DONE
+shared_focus = { #TODOICON add icon from dolleprint when ready
 	id = GEN_theocratic_reforms
-	icon = GFX_
+	icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 	x = -2
 	y = 1
 	cost = @30_days
@@ -210,7 +224,7 @@ shared_focus = { #DONE
 	}
 }
 ###pro-iran Branch
-shared_focus = {
+shared_focus = { #TODOICON add icon from dolleprint when ready
 	id = GEN_concessions_to_iran
 	icon = GFX_
 	x = 0
@@ -223,10 +237,49 @@ shared_focus = {
 	}
 	relative_position_id = GEN_pro_iranian_policy
 	completion_reward = {
-		#concession to iran idea
-		##lower volunteers, 
-		##set to allow volunteers to anti-israel countries
-		###will be counteracted with a tree on the other side
+		add_ideas = GEN_concessions_to_iran_idea
+	}
+}
+shared_focus = { #TODOICON add icon from dolleprint when ready
+	id = GEN_sharia_law
+	icon = GFX_
+	x = 1
+	y = 1
+	cost = @35_days
+	prerequisite = {	focus = GEN_theocratic_reforms
+						focus = GEN_concessions_to_iran
+	}
+	ai_will_do = {
+		factor = 30
+	}
+	relative_position_id = GEN_theocratic_reforms
+	completion_reward = {
+		add_ideas = GEN_sharia_law_idea
+		add_timed_idea = {
+			idea = GEN_resistance_to_reforms
+			days = 365
+		}
+	}
+}
+shared_focus = { #TODOICON add icon from dolleprint when ready
+	id = GEN_the_palestinian_struggle
+	icon = GFX_
+	x = 0
+	y = 1
+	cost = @120_days
+	prerequisite = { focus = GEN_sharia_law }
+	available = { AND = {	ROOT = { NOT = { has_idea = GEN_resistance_to_reforms }}
+							ISR = { has_war_with = HAM }}}
+	ai_will_do = {
+		factor = 30
+	}
+	relative_position_id = GEN_sharia_law
+	completion_reward = {
+		add_ideas = GEN_intervene
+		modifier = {
+			is_ai = yes
+			factor = -100
+		}
 	}
 }
 ###shared branch between iranian/western influence
@@ -347,10 +400,7 @@ shared_focus = {
 	}
 	relative_position_id = GEN_pro_western_policy
 	completion_reward = {
-		#concession to iran idea
-		##lower volunteers, 
-		##set to allow volunteers to anti-israel countries
-		###will be counteracted with a tree on the other side
+		add_ideas = GEN_concessions_to_america
 	}
 }
 shared_focus = {
@@ -366,7 +416,60 @@ shared_focus = {
 	}
 	relative_position_id = GEN_pro_western_policy
 	completion_reward = {
-		#free market idea 
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+			}
+		}
+		random_core_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 3
+		}
 	}
 }
-#Democratic allow_branch here TODO
+shared_focus = {
+	id = GEN_a_liberal_society
+	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	x = 1
+	y = 1
+	cost = @35_days
+	prerequisite = {	focus = GEN_meeting_in_the_city_on_a_hill
+						focus = GEN_free_market_reforms }
+	ai_will_do = {
+		factor = 30
+	}
+	relative_position_id = GEN_meeting_in_the_city_on_a_hill
+	completion_reward = {
+		add_ideas = GEN_liberal_society_idea
+		add_timed_idea = {
+			idea = GEN_resistance_to_reforms
+			days = 365
+		}
+	}
+}
+shared_focus = { #TODOICON add icon from dolleprint when ready
+	id = GEN_the_israeli_crisis
+	icon = GFX_
+	x = 0
+	y = 1
+	cost = @120_days
+	prerequisite = { focus = GEN_a_liberal_society }
+	available = { AND = {	ROOT = { NOT = { has_idea = GEN_resistance_to_reforms }}
+							ISR = { has_war_with = HAM }}}
+	ai_will_do = {
+		factor = 30
+		modifier = {
+			is_ai = yes
+			factor = -100
+		}
+	}
+	relative_position_id = GEN_a_liberal_society
+	completion_reward = {
+		add_ideas = GEN_intervene
+	}
+}

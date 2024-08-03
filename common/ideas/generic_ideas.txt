@@ -1,18 +1,84 @@
 #TODO finish ideas
 ideas = {
 	country = {
-		GEN_concessions_to_iran = {
-
+		GEN_concessions_to_iran_idea = {
+			allowed = {
+				always = yes
+			}
+			picture = raj_marginalized_muslim_community_happy
+			modifier = {
+				islamism_acceptance = 50		
+			}
 		}	
 		GEN_concessions_to_america = {
-
+			allowed = {
+				always = yes
+			}
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				democractic_acceptance = 50
+			}
 		}
 		GEN_traditional_mothers = {
-			#reduce research speed/production/building slightly
+			allowed = {
+				always = yes
+			}
+			picture = ITA_battaglie_per_la_nascite
+			modifier = {
+				research_speed_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				production_factory_max_efficiency_factor = -0.025
+			}
 		}
-		GEN_women_in_the_army = {
-			#allow women in air, sea, and army (see what effects/modifiers allows me to do)
-			#add a slightly + in manpower 
+		GEN_women_in_the_army = { 
+			allowed = {
+				always = yes
+			}
+			picture = generic_women_in_the_army
+			modifier = {
+				conscription_factor  = 0.2			
+			}
+		}
+		GEN_sharia_law_idea = {
+			allowed = {
+				always = yes
+			}
+			picture = raj_marginalized_muslim_community 
+			modifier = {
+				stability_weekly_factor = 0.2
+				islamism_acceptance = 0.2
+				islamism_drift = 0.2	
+			}
+		}
+		GEN_liberal_society_idea = {
+			allowed = {
+				always = yes
+			}
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_weekly_factor = 0.1
+				production_lack_of_resource_penalty_factor = 0.2
+				political_power_factor = -0.1 
+			}
+		}
+		GEN_resistance_to_reforms = {
+			allowed = {
+				always = yes
+			}
+			picture = chi_war_of_resistance
+			modifier = {
+				stability_weekly_factor = -0.15
+				drift_defence_factor = -0.1
+			}
+		}
+		GEN_intervene = {
+			allowed = { is_ai = no }
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteer_factor = 0.5
+				send_volunteers_tension = -0.1			
+			}
 		}
 	}
 }
