@@ -1,0 +1,11 @@
+add_namespace = GEN_TREE_EVENTS
+
+#welcome event - For Generic Trees (can be reused for other trees too
+country_event = {
+	id = GEN_TREE_EVENTS.1
+	title = GEN_TREE_EVENTS.1.t
+	desc = GEN_TREE_EVENTS.desc
+	is_triggered_only = yes
+	# picture = GFX_
+	option = {name = generic.1.a}
+}

@@ -1,0 +1,18 @@
+#TODO finish ideas
+ideas = {
+	country = {
+		GEN_concessions_to_iran = {
+
+		}	
+		GEN_concessions_to_america = {
+
+		}
+		GEN_traditional_mothers = {
+			#reduce research speed/production/building slightly
+		}
+		GEN_women_in_the_army = {
+			#allow women in air, sea, and army (see what effects/modifiers allows me to do)
+			#add a slightly + in manpower 
+		}
+	}
+}

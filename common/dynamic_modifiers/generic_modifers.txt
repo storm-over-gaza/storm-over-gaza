@@ -1,0 +1,6 @@
+GEN_unity_modifer = {
+	icon = generic_volunteer_expedition_bonus
+	political_power_factor = unity_idea_pp_var
+	recruitable_population_factor = unity_idea_pop_var
+	stability_weekly_factor = unity_idea_stab_var
+}
