@@ -1,7 +1,9 @@
 begin_al_asqa_flood = {
 	#TODO add any mechanic starts/variables for guis here
+	set_country_flag = Al_Asqa_Occured
 	declare_war_on = {
 		target = ISR
+		type = annex_everything
 	}
 	#TODO make more intricate later
 }

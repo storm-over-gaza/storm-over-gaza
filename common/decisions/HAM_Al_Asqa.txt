@@ -1,10 +1,13 @@
 HAM_pre_war_decision = {
 	war_start_timer_mission = {
+		
+		activation = { 	tag = HAM 
+						NOT = { has_country_flag = Al_Asqa_Occured }}
+		available = { always = no }
 		icon = GEN
 		is_good = no
-		days_mission_timeout = 128
-		timeout_effect = {
-			country_event = { id = WAR_START_EVENTS.1 days = 0 }
-		}
+		days_mission_timeout = 127 
+		cancel_trigger = { always = no }
+		timeout_effect = {country_event = { id = WAR_START_EVENTS.1 days = 0 }}#Oct7
 	}
 }

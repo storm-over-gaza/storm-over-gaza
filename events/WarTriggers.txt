@@ -4,6 +4,7 @@ country_event = {#Hamas Launches Al Asqa Flood
 	id = WAR_START_EVENTS.1
 	title = WAR_START_EVENTS.1.t
 	desc = WAR_START_EVENTS.1.desc
+	is_triggered_only = yes
 	# picture = GFX
 	option = {	name = WAR_START_EVENTS.1.a
 				ai_chance = { base = 100 }
