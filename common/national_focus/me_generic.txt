@@ -1478,7 +1478,7 @@ shared_focus = {
 		}
 	}
 }
-shared_focus = { #DONE
+shared_focus = { 
 	id = GEN_one_nation_one_faith
 	icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 	cost = @14_days
@@ -1501,7 +1501,7 @@ shared_focus = { #DONE
 		}
 	}
 }
-shared_focus = { #DONE
+shared_focus = { 
 	id = GEN_freedom_of_religion
 	icon = GFX_focus_generic_treaty
 	x = 0
