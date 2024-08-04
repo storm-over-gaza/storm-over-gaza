@@ -144,8 +144,10 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
-		set_variable = { var = tmp_strong_growth value = 0 }
-		set_variable = { var = tmp_weak_growth value = 0 }
+		hidden_effect = {
+			set_variable = { var = tmp_strong_growth value = 0 }
+			set_variable = { var = tmp_weak_growth value = 0 }
+		}
 		add_ideas = GEN_economic_recovery
 	}
 }
@@ -262,7 +264,9 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
-		add_to_variable = { var = tmp_strong_growth value = 1 }
+		hidden_effect = {
+			add_to_variable = { var = tmp_strong_growth value = 1 }	
+		}
 		add_ideas = GEN_unions_crushed
 	}
 }
@@ -281,7 +285,9 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
-		add_to_variable = { var = tmp_weak_growth value = 1 }
+		hidden_effect = {
+			add_to_variable = { var = tmp_weak_growth value = 1 }	
+		}
 		add_ideas = GEN_unions_tolerated
 	}
 }
@@ -936,21 +942,15 @@ shared_focus = {
 		}
 		add_tech_bonus = {
 			name = GEN_our_own_planes_chassis
-			bonus = 2
-			uses = 1
+			bonus = 1
+			uses = 2
 			category = light_air
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes_guns
-			bonus = 2
-			uses = 1
-			category = cat_air_guns
-		}
-		add_tech_bonus = {
-			name = GEN_our_own_planes_engine
-			bonus = 1
-			uses = 1
-			category = cat_air_engine
+			name = GEN_arial_gear
+			bonus = 0.5
+			uses = 3
+			category = plane_modules_tech
 		}
 		if = { limit = { NOT = { has_dynamic_modifier = { modifier = GEN_military_industry}}}
 			hidden_effect = {
@@ -1110,25 +1110,19 @@ shared_focus = {
 		add_dynamic_modifier = { modifier = GEN_modern_airforce }
 		add_timed_idea = {
 			idea = GEN_our_own_design_idea
-			days = 365
+			days = 180
 		}
 		add_tech_bonus = {
 			name = GEN_our_own_planes_chassis
-			bonus = 2
-			uses = 1
+			bonus = 1
+			uses = 2
 			category = light_air
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes_guns
-			bonus = 2
-			uses = 1
-			category = cat_air_guns
-		}
-		add_tech_bonus = {
-			name = GEN_our_own_planes_engine
-			bonus = 1
-			uses = 1
-			category = cat_air_engine
+			name = GEN_arial_gear
+			bonus = 0.5
+			uses = 3
+			category = plane_modules_tech
 		}
 	}
 }
@@ -1149,10 +1143,6 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_dynamic_modifier = { modifier = GEN_modern_airforce }
-		add_timed_idea = {
-			idea = GEN_our_own_design_idea
-			days = 365
-		}
 		add_tech_bonus = {
 			name = GEN_our_own_planes_chassis
 			bonus = 2
@@ -1160,16 +1150,10 @@ shared_focus = {
 			category = light_air
 		}
 		add_tech_bonus = {
-			name = GEN_our_own_planes_guns
-			bonus = 2
-			uses = 1
-			category = cat_air_guns
-		}
-		add_tech_bonus = {
-			name = GEN_our_own_planes_engine
+			name = GEN_arial_gear
 			bonus = 1
-			uses = 1
-			category = cat_air_engine
+			uses = 2
+			category = plane_modules_tech
 		}
 	}
 }
@@ -1448,12 +1432,13 @@ shared_focus = {
 	}
 	relative_position_id = GEN_promote_unity
 	completion_reward = {
-		add_ideas = GEN_traditional_mothers
 		hidden_effect = {
 			subtract_from_variable = { var = unity_idea_pp_var value = 0.05 }
 			subtract_from_variable = { var = unity_idea_pop_var value = 0.1}
-			add_to_variable = { var = unity_idea_stab_var value = 0.1 }		
+			add_to_variable = { var = unity_idea_stab_var value = 0.1 }	
 		}
+		custom_effect_tooltip = GEN_the_traditional_mother_effect_tt
+		add_ideas = GEN_traditional_mothers	
 	}
 }
 shared_focus = { 
@@ -1470,12 +1455,13 @@ shared_focus = {
 	}
 	relative_position_id = GEN_promote_unity
 	completion_reward = {
-		add_ideas = GEN_women_in_the_army
 		hidden_effect = {
 			add_to_variable = { var = unity_idea_pp_var value = 0.05 }
 			add_to_variable = { var = unity_idea_pop_var value = 0.1}
-			subtract_from_variable = { var = unity_idea_stab_var value = 0.1 }		
+			subtract_from_variable = { var = unity_idea_stab_var value = 0.1 }	
 		}
+		custom_effect_tooltip = GEN_womens_equality_effect_tt
+		add_ideas = GEN_women_in_the_army	
 	}
 }
 shared_focus = { 
@@ -1497,8 +1483,9 @@ shared_focus = {
 		hidden_effect = {
 			subtract_from_variable = { var = unity_idea_pp_var value = 0.1 }
 			subtract_from_variable = { var = unity_idea_pop_var value = 0.05}
-			add_to_variable = { var = unity_idea_stab_var value = 0.05 }					
+			add_to_variable = { var = unity_idea_stab_var value = 0.05 }	
 		}
+		custom_effect_tooltip = GEN_one_nation_one_faith_effect_tt
 	}
 }
 shared_focus = { 
@@ -1519,8 +1506,9 @@ shared_focus = {
 		hidden_effect = {
 			add_to_variable = { var = unity_idea_pp_var value = 0.1 }
 			add_to_variable = { var = unity_idea_pop_var value = 0.05}
-			subtract_from_variable = { var = unity_idea_stab_var value = 0.05 }					
+			subtract_from_variable = { var = unity_idea_stab_var value = 0.05 }		
 		}
+		custom_effect_tooltip = GEN_freedom_of_religion_effect_tt				
 	}
 }
 ###Pro West Branch

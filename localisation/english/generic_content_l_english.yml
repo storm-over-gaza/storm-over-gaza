@@ -90,19 +90,23 @@
 
   GEN_promote_unity:0 "Promote National Unity"
   GEN_promote_unity_desc:0 "TODO"
-  GEN_promote_unity_effect_tt: "TODO-with icons, build effects"
+  GEN_promote_unity_effect_tt: "Add §Y$GEN_unity_modifier$§! , which grants (£GFX_pol_idea Political Power Gain: §G+5.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §G+5.00%§! , £GFX_stability_texticon Weekly Stability Factor: §G+5.00%§! \n"
 
   GEN_the_traditional_mother:0 "Traditional Gender Norms"
   GEN_the_traditional_mother_desc:0 "TODO"
-
+  GEN_the_traditional_mother_effect_tt: "Modifies §Y$GEN_unity_modifier$§! , by (£GFX_pol_idea Political Power Gain: §R-5.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §R-10.00%§! , £GFX_stability_texticon Weekly Stability Factor: §G+10.00%§! \n"
+  
   GEN_womens_equality:0 "Womens Equality"
   GEN_womens_equality_desc:0 "TODO"
+  GEN_womens_equality_effect_tt: "Modifies §Y$GEN_unity_modifier$§! , by (£GFX_pol_idea Political Power Gain: §G+5.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §G+10.00%§! , £GFX_stability_texticon Weekly Stability Factor: §R-10.00%§! \n" 
 
   GEN_one_nation_one_faith:0 "One Nation, One Faith"
   GEN_one_nation_one_faith_desc:0 "TODO"
+  GEN_one_nation_one_faith_effect_tt: "Modifies §Y$GEN_unity_modifier$§! , by (£GFX_pol_idea Political Power Gain: §R-10.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §R-5.00%§! , £GFX_stability_texticon Weekly Stability Factor: §G+5.00%§! \n" 
 
   GEN_freedom_of_religion:0 "Freedom of Religion"
   GEN_freedom_of_religion_desc:0 "TODO"
+  GEN_freedom_of_religion_effect_tt: "Modifies §Y$GEN_unity_modifier$§! , by (£GFX_pol_idea Political Power Gain: §G+10.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §G+5.00%§! , £GFX_stability_texticon Weekly Stability Factor: §R-5.00%§! \n" 
 
   GEN_meeting_in_the_city_on_a_hill:0 "Meeting in the City on a Hill"
   GEN_meeting_in_the_city_on_a_hill_desc:0 "TODO"
@@ -264,7 +268,7 @@
 
   ###AIR
   GEN_our_own_planes_chassis: "Small Planes Chassis"
-  GEN_our_own_planes_guns: "Plane Guns"
+  GEN_arial_gear: "Planes Modules"
   GEN_our_own_planes_engine: "Engine"
 
   ###NAVY
