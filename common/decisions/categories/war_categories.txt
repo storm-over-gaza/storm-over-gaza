@@ -6,3 +6,14 @@ HEZ_war_decisions = {
 		has_dynamic_modifier = { modifier = ISR_HEZ_Conflict_modifier }
 	}
 }
+HAM_pre_war_decision = { #starts 29-june 2024, with 100 day mission to event and al_asqa begins
+	icon = GFX_
+	visible = { 
+		tag = HAM
+		NOT = { has_country_flag = Al_Asqa_Occured }
+	}
+}
+HAM_war_decisions = { #starts when Al-Asqa Flood mission expires #Oct7 
+	icon = GFX_
+	# scripted_gui = HAM TODO after beta
+}

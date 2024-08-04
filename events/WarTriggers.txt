@@ -1,0 +1,13 @@
+add_namespace = WAR_START_EVENTS
+
+country_event = {#Hamas Launches Al Asqa Flood
+	id = WAR_START_EVENTS.1
+	title = WAR_START_EVENTS.1.t
+	desc = WAR_START_EVENTS.1.desc
+	# picture = GFX
+	option = {	name = WAR_START_EVENTS.1.a
+				ai_chance = { base = 100 }
+				begin_al_asqa_flood = yes
+				custom_effect_tooltip = WAR_START_EVENTS.1.a.tt
+			}
+}

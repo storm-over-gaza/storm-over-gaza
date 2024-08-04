@@ -1,0 +1,7 @@
+begin_al_asqa_flood = {
+	#TODO add any mechanic starts/variables for guis here
+	declare_war_on = {
+		target = ISR
+	}
+	#TODO make more intricate later
+}
