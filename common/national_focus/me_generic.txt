@@ -231,6 +231,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = @35_days
+	mutually_exclusive = { focus = GEN_civilian_industrial_projects }
 	prerequisite = { focus = GEN_welfare_state  }
 	relative_position_id = GEN_welfare_state
 	ai_will_do = {
@@ -502,10 +503,13 @@ shared_focus = {
 				set_variable = { var = military_industry_gain_eff_var value = 0.1 }
 				add_dynamic_modifier = { modifier = GEN_military_industry }	
 			}
-			custom_effect_tooltip = GEN_military_industrial_complex_effect_tt
+			custom_effect_tooltip = GEN_military_industrial_complex_effect_new_tt
 		} else = {
-			add_to_variable = { var = military_industry_max_eff_var value = 0.2 }
-			add_to_variable = { var = military_industry_gain_eff_var value = 0.1 }
+			hidden_effect = {
+				add_to_variable = { var = military_industry_max_eff_var value = 0.2 }
+				add_to_variable = { var = military_industry_gain_eff_var value = 0.1 }	
+			}
+			custom_effect_tooltip = GEN_military_industrial_complex_effect_change_tt
 		}
 	}
 }
@@ -554,8 +558,11 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_ARMY_XP }
 	completion_reward = {
-		add_to_variable = { var = army_tf_eff_var value = 0.15}
-		add_to_variable = { var = army_tf_spd_var value = 0.2}
+		hidden_effect = {
+			add_to_variable = { var = army_tf_eff_var value = 0.15}
+			add_to_variable = { var = army_tf_spd_var value = 0.2}			
+		}
+		custom_effect_tooltip = GEN_a_tank_army_effect_tt
 	}
 }
 shared_focus = {
@@ -638,9 +645,12 @@ shared_focus = {
 			idea = GEN_military_reform
 			days = 90
 		}
-		add_to_variable = { var = army_sf_cap_var value = 0.2 }
-		subtract_from_variable = { var = army_sf_tt_var value = -0.05 }
-		add_to_variable = { var = army_sf_eff_var value = 0.05}
+		hidden_effect = {
+			add_to_variable = { var = army_sf_cap_var value = 0.2 }
+			subtract_from_variable = { var = army_sf_tt_var value = 0.05 }
+			add_to_variable = { var = army_sf_eff_var value = 0.05}
+		}
+		custom_effect_tooltip = GEN_special_forces_effect_tt
 	}
 }
 shared_focus = {
@@ -671,10 +681,14 @@ shared_focus = {
 			uses = 2
 			category = special_forces_doctrine
 		}
-		add_to_variable = { var = army_sf_cap_var value = 0.05 }
-		subtract_from_variable = { var = army_sf_ter_red_var value = 0.15 }
-		subtract_from_variable = { var = army_sf_tt_var value = 0.15 }
-		add_to_variable = { var = army_sf_eff_var value = 0.2}
+		hidden_effect = {
+			add_to_variable = { var = army_sf_cap_var value = 0.05 }
+			subtract_from_variable = { var = army_sf_ter_red_var value = 0.15 }
+			subtract_from_variable = { var = army_sf_tt_var value = 0.15 }
+			add_to_variable = { var = army_sf_eff_var value = 0.2}			
+		}
+		custom_effect_tooltip = GEN_special_forces_2_effect_tt
+
 	}
 }
 shared_focus = {
@@ -698,7 +712,10 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_ARMY_XP }
 	completion_reward = {
-		add_to_variable = { var = army_sf_global_eff_var value = 0.1 }
+		hidden_effect = {
+			add_to_variable = { var = army_sf_global_eff_var value = 0.1 }	
+		}
+		custom_effect_tooltip = GEN_modern_military_effect_tt
 		add_ideas = GEN_regional_military_power
 	}
 }
@@ -893,11 +910,14 @@ shared_focus = {
 					set_variable = { var = military_industry_gain_eff_var value = 0 }
 					add_dynamic_modifier = { modifier = GEN_military_industry }	
 				}
-				custom_effect_tooltip = GEN_purchase_subs_effect_tt
+				custom_effect_tooltip = GEN_purchase_subs_effect_new_tt
 		}
 		else = {
-			add_to_variable = { var = military_industry_license_cost_var value = -0.25 }
-			add_to_variable = { var = military_industry_license_speed_var value = -0.25 }
+			hidden_effect = {
+				add_to_variable = { var = military_industry_license_cost_var value = -0.25 }
+				add_to_variable = { var = military_industry_license_speed_var value = -0.25 }			
+			}
+			custom_effect_tooltip = GEN_purchase_subs_effect_edit_tt
 		}
 	}
 }
@@ -961,12 +981,16 @@ shared_focus = {
 				set_variable = { var = military_industry_gain_eff_var value = 0.3 }
 				add_dynamic_modifier = { modifier = GEN_military_industry }	
 			}
-			custom_effect_tooltip = GEN_our_own_designs_effect_tt
+			custom_effect_tooltip = GEN_our_own_designs_effect_new_tt
 		}
 		else = {
+			hidden_effect = {
 				add_to_variable = { var = military_industry_lor_var value = -0.2 }
 				add_to_variable = { var = military_industry_max_eff_var value = 0.1 }
-				add_to_variable = { var = military_industry_gain_eff_var value = 0.3 }			
+				add_to_variable = { var = military_industry_gain_eff_var value = 0.3 }	
+								
+			}
+			custom_effect_tooltip = GEN_our_own_designs_effect_edit_tt
 		}
 	}	
 }
@@ -999,19 +1023,19 @@ shared_focus = {
 				hidden_effect = {
 					set_variable = { var = military_industry_license_cost_var value = -0.25 }
 					set_variable = { var = military_industry_license_speed_var value = -0.25 }
-					set_variable = { var = military_industry_lor_var value = -0.2 }
-					set_variable = { var = military_industry_max_eff_var value = 0.1 }
-					set_variable = { var = military_industry_gain_eff_var value = 0.3 }
+					set_variable = { var = military_industry_lor_var value = 0 }
+					set_variable = { var = military_industry_max_eff_var value = 0 }
+					set_variable = { var = military_industry_gain_eff_var value = 0 }
 					add_dynamic_modifier = { modifier = GEN_military_industry }	
 				}
-				custom_effect_tooltip = GEN_rely_on_allied_designs_effect_tt
+				custom_effect_tooltip = GEN_rely_on_allied_designs_effect_new_tt
 		}
 		else = {
-			add_to_variable = { var = military_industry_license_cost_var value = -0.25 }
-			add_to_variable = { var = military_industry_license_speed_var value = -0.25 }
-			add_to_variable = { var = military_industry_lor_var value = -0.2 }
-			add_to_variable = { var = military_industry_max_eff_var value = 0.1 }
-			add_to_variable = { var = military_industry_gain_eff_var value = 0.3 }
+			hidden_effect = {
+				add_to_variable = { var = military_industry_license_cost_var value = -0.25 }
+				add_to_variable = { var = military_industry_license_speed_var value = -0.25 }	
+			}
+			custom_effect_tooltip = GEN_rely_on_allied_designs_effect_edit_tt
 		}
 	}
 }
