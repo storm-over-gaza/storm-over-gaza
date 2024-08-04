@@ -6,17 +6,17 @@ l_russian:
   
   ###POL
   GEN_TREE_EVENTS.1.t: "Добро пожаловать на войну в Газе."
-  GEN_TREE_EVENTS.1.desc: "TODO"
-  GEN_TREE_EVENTS.1.a: "TODO"
+  GEN_TREE_EVENTS.1.desc: "ЗАДАЧА"
+  GEN_TREE_EVENTS.1.a: "ЗАДАЧА"
   
   ###ECO
   GEN_TREE_EVENTS.2.t: "Экономический рост!"
-  GEN_TREE_EVENTS.2.desc: "TODO"
-  GEN_TREE_EVENTS.2.a: "TODO"
+  GEN_TREE_EVENTS.2.desc: "ЗАДАЧА"
+  GEN_TREE_EVENTS.2.a: "ЗАДАЧА"
 
   GEN_TREE_EVENTS.3.t: "Экономический застой!"
-  GEN_TREE_EVENTS.3.desc: "TODO"
-  GEN_TREE_EVENTS.3.a: "TODO"
+  GEN_TREE_EVENTS.3.desc: "ЗАДАЧА"
+  GEN_TREE_EVENTS.3.a: "ЗАДАЧА"
 
 ###########################
 ### IDEAS AND MODIFIERS ###
@@ -60,154 +60,214 @@ l_russian:
 
   ###POL
   GEN_the_coming_storm:0 "Приближающаяся буря..."
-  GEN_the_coming_storm_desc:0 "TODO"
+  GEN_the_coming_storm_desc:0 ""
 
   GEN_the_islamic_revolution:0 "Исламская революция"
-  GEN_the_islamic_revolution_desc:0 "TODO"
+  GEN_the_islamic_revolution_desc:0 ""
 
   GEN_a_stable_monarchy:0 "Стабильная монархия"
-  GEN_a_stable_monarchy_desc:0 "TODO"
+  GEN_a_stable_monarchy_desc:0 ""
 
   GEN_path_of_democracy:0 "Путь демократии"
-  GEN_path_of_democracy_desc:0 "TODO"
+  GEN_path_of_democracy_desc:0 ""
 
   GEN_pro_iranian_policy:0 "Проиранская политика"
-  GEN_pro_iranian_policy_desc:0 "TODO"
+  GEN_pro_iranian_policy_desc:0 ""
 
   GEN_pro_western_policy:0 "Про западная политика"
-  GEN_pro_western_policy_desc:0 "TODO"
+  GEN_pro_western_policy_desc:0 ""
 
   GEN_theocratic_reforms:0 "Теократические реформы"
-  GEN_theocratic_reforms_desc:0 "TODO"
+  GEN_theocratic_reforms_desc:0 ""
 
   GEN_concessions_to_iran:0 "Уступки Ирану"
-  GEN_concessions_to_iran_desc:0 "TODO"
+  GEN_concessions_to_iran_desc:0 ""
 
   GEN_sharia_law:0 "Ввести шариатский закон"
-  GEN_sharia_law_desc:0 "TODO"
+  GEN_sharia_law_desc:0 ""
 
   GEN_the_palestinian_struggle:0 "Присоединиться к палестинской борьбе"
-  GEN_the_palestinian_struggle_desc:0 "TODO"
+  GEN_the_palestinian_struggle_desc:0 ""
 
   GEN_promote_unity:0 "Продвигать национальное единство"
-  GEN_promote_unity_desc:0 "TODO"
-  GEN_promote_unity_effect_tt: "TODO"
+  GEN_promote_unity_desc:0 ""
+  GEN_promote_unity_effect_tt: ""
 
   GEN_the_traditional_mother:0 "Традиционные гендерные нормы"
-  GEN_the_traditional_mother_desc:0 "TODO"
+  GEN_the_traditional_mother_desc:0 ""
 
   GEN_womens_equality:0 "Равенство женщин"
-  GEN_womens_equality_desc:0 "TODO"
+  GEN_womens_equality_desc:0 ""
 
   GEN_one_nation_one_faith:0 "Одна нация, одна вера"
-  GEN_one_nation_one_faith_desc:0 "TODO"
+  GEN_one_nation_one_faith_desc:0 ""
 
   GEN_freedom_of_religion:0 "Свобода вероисповедания"
-  GEN_freedom_of_religion_desc:0 "TODO"
+  GEN_freedom_of_religion_desc:0 ""
 
   GEN_meeting_in_the_city_on_a_hill:0 "Встреча в Граде на холме"
-  GEN_meeting_in_the_city_on_a_hill_desc:0 "TODO"
+  GEN_meeting_in_the_city_on_a_hill_desc:0 ""
 
   GEN_free_market_reforms:0 "Реформы свободного рынка"
-  GEN_free_market_reforms_desc:0 "TODO"
+  GEN_free_market_reforms_desc:0 ""
 
   GEN_a_liberal_society:0 "Либеральное общество"
-  GEN_a_liberal_society_desc:0 "TODO"
+  GEN_a_liberal_society_desc:0 ""
 
   GEN_the_israeli_crisis:0 "Поддержка Израиля"
-  GEN_the_israeli_crisis_desc:0 "TODO"
+  GEN_the_israeli_crisis_desc:0 ""
 
   ###ECO
   GEN_economic_policy:0 "Экономическая политика"
-  GEN_economic_policy_desc:0 "TODO"
+  GEN_economic_policy_desc:0 "ЗАДАЧА"
 
   GEN_invest_in_public_works:0 "Инвестировать в общественные работы"
-  GEN_invest_in_public_works_desc:0 "TODO"
+  GEN_invest_in_public_works_desc:0 "ЗАДАЧА"
 
   GEN_sovreign_wealth_fund:0 "Расширение суверенного фонда"
-  GEN_sovreign_wealth_fund_desc:0 "TODO"
+  GEN_sovreign_wealth_fund_desc:0 "ЗАДАЧА"
 
   GEN_focus_on_industrialisation:0 "Сосредоточиться на промышленных технологиях"
-  GEN_focus_on_industrialisation_desc:0 "TODO"
+  GEN_focus_on_industrialisation_desc:0 "ЗАДАЧА"
 
   GEN_research_stimulus:0 "Стимул для исследований"
-  GEN_research_stimulus_desc:0 "TODO"
+  GEN_research_stimulus_desc:0 ""
 
   GEN_begin_the_rebuild:0 "Начать восстановление"
-  GEN_begin_the_rebuild_desc:0 "TODO"
+  GEN_begin_the_rebuild_desc:0 ""
 
   GEN_austerity:0 "Начать режим экономии"
-  GEN_austerity_desc:0 "TODO"
+  GEN_austerity_desc:0 ""
 
   GEN_welfare_state:0 "Восстановить государство всеобщего благосостояния"
-  GEN_welfare_state_desc:0 "TODO"
+  GEN_welfare_state_desc:0 ""
 
   GEN_civilian_industrial_projects:0 "Расширение частного сектора"
-  GEN_civilian_industrial_projects_desc:0 "TODO"
+  GEN_civilian_industrial_projects_desc:0 ""
 
   GEN_military_priority:0 "Обеспечить военное экономическое превосходство"
-  GEN_military_priority_desc:0 "TODO"
+  GEN_military_priority_desc:0 ""
 
   GEN_crush_unions:0 "Разгром профсоюзов"
-  GEN_crush_unions_desc:0 "TODO"
+  GEN_crush_unions_desc:0 ""
 
   GEN_befriend_unions:0 "Подружиться с лидерами профсоюзов"
-  GEN_befriend_unions_desc:0 "TODO"
+  GEN_befriend_unions_desc:0 ""
 
   GEN_flourishing_economy:0 "Процветающая экономика"
-  GEN_flourishing_economy_desc:0 "TODO"
+  GEN_flourishing_economy_desc:0 ""
 
   ###MIL
   ####LAND
   GEN_army_matters:0 "Дела армии"
-  GEN_army_matters_desc:0 "TODO"
+  GEN_army_matters_desc:0 ""
 
   GEN_land_army_reforms:0 "Реформа сухопутных войск"
-  GEN_land_army_reforms_desc:0 "TODO"
+  GEN_land_army_reforms_desc:0 ""
 
   GEN_training_effort:0 "Усилия по подготовке"
-  GEN_training_effort_desc:0 "TODO"
+  GEN_training_effort_desc:0 ""
 
   GEN_big_guns_focus:0 "Крупнокалиберное оружие"
-  GEN_big_guns_focus_desc:0 "TODO"
+  GEN_big_guns_focus_desc:0 ""
 
   GEN_support_companies:0 "Поддержка компаний"
-  GEN_support_companies_desc:0 "TODO"
+  GEN_support_companies_desc:0 ""
 
   GEN_infantry_focus:0 "Малокалиберное оружие"
-  GEN_infantry_focus_desc:0 "TODO"
+  GEN_infantry_focus_desc:0 ""
 
   GEN_military_industrial_complex:0 "Отечественная военная промышленность"
-  GEN_military_industrial_complex_desc:0 "TODO"
-  GEN_military_industrial_complex_effect_tt: "TODO"
+  GEN_military_industrial_complex_desc:0 ""
+  GEN_military_industrial_complex_effect_tt: ""
 
   GEN_plans_for_the_army:0 "Планы для армии"
-  GEN_plans_for_the_army_desc:0 "TODO"
-  GEN_plans_for_the_army_effect_tt: "TODO"
+  GEN_plans_for_the_army_desc:0 ""
+  GEN_plans_for_the_army_effect_tt: ""
 
   GEN_a_tank_army:0 "Реформа бронетанковых войск"
-  GEN_a_tank_army_desc:0 "TODO"
+  GEN_a_tank_army_desc:0 ""
 
   GEN_a_new_battle_tank:0 "Новый боевой танк"
-  GEN_a_new_battle_tank_desc:0 "TODO"
+  GEN_a_new_battle_tank_desc:0 ""
 
   GEN_ifv_effort:0 "Новый БМП"
-  GEN_ifv_effort_desc:0 "TODO"
+  GEN_ifv_effort_desc:0 ""
 
   GEN_special_forces:0 "Инвестировать в спецназ"
-  GEN_special_forces_desc:0 "TODO"
+  GEN_special_forces_desc:0 ""
 
   GEN_special_forces_2:0 "Расширить программу спецназа"
-  GEN_special_forces_2_desc:0 "TODO"
+  GEN_special_forces_2_desc:0 ""
 
   GEN_modern_military:0 "Региональная военная сила"
-  GEN_modern_military_desc:0 "TODO"
+  GEN_modern_military_desc:0 ""
   
   ####NAVY
   GEN_naval_reforms:0 "Реформа флота"
-  GEN_naval_reforms_desc:0 "TODO"
+  GEN_naval_reforms_desc:0 ""
 
   GEN_naval_build_up_the_ports:0 "Развитие портовой инфраструктуры"
-  GEN_naval_build_up_the_ports_desc:0 "TODO"
+  GEN_naval_build_up_the_ports_desc:0 ""
 
   GEN_a_merchant_navy:0 "Торговый флот"
+  GEN_a_merchant_navy_desc:0 ""
+
+  GEN_form_a_wolfpack:0 "Сформировать волчью стаю"
+  GEN_form_a_wolfpack_desc:0 ""
+
+  GEN_our_own_subs:0 "Наши собственные подлодки"
+  GEN_our_own_subs_desc:0 ""  
+
+  GEN_purchase_subs:0 "Покупка подлодок у союзников"
+  GEN_purchase_subs_desc:0 ""
+  GEN_purchase_subs_effect_tt: ""
+
+  ####AIR
+  GEN_air_force_reforms:0 "Реформа ВВС"
+  GEN_air_force_reforms_desc:0 ""
+
+  GEN_our_own_designs:0 "Наш собственный истребитель"
+  GEN_our_own_designs_desc:0 ""
+  GEN_our_own_designs_effect_tt: ""
+
+  GEN_rely_on_allied_designs:0 "Покупка истребителей у союзников"
+  GEN_rely_on_allied_designs_desc:0 ""
+  GEN_rely_on_allied_designs_effect_tt: ""
+
+  GEN_defensive_airforce:0 "Оборонительные ВВС"
+  GEN_defensive_airforce_desc:0 ""
+
+  GEN_pilot_training_programme:0 "Программа подготовки пилотов-истребителей"
+  GEN_pilot_training_programme_desc:0 ""
+
+  GEN_modern_airforce:0 "Современные ВВС"
+  GEN_modern_airforce_desc:0 ""
+
+  GEN_modern_bombers:0 "Новый бомбардировщик"
+  GEN_modern_bombers_desc:0 ""
+
+############
+### TECH ###
+############
+
+  ### ECO
+  GEN_industrial_buff: "Промышленность"
+  GEN_electronics_buff: "Электроника"
+
+  ###LAND
+  GEN_guns_buff: "Малокалиберное оружие"
+  GEN_artillery_buff: "Артиллерия"
+  GEN_armor_buff: "Танки + модули"
+  GEN_mech_buff: "БМП/БТР"
+  GEN_special_forces_units: "Спецназ - снаряжение" 
+  GEN_special_forces_divison: "Спецназ - доктрина"
+
+  ###AIR
+  GEN_our_own_planes_chassis: "Шасси самолета"
+  GEN_arial_gear: "Модули самолетов"
+
+  ###NAVY
+  GEN_submarine_torpedoe: "Торпеды подлодки"
+  GEN_submarine_radar: "Сонар подлодки"
+  GEN_submarine_chassis: "Шасси подлодки"
