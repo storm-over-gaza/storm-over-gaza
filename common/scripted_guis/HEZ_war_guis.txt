@@ -4,13 +4,13 @@ scripted_gui = {
 		parent_window_token = top_bar
 		window_name = "missle_counter"
 		visible = {
-			ROOT = { has_dynamic_modifier = { modifier = GEN_ISR_HEZ_Conflict}}
+			ROOT = { has_dynamic_modifier = { modifier = ISR_HEZ_Conflict_modifier}}
 		}
 	}	
 
-	ISR_HEZ_Conflict_Decicion_ui = {
+	HEZ_Conflict_Decicion_ui = {
 		context_type = decision_category
-		window_name = "ISR_HEZ_Conflict_container"
+		window_name = "HEZ_container"
 		visible = { 
 			is_ai = no
 		}

@@ -1,5 +1,5 @@
 #request assets
-GEN_ISR_HEZ_Conflict = {
+ISR_HEZ_Conflict_modifier = {
 	icon = GFX_
 	#check all of these
 	war_support_factor = ISR_HEZ_WAR_SUPPORT

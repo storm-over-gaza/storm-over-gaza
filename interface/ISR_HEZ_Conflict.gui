@@ -25,10 +25,10 @@ guiTypes = {
 			fixedsize = yes	
 		}
 	}
-	## TODO make some gui for missle pdouction (Keep It Simple)
+	## TODO make some gui for missle purchase (Keep It Simple) (based on new eco)
 	#decisions
 	containerWindowType = {
-		name = "ISR_HEZ_Conflict_container"
+		name = "HEZ_container"
 		size = { width = 525 height = 300 }
 		position = { x = 0 y = 0 }
 		#first row
@@ -63,12 +63,12 @@ guiTypes = {
 			spriteType = "aa_health_progress_bar"
 		}
 		instantTextBoxType = {
-			name = "ISR_aa_health_progress_bar_label"
+			name = "HEZ_ISR_aa_health_progress_bar_label"
 			text = "AA Health:[?ISR.CONST_AA_HEALTH_VAR]"
 			position = {x = 330 y = 160 }
 		}		
 		iconType = {
-			name ="ISR_aa_health_progress_bar_container"
+			name ="HEZ_ISR_aa_health_progress_bar_container"
 			position = { x = 440 y = 150 }
 			spriteType = "aa_health_progress_bar"
 			rotation = 3.14159

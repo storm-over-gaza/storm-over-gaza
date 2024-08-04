@@ -1,0 +1,8 @@
+HEZ_war_decisions = {
+	icon = GFX_
+	scripted_gui = HEZ_Conflict_Decicion_ui
+	visible = {
+		tag = HEZ
+		has_dynamic_modifier = { modifier = ISR_HEZ_Conflict_modifier }
+	}
+}

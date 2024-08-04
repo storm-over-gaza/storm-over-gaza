@@ -1,4 +1,4 @@
-ISR_HEZ_war_decisions = {
+HEZ_war_decisions = {
 	#TODO write onmap decisions for strikes of vaarious types
 	# each needs a small (ESCALATIONLEVEL 1), 
 	# medium after retaliation (ESCALATIONLEVEL 2)
@@ -11,7 +11,7 @@ ISR_HEZ_war_decisions = {
 	# 1 (Lebanon) (ESCALATIONLEVEL 3) and (AA less than 50)
 	# Add Special Operations/strikes based on conflict wiki page
 	# Hez
-	#border regions to debuff israel via GEN_ISR_HEZ_Conflict, ISR_misplaced_population
+	#border regions to debuff israel via ISR_HEZ_Conflict_modifier, ISR_misplaced_population
 	## AA strike 
 	## propaganda strike small (ESC 1)
 	## border raid (ESC 2)
