@@ -1,0 +1,14 @@
+#request assets
+GEN_ISR_HEZ_Conflict = {
+	icon = GFX_
+	#check all of these
+	war_support_factor = ISR_HEZ_WAR_SUPPORT
+	stability_factor = ISR_HEZ_WAR_IMPACT	
+	war_stability_factor = ISR_HEZ_WAR_IMPACT
+}
+
+ISR_misplaced_population = {
+	stability_factor = ISR_HEZ_WAR_IMPACT	
+	war_stability_factor = ISR_HEZ_WAR_IMPACT_DRIFT
+	drift_defence_factor = ISR_HEZ_WAR_IMPACT_DRIFT
+}

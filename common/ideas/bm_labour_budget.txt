@@ -96,13 +96,6 @@ ideas = {
                 
                 modifier = {
                     has_government = fascism
-                    NOT = { 
-                        
-                        OR = {
-                            tag = ITA 
-                            tag = GER 
-                        }
-                    }
 
                     add = 40
                 }
@@ -185,12 +178,7 @@ ideas = {
                     has_government = communism
                     add = 20
                 }
-
-                modifier = {
-                    tag = ITA
-                    has_government = fascism
-                    add = 40
-                }
+                
 
                 modifier = {
                     has_government = democratic

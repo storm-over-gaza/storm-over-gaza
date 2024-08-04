@@ -1,0 +1,38 @@
+scripted_gui = {
+    ISR_HEZ_Conflict_temp_MISSLES_Counter = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "missle_counter"
+		visible = {
+			ROOT = { has_dynamic_modifier = { modifier = GEN_ISR_HEZ_Conflict}}
+		}
+	}	
+
+	ISR_HEZ_Conflict_Decicion_ui = {
+		context_type = decision_category
+		window_name = "ISR_HEZ_Conflict_container"
+		visible = { 
+			is_ai = no
+		}
+		properties = {
+			HEZ_Flag = {
+				image = "[HEZ.GetFlag]"
+			}
+			escalation_counter = {
+				frame = HEZ.CONST_ESCALATION_LEVEL
+			}
+			ISR_Flag = {
+				image = "[ISR.GetFlag]"
+			}
+			aggression_progress_bar_container = {
+				frame = HEZ.CONST_AGGRESION_SCALE # you can set a temp var in the triggers section and then use it here if you want the frame to not be 1:1 with the var
+			}
+			HEZ_aa_health_progress_bar_container = {
+				frame = HEZ.CONST_AA_HEALTH_VAR
+			}
+			ISR_aa_health_progress_bar_container = {
+				frame = ISR.CONST_AA_HEALTH_VAR
+			}
+		}
+	}
+}

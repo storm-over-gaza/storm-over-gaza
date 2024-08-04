@@ -1,0 +1,286 @@
+﻿l_english:
+##############
+### EVENTS ###
+##############
+  
+  ###POL
+  GEN_TREE_EVENTS.1.t: "Welcome to War in Gaza."
+  GEN_TREE_EVENTS.1.desc: "TODO"
+  GEN_TREE_EVENTS.1.a: "TODO"
+  
+  ###ECO
+  GEN_TREE_EVENTS.2.t: "Economic Growth!"
+  GEN_TREE_EVENTS.2.desc: "TODO"
+  GEN_TREE_EVENTS.2.a: "TODO"
+
+  GEN_TREE_EVENTS.3.t: "Economic Stagnation!"
+  GEN_TREE_EVENTS.3.desc: "TODO"
+  GEN_TREE_EVENTS.3.a: "TODO"
+
+###########################
+### IDEAS AND MODIFIERS ###
+###########################
+
+  ###OpinionModifiers
+  opposes_us: "Opposes us"
+  loyal_to_the_revolution: "Loyal to the Islamic Revolution"
+  friend_of_america: "American Ally"
+
+  ### POL
+  GEN_concessions_to_america: "Concessions to America"
+  GEN_concessions_to_iran_idea: "Concessions to Iran"
+  GEN_resistance_to_reforms: "Resistance to Reforms"
+  GEN_liberal_society_idea: "Liberal Society"
+  GEN_sharia_law_idea: "Sharia Law"
+  GEN_unity_modifier: "National Unity"
+  GEN_traditional_mothers: "Traditional Mothers"
+  GEN_women_in_the_army: "Warrior Women"
+  GEN_intervene: "Intervention in Israeli-Hamaz War"
+  ###ECO
+  GEN_economic_recovery: "Economic Stimulus"
+  GEN_unions_crushed: "Unions Crushed"
+  GEN_unions_tolerated: "Unions Tolerated"
+  GEN_economic_growth: "Economy Growth"
+  GEN_stagnation: "Economic Stagnation"
+
+  ###MIL
+  GEN_military_industry: "Domestic Arms Industry"
+  GEN_military_reform: "Military Reforms"
+  GEN_army_modifier: "Army Buffs"
+  GEN_regional_military_power: "Regional Military Power"
+
+  ###AIR
+  GEN_airforce_planning_def: "Interception Training"
+  GEN_airforce_planning_off: "Superiority Training"
+  GEN_our_own_design_idea: "Native Fighters"
+
+#############
+### FOCUS ###
+#############
+
+  ###POL
+  GEN_the_coming_storm:0 "The Coming Storm..."
+  GEN_the_coming_storm_desc:0 "TODO"
+
+  GEN_the_islamic_revolution:0 "The Islamic Revolution"
+  GEN_the_islamic_revolution_desc:0 "TODO"
+
+  GEN_a_stable_monarchy:0 "A Stable Monarchy"
+  GEN_a_stable_monarchy_desc:0 "TODO"
+
+  GEN_path_of_democracy:0 "Path of Democracy"
+  GEN_path_of_democracy_desc:0 "TODO"
+
+  GEN_pro_iranian_policy:0 "Pro Iran Policy"
+  GEN_pro_iranian_policy_desc:0 "TODO"
+
+  GEN_pro_western_policy:0 "Pro Western Policy "
+  GEN_pro_western_policy_desc:0 "TODO"
+
+  GEN_theocratic_reforms:0 "Theocratic Reforms"
+  GEN_theocratic_reforms_desc:0 "TODO"
+
+  GEN_concessions_to_iran:0 "Concessions to Iran"
+  GEN_concessions_to_iran_desc:0 "TODO"
+
+  GEN_sharia_law:0 "Declare Sharia Law"
+  GEN_sharia_law_desc:0 "TODO"
+
+  GEN_the_palestinian_struggle:0 "Join The Palestinian Struggle"
+  GEN_the_palestinian_struggle_desc:0 "TODO"
+
+  GEN_promote_unity:0 "Promote National Unity"
+  GEN_promote_unity_desc:0 "TODO"
+  GEN_promote_unity_effect_tt: "Add §Y$GEN_unity_modifier$§! , which grants (£GFX_pol_idea Political Power Gain: §G+5.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §G+5.00%§! , £GFX_stability_texticon Weekly Stability Factor: §G+5.00%§! ) \n"
+
+  GEN_the_traditional_mother:0 "Traditional Gender Norms"
+  GEN_the_traditional_mother_desc:0 "TODO"
+  GEN_the_traditional_mother_effect_tt: "Modifies §Y$GEN_unity_modifier$§! , by (£GFX_pol_idea Political Power Gain: §R-5.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §R-10.00%§! , £GFX_stability_texticon Weekly Stability Factor: §G+10.00%§! ) \n"
+  
+  GEN_womens_equality:0 "Womens Equality"
+  GEN_womens_equality_desc:0 "TODO"
+  GEN_womens_equality_effect_tt: "Modifies §Y$GEN_unity_modifier$§! , by (£GFX_pol_idea Political Power Gain: §G+5.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §G+10.00%§! , £GFX_stability_texticon Weekly Stability Factor: §R-10.00%§! ) \n" 
+
+  GEN_one_nation_one_faith:0 "One Nation, One Faith"
+  GEN_one_nation_one_faith_desc:0 "TODO"
+  GEN_one_nation_one_faith_effect_tt: "Modifies §Y$GEN_unity_modifier$§! , by (£GFX_pol_idea Political Power Gain: §R-10.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §R-5.00%§! , £GFX_stability_texticon Weekly Stability Factor: §G+5.00%§! ) \n" 
+
+  GEN_freedom_of_religion:0 "Freedom of Religion"
+  GEN_freedom_of_religion_desc:0 "TODO"
+  GEN_freedom_of_religion_effect_tt: "Modifies §Y$GEN_unity_modifier$§! , by (£GFX_pol_idea Political Power Gain: §G+10.00%§! , £GFX_manpower_texticon Recruitable Population Factor: §G+5.00%§! , £GFX_stability_texticon Weekly Stability Factor: §R-5.00%§! ) \n" 
+
+  GEN_meeting_in_the_city_on_a_hill:0 "Meeting in the City on a Hill"
+  GEN_meeting_in_the_city_on_a_hill_desc:0 "TODO"
+
+  GEN_free_market_reforms:0 "Free Market Reforms"
+  GEN_free_market_reforms_desc:0 "TODO"
+
+  GEN_a_liberal_society:0 "A Liberal Society"
+  GEN_a_liberal_society_desc:0 "TODO"
+
+  GEN_the_israeli_crisis:0 "Support Israel"
+  GEN_the_israeli_crisis_desc:0 "TODO"
+
+  ###ECO
+  GEN_economic_policy:0 "Economic Policy"
+  GEN_economic_policy_desc:0 "TODO"
+
+  GEN_invest_in_public_works:0 "Invest In Public Works"
+  GEN_invest_in_public_works_desc:0 "TODO"
+
+  GEN_sovreign_wealth_fund:0 "Expand Sovreign Wealth Fund"
+  GEN_sovreign_wealth_fund_desc:0 "TODO"
+
+  GEN_focus_on_industrialisation:0 "Focus on Industrial Tech"
+  GEN_focus_on_industrialisation_desc:0 "TODO"
+
+  GEN_research_stimulus:0 "Research Stimulus"
+  GEN_research_stimulus_desc:0 "TODO"
+
+  GEN_begin_the_rebuild:0 "Begin The Rebuild"
+  GEN_begin_the_rebuild_desc:0 "TODO"
+
+  GEN_austerity:0 "Begin austerity"
+  GEN_austerity_desc:0 "TODO"
+
+  GEN_welfare_state:0 "Rebuild The Welfare State"
+  GEN_welfare_state_desc:0 "TODO"
+
+  GEN_civilian_industrial_projects:0 "Expand the Private Sector"
+  GEN_civilian_industrial_projects_desc:0 "TODO"
+
+  GEN_military_priority:0 "Ensure Military Economic Dominance"
+  GEN_military_priority_desc:0 "TODO"
+
+  GEN_crush_unions:0 "Crush the Labour Unions"
+  GEN_crush_unions_desc:0 "TODO"
+
+  GEN_befriend_unions:0 "Befriend Union Leaders"
+  GEN_befriend_unions_desc:0 "TODO"
+
+  GEN_flourishing_economy:0 "Flourishing Economy"
+  GEN_flourishing_economy_desc:0 "TODO"
+
+  ###MIL
+  ####LAND
+  GEN_army_matters:0 "Army Matters"
+  GEN_army_matters_desc:0 "TODO"
+
+  GEN_land_army_reforms:0 "Land Forces Reform"
+  GEN_land_army_reforms_desc:0 "TODO"
+
+  GEN_training_effort:0 "Training Effort"
+  GEN_training_effort_desc:0 "TODO"
+
+  GEN_big_guns_focus:0 "Big Guns"
+  GEN_big_guns_focus_desc:0 "TODO"
+
+  GEN_support_companies:0 "Support Companies"
+  GEN_support_companies_desc:0 "TODO"
+
+  GEN_infantry_focus:0 "Smaller Guns"
+  GEN_infantry_focus_desc:0 "TODO"
+
+  GEN_military_industrial_complex:0 "A Domestic Military Industry"
+  GEN_military_industrial_complex_desc:0 "TODO"
+  GEN_military_industrial_complex_effect_new_tt: "Add §Y$GEN_military_industry$§! , which grants (£GFX_prod_eff_cap Production Max Efficiency: §G+20.00%§! , £GFX_prod_eff Production Efficiency Gain: §G+10.00%§! ) \n"
+  GEN_military_industrial_complex_effect_change_tt: "Modifies §Y$GEN_military_industry$§! , by (£GFX_prod_eff_cap Production Max Efficiency: §G+20.00%§! , £GFX_prod_eff Production Efficiency Gain: §G+10.00%§! ) \n"
+
+  GEN_plans_for_the_army:0 "Army Planning"
+  GEN_plans_for_the_army_desc:0 "TODO"
+  GEN_plans_for_the_army_effect_tt: "Add §Y$GEN_army_modifier$§! , which grants (£GFX_unit_infantry_icon_small Infantry Attack + Defence:: §G+10.00%§! , £GFX_unit_category_support_artillery_icon_small Artillery Attack + Defence: §G+10.00%§! ) \n"
+
+  GEN_a_tank_army:0 "Reform our Armored Corps"
+  GEN_a_tank_army_desc:0 "TODO"
+  GEN_a_tank_army_effect_tt: "Modifies §Y$GEN_army_modifier$§!, by (£GFX_modern_tank_chassis_texticon Infantry Attack + Defence: §G+15.00%§! , £GFX_modern_tank_chassis_texticon Armored Speed: §G+20.00%§! ) \n"
+
+  GEN_a_new_battle_tank:0 "A new Battle Tank"
+  GEN_a_new_battle_tank_desc:0 "TODO"
+
+  GEN_ifv_effort:0 "New IFV"
+  GEN_ifv_effort_desc:0 "TODO"
+
+  GEN_special_forces:0 "Invest into the Special Forces"
+  GEN_special_forces_desc:0 "TODO"
+  GEN_special_forces_effect_tt: "Modifies §Y$GEN_army_modifier$§!, by (£GFX_unit_category_special_forces_icon_small Special Forces Capacity: §G+20.00%§! , £GFX_unit_category_special_forces_icon_small Special Forces Training Time: §G-5.00%§! , £GFX_unit_category_special_forces_icon_small Special Forces Attack+Defence: §G+5.00%§!) \n"
+
+  GEN_special_forces_2:0 "Expand Special Forces Programme"
+  GEN_special_forces_2_desc:0 "TODO"
+  GEN_special_forces_2_effect_tt: "Modifies §Y$GEN_army_modifier$§!, by (£GFX_unit_category_special_forces_icon_small Special Forces Capacity: §G+5.00%§! , £GFX_unit_category_special_forces_icon_small Special Forces Training Time: §G-15.00%§! , £GFX_unit_category_special_forces_icon_small Special Forces Attack+Defence: §G+20.00%§! , £GFX_unit_category_special_forces_icon_small Terrian Penalty Reduction: §G+15.00%§!) \n"
+
+  GEN_modern_military:0 "Regional Military Power"
+  GEN_modern_military_desc:0 "TODO"
+  GEN_modern_military_effect_tt: "Modifies §Y$GEN_army_modifier$§! , by (£GFX_unit_infantry_icon_small Infantry Attack + Defence:: §G+10.00%§! , £GFX_unit_category_support_artillery_icon_small Artillery Attack + Defence: §G+10.00%§! ) \n" 
+
+  ####NAVY
+  GEN_naval_reforms:0 "Naval Reform"
+  GEN_naval_reforms_desc:0 "TODO"
+
+  GEN_naval_build_up_the_ports:0 "Naval Infrastructure Buildup"
+  GEN_naval_build_up_the_ports_desc:0 "TODO"
+
+  GEN_a_merchant_navy:0 "Merchant Navy"
+  GEN_a_merchant_navy_desc:0 "TODO"
+
+  GEN_form_a_wolfpack:0 "Form a Wolfpack"
+  GEN_form_a_wolfpack_desc:0 "TODO"
+
+  GEN_our_own_subs:0 "Our Own Submarine"
+  GEN_our_own_subs_desc:0 "TODO"  
+
+  GEN_purchase_subs:0 "Buy Allied Submarines"
+  GEN_purchase_subs_desc:0 "TODO"
+  GEN_purchase_subs_effect_new_tt: "Add §Y$GEN_military_industry$§! , which grants (£GFX_civ_factory Equipment Licence Cost: §G-25.00%§! , £GFX_production_cost Licensed Equipment Production Speed: §G-25.00%§! ) \n"
+  GEN_purchase_subs_effect_edit_tt: "Modifies §Y$GEN_military_industry$§! , by (£GFX_civ_factory Equipment Licence Cost: §G-25.00%§! , £GFX_production_cost Licensed Equipment Production Speed: §G-25.00%§! ) \n"
+
+  ####AIR
+  GEN_air_force_reforms:0 "Air Force Reforms"
+  GEN_air_force_reforms_desc:0 "TODO"
+
+  GEN_our_own_designs:0 "Our Own Fighter"
+  GEN_our_own_designs_desc:0 "TODO"
+  GEN_our_own_designs_effect_new_tt: "Add §Y$GEN_military_industry$§! , which grants (£GFX_prod_eff_cap Production Max Efficiency: §G+20.00%§! , £GFX_prod_eff Production Efficiency Gain: §G+10.00%§! ) \n"
+  GEN_our_own_designs_effect_edit_tt: ""
+
+  GEN_rely_on_allied_designs:0 "Buy Allied Fighters"
+  GEN_rely_on_allied_designs_desc:0 "TODO"
+  GEN_rely_on_allied_designs_effect_new_tt: "Add §Y$GEN_military_industry$§! , which grants (£GFX_civ_factory Equipment Licence Cost: §G-25.00%§! , £GFX_production_cost Licensed Equipment Production Speed: §G-25.00%§! ) \n"
+  GEN_rely_on_allied_designs_effect_edit_tt: "Modifies §Y$GEN_military_industry$§! , by (£GFX_civ_factory Equipment Licence Cost: §G-25.00%§! , £GFX_production_cost Licensed Equipment Production Speed: §G-25.00%§! , £GFX_resources_to_market_icon Lack of resources penalty: §G-20.00%§! ) \n"
+
+  GEN_defensive_airforce:0 "Defensive Airforce"
+  GEN_defensive_airforce_desc:0 "TODO"
+
+  GEN_pilot_training_programme:0 "Advanced Figher Pilot Programme"
+  GEN_pilot_training_programme_desc:0 "TODO"
+
+  GEN_modern_airforce:0 "Modern Airforce"
+  GEN_modern_airforce_desc:0 "TODO"
+
+  GEN_modern_bombers:0 "A New Bomber"
+  GEN_modern_bombers_desc:0 "TODO"
+
+############
+### TECH ###
+############
+
+  ### ECO
+  GEN_industrial_buff: "Industry"
+  GEN_electronics_buff: "Electronics"
+
+  ###LAND
+  GEN_guns_buff: "Small Guns"
+  GEN_artillery_buff: "Artillery"
+  GEN_armor_buff: "Tank + modules"
+  GEN_mech_buff: "IFV/APC"
+  GEN_special_forces_units: "Special Forces - Gear " 
+  GEN_special_forces_divison: "Special Forces - Doctrine"
+
+  ###AIR
+  GEN_our_own_planes_chassis: "Small Planes Chassis"
+  GEN_arial_gear: "Planes Modules"
+  GEN_our_own_planes_engine: "Engine"
+
+  ###NAVY
+  GEN_submarine_torpedoe: "Submarine Torpedoes"
+  GEN_submarine_radar: "Submarine Sonar"
+  GEN_submarine_chassis: "Submarine Chassis"

@@ -17,7 +17,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				HAM_sword_of_jerusalem
+				# HAM_sword_of_jerusalem
 			}
 		}
 		"ISR"={
@@ -27,7 +27,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				ISR_sword_of_jerusalem
+				# ISR_sword_of_jerusalem
 			}
 		}
 		"PAL"={
@@ -37,7 +37,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				PAL_sword_of_jerusalem
+				# PAL_sword_of_jerusalem
 			}
 		}
 		"PIJ"={
@@ -47,7 +47,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				PIJ_sword_of_jerusalem
+				# PIJ_sword_of_jerusalem
 			}
 		}
 		"EGY"={
@@ -57,7 +57,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				EGY_sword_of_jerusalem
+				# EGY_sword_of_jerusalem
 			}
 		}
 		"SYR"={
@@ -67,7 +67,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				SYR_sword_of_jerusalem
+				# SYR_sword_of_jerusalem
 			}
 		}
 		"HEZ"={
@@ -77,7 +77,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				HEZ_sword_of_jerusalem
+				# HEZ_sword_of_jerusalem
 			}
 		}
 		"FSA"={
@@ -88,7 +88,7 @@ bookmarks = {
 			}
 			
 			focuses = {
-				FSA_sword_of_jerusalem
+				# FSA_sword_of_jerusalem
 			}
 		}
         "JOR"={
@@ -99,7 +99,7 @@ bookmarks = {
 			}
 			minor = yes
 			focuses = {
-				JOR_sword_of_jerusalem
+				# JOR_sword_of_jerusalem
 			}
 		}
 		"LEB"={
@@ -110,7 +110,7 @@ bookmarks = {
 			}
 			minor = yes
 			focuses = {
-				LEB_sword_of_jerusalem
+				# LEB_sword_of_jerusalem
 			}
 		}
 		"SAU"={
@@ -121,7 +121,7 @@ bookmarks = {
 			}
 			minor = yes
 			focuses = {
-				SAU_sword_of_jerusalem
+				# SAU_sword_of_jerusalem
 			}
 		}
 		"IRQ"={
@@ -132,10 +132,10 @@ bookmarks = {
 			}
 			minor = yes
 			focuses = {
-				IRQ_sword_of_jerusalem
+				# IRQ_sword_of_jerusalem
 			}
 		}
-               "USA"={
+		"USA"={
 			history = "USA_SWORDOFJERUSALEM_DESC"
 			ideology = democratic
 			ideas = {
@@ -143,10 +143,10 @@ bookmarks = {
 			}
 			minor = yes
 			focuses = {
-				USA_sword_of_jerusalem
+				# USA_sword_of_jerusalem
 			}
 		}
-               "RUS"={
+		"RUS"={
 			history = "RUS_SWORDOFJERUSALEM_DESC"
 			ideology = democratic
 			ideas = {
@@ -154,10 +154,8 @@ bookmarks = {
 			}
 			minor = yes
 			focuses = {
-				RUS_sword_of_jerusalem
+				# RUS_sword_of_jerusalem
 			}
 		}
-		
-
 	}
 }

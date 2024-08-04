@@ -1,0 +1,174 @@
+#Mechanic Begins. 
+#will be launched via an event, depening on when war with hamas begins
+#in debug mode has a cheat command
+HEZ_begin_conflict_with_israel = { 
+	ISR = { set_variable = { var = ISR_HEZ_WAR_SUPPORT 		value = 0.3 }
+			set_variable = { var = ISR_HEZ_WAR_IMPACT 		value = -0.05 }
+			add_dynamic_modifier = { modifier = GEN_ISR_HEZ_Conflict }
+		
+			set_variable = { var = CONST_AA_HEALTH_VAR 		value = 100 }#higher-iron dome
+			set_variable = { var = CONST_MISSLE_STOCKPILE 	value = 200 }
+		}
+	HEZ = { set_variable = { var = ISR_HEZ_WAR_SUPPORT 		value = 0.3 }
+			set_variable = { var = ISR_HEZ_WAR_IMPACT 		value = -0.05 }
+			add_dynamic_modifier = { modifier = GEN_ISR_HEZ_Conflict }
+
+			set_variable = { var = CONST_AA_HEALTH_VAR 		value = 50 }
+			set_variable = { var = CONST_MISSLE_STOCKPILE 	value = 200 }
+
+			set_variable = { var = CONST_AGGRESION_SCALE 	value = 50 }
+			set_variable = { var = CONST_ESCALATION_LEVEL 	value = 1 }
+	}
+}
+#Strikes
+##TODO Write (after map update) set these in decisions when clicked. 
+GEN_launch_small_strike = {
+	set_variable = { var = temp_MISSLES val = 20}
+	GEN_strike = yes
+}
+GEN_launch_medium_strike = {
+	set_variable = { var = temp_MISSLES val = 50}
+	GEN_strike = yes	
+}
+GEN_launch_large_strike = {
+	set_variable = { var = temp_MISSLES val = 100}
+	GEN_strike = yes
+}
+GEN_target_aa_sites = {
+	set_variable = { var = temp_MISSLES val = 10}
+	GEN_strike = yes
+}
+GEN_strike = { ##TODO TEST
+	GEN_calculate_effectiveness = yes
+	GEN_strike_impact = yes
+	GEN_calculate_aggression = yes
+	# GEN_destroy_buildings = yes
+	ROOT.owner = { 	if = { 	limit = { original_tag = ISR }
+							HEZ = { 	subtract_from_variable = { var = CONST_MISSLE_STOCKPILE value = temp_MISSLES }
+									}
+							ISR_Strike_ideas = yes
+						}
+					else = {
+							ISR = {	subtract_from_variable = { var = CONST_MISSLE_STOCKPILE value = temp_MISSLES }
+								}
+							HEZ_Strike_ideas = yes
+						}
+					GEN_cleanup_strike = yes
+	}
+}
+
+GEN_cleanup_strike = { ##TODO TEST
+	clear_variable = temp_MISSLES
+	clear_variable = temp_EFFECTIVENESS
+}
+
+ISR_Strike_ideas = { ##TODO TEST
+	remove_ideas = { ISR_recently_struck }
+	add_timed_idea = {
+		idea = ISR_recently_conducted_strikes
+		days = 7
+	}
+	HEZ = {
+		add_timed_idea = {
+			idea = HEZ_recently_struck
+			days = 14
+		}
+	}
+}
+HEZ_Strike_ideas = { ##TODO TEST
+	remove_ideas = { HEZ_recently_struck }
+	add_timed_idea = {
+		idea = HEZ_recently_conducted_strikes
+		days = 7
+	}
+	ISR = {
+		add_timed_idea = {
+			idea = ISR_recently_struck
+			days = 14
+		}
+
+	}
+}
+#math #calcs effectiness based on an AA_health Variable
+GEN_calculate_effectiveness = { ##TODO TEST
+
+	set_variable = { var = temp_EFFECTIVENESS val = 100 }
+	
+	if = { 	limit = { ROOT.owner = { original_tag = ISR }} 
+			
+			subtract_from_variable = { 	var = temp_EFFECTIVENESS 
+										value = HEZ.CONST_AA_HEALTH_VAR }
+
+		} 
+	else = {
+			subtract_from_variable = { 	var = temp_EFFECTIVENESS 
+										value = ISR.CONST_AA_HEALTH_VAR }
+	}
+	clamp_variable = {	var = temp_EFFECTIVENESS
+						min = 0
+						max = 10 }
+
+	if = { 	limit = { check_variable = { var = temp_EFFECTIVENESS
+										value = 0 
+										compare = equals  }}
+			random_list = { 
+				50 = {
+					set_variable = { var = temp_EFFECTIVENESS value = 1 }
+				50 = {}
+			}
+									}		
+	}
+}
+GEN_strike_impact = {
+	if = { 	limit = { ROOT.owner = { original_tag = ISR }}
+		
+			divide_variable = {	var = temp_EFFECTIVENESS
+								value = 10}
+			subtract_from_variable = { var = ISR.ISR_HEZ_WAR_IMPACT value = temp_EFFECTIVENESS }
+			divide_variable = {	var = temp_EFFECTIVENESS
+								value = 2}
+			subtract_from_variable = { var = ISR.ISR_HEZ_WAR_IMPACT_DRIFT value = temp_EFFECTIVENESS }
+
+			#TODO when israeli mechanic built, add further consequences here
+	}
+	if = { 	limit = { ROOT.owner = { original_tag = HEZ }}
+			
+			divide_variable = {	var = temp_EFFECTIVENESS value = 10}
+			subtract_from_variable = { var = ISR.ISR_HEZ_WAR_IMPACT value = temp_EFFECTIVENESS }
+			#TODO think of more consequences to add for hezbollah
+	}
+}
+
+GEN_calculate_aggression = { ##TODO TEST
+	#RNG
+	random_list = {
+		30 = { 
+			#event 
+			multiply_variable = { var = temp_EFFECTIVENESS value = 1.35 }
+		}
+		40 = { 
+			#event
+			multiply_variable = { var = temp_EFFECTIVENESS value = 1.25 }
+		}
+		40 = { 
+			multiply_variable = { var = temp_EFFECTIVENESS  value = 0.9 }
+		}
+	}
+	#deterministic
+	#if recently conducted strikes, which were not retaliated on.
+	if = { limit = { ROOT.owner = { original_tag = ISR }}
+		if = { limit = { HEZ = { has_idea = HEZ_recently_struck }}
+				multiply_variable = { var = temp_EFFECTIVENESS value = 1.3 }
+			}
+	}
+	else = {
+		if = { limit = { ISR = { has_idea = ISR_recently_struck }}
+				multiply_variable = { var = temp_EFFECTIVENESS value = 1.3 }
+			}
+	}
+}
+
+GEN_End_The_Conflict = { ##TODO TEST
+	## remove modifier
+	clear_variable = CONST_MISSLE_STOCKPILE	
+}

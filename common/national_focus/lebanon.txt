@@ -1,0 +1,30 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = lebanon_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = LEB
+		}
+	}
+	
+	default = no
+	
+	initial_show_position = { x = 5 y = 2}
+	continuous_focus_position = { x = 25 y = 1000}
+	
+	shared_focus = GEN_economic_policy
+	shared_focus = GEN_army_matters
+	shared_focus = GEN_the_coming_storm
+	#TODO Politics Focus Tree(4)
+}

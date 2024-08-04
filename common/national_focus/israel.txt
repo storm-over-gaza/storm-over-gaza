@@ -19,20 +19,12 @@ focus_tree = {
 	}
 	
 	default = no
-
-	focus = {
-		id = ISR_sword_of_jerusalem
-		icon = GFX_goal_generic_construction
-		x = 6
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			add_war_support = 0.05
-		}
-		
-	}
+	
+	initial_show_position = { x = 5 y = 2}
+	continuous_focus_position = { x = 25 y = 1000}
+	
+	#TMP2
+	shared_focus = GEN_economic_policy
+	shared_focus = GEN_army_matters
+	#TODO Politics Focus Tree(1)
 }

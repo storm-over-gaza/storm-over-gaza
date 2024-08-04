@@ -647,5 +647,15 @@ debug_decisions = {
 			}
 		}
 	}
+	debug_start_isr_hez_conflict = {
+		visible = { OR = { tag = ISR tag = HEZ } }
+		cost = 0 
+		icon = GFX_
+		fire_only_once = no
+		days_remove = 1
+		remove_effect = {
+			HEZ_begin_conflict_with_israel = yes
+		}
+	}
 	
 }

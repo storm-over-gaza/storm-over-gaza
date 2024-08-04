@@ -1,0 +1,29 @@
+add_namespace = GEN_TREE_EVENTS
+
+#welcome event - For Generic Trees (can be reused for other trees too
+country_event = {
+	id = GEN_TREE_EVENTS.1
+	title = GEN_TREE_EVENTS.1.t
+	desc = GEN_TREE_EVENTS.1.desc
+	is_triggered_only = yes
+	# picture = GFX_
+	option = {name = GEN_TREE_EVENTS.1.a}
+}
+
+country_event = {
+	id = GEN_TREE_EVENTS.2
+	title = GEN_TREE_EVENTS.2.t
+	desc = GEN_TREE_EVENTS.2.desc
+	is_triggered_only = yes
+	# picture = GFX_
+	option = {name = GEN_TREE_EVENTS.2.a}
+}
+
+country_event = {
+	id = GEN_TREE_EVENTS.3
+	title = GEN_TREE_EVENTS.3.t
+	desc = GEN_TREE_EVENTS.3.desc
+	is_triggered_only = yes
+	# picture = GFX_
+	option = {name = GEN_TREE_EVENTS.3.a}
+}

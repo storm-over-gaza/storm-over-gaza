@@ -1,0 +1,77 @@
+guiTypes = {
+	## Missle Display
+	## TODO make only visible under during ISR HEZ conflict (dynamic modifier)
+	containerWindowType = {
+		name = "missle_counter"
+		position = { x = 975 y = 5 }	
+		iconType ={
+			name ="missle_counter_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=0 y=0 }
+		}
+		iconType = { ##TODO
+			name ="missle_counter_icon"
+			spriteType = "GFX_Rocket" #need new icon
+			position = { x= 3 y = 6 }
+		}
+		instantTextBoxType = {
+			name ="missle_counter_text"
+			position = { x= 23 y = 4 }
+			font = "hoi_18mbs"
+			text = [?CONST_MISSLE_STOCKPILE]
+			format = left
+			maxWidth = 150
+			maxHeight = 24
+			fixedsize = yes	
+		}
+	}
+	## TODO make some gui for missle pdouction (Keep It Simple)
+	#decisions
+	containerWindowType = {
+		name = "ISR_HEZ_Conflict_container"
+		size = { width = 525 height = 300 }
+		position = { x = 0 y = 0 }
+		#first row
+		iconType = {
+			name = "HEZ_Flag" 
+			position = { x = 50 y = 15 } 
+			spriteType = "GFX_shield_medium"
+		}
+		iconType = {
+			name = "escalation_counter"
+			position = { x = 200 y = 15 }
+			spriteType = "GFX_escalation_bar"
+		}
+		iconType = {
+			name = "ISR_Flag" 
+			position = { x = 350 y = 15 }
+			spriteType = "GFX_shield_medium"
+		}
+		iconType = {
+			name ="aggression_progress_bar_container"
+			position = { x = 45 y = 100 }
+			spriteType = "aggression_progress_bar"
+		}
+		instantTextBoxType = {
+			name = "HEZ_aa_health_progress_bar_label"
+			text = "AA Health:[?HEZ.CONST_AA_HEALTH_VAR]"
+			position = {x = 50 y = 160 }
+		}
+		iconType = {	
+			name ="HEZ_aa_health_progress_bar_container"
+			position = { x = 50 y = 175 }
+			spriteType = "aa_health_progress_bar"
+		}
+		instantTextBoxType = {
+			name = "ISR_aa_health_progress_bar_label"
+			text = "AA Health:[?ISR.CONST_AA_HEALTH_VAR]"
+			position = {x = 330 y = 160 }
+		}		
+		iconType = {
+			name ="ISR_aa_health_progress_bar_container"
+			position = { x = 440 y = 150 }
+			spriteType = "aa_health_progress_bar"
+			rotation = 3.14159
+		}
+	}
+}
