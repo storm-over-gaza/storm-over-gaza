@@ -1,0 +1,30 @@
+﻿##################
+# SUPER EVENTS 
+##################
+
+add_namespace = super
+
+country_event = {		#Super Event DONE
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_SPEVNT_Second_Gaza_War
+
+	is_triggered_only = no
+	
+	trigger = {
+		HAM = { has_war_with = ISR }
+	}
+
+	fire_only_once = yes
+	
+	hidden = yes
+
+	option = {
+		name = super.1.a
+
+        #set_global_flag = Super_Event_Visible
+        #set_global_flag = GER_Second_Weltkrieg
+		#sound_effect = "superev_weltkrieg"
+	}
+}
