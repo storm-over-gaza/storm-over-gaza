@@ -23,8 +23,8 @@ country_event = {		#Super Event DONE
 	option = {
 		name = super.1.a
 
-        #set_global_flag = Super_Event_Visible
-        #set_global_flag = GER_Second_Weltkrieg
+        set_global_flag = Super_Event_Visible
+        set_global_flag = GER_Second_Gaza_War
 		#sound_effect = "superev_weltkrieg"
 	}
 }
