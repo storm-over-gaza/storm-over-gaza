@@ -1,0 +1,11 @@
+opinion_modifiers = {
+	friend_of_america = {
+		value = 50
+	}
+	loyal_to_the_revolution = {
+		value = 50
+	}
+	opposes_us = {
+		value = -100
+	}
+}
