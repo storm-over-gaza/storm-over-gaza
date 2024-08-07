@@ -10,11 +10,7 @@ country_event = {		#Super Event DONE
 	desc = super.1.d
 	picture = GFX_SPEVNT_Second_Gaza_War
 
-	is_triggered_only = no
-	
-	trigger = {
-		HAM = { has_war_with = ISR }
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 	
@@ -25,6 +21,10 @@ country_event = {		#Super Event DONE
 
         set_global_flag = Super_Event_Visible
         set_global_flag = HAM_Second_Gaza_War
-		sound_effect = "tno_se_custom"
+		# sound_effect = "tno_se_custom"
+		declare_war_on = {
+			target = ISR
+			type = annex_everything
+		}
 	}
 }
