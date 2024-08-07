@@ -1,0 +1,20 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_supereventsbg"
+		textureFile = "/gfx/super_event_gui/supereventsbg.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbutton"
+		textureFile = "/gfx/super_event_gui/supereventsbutton.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventtextbg"
+		texturefile = "/gfx/super_event_gui/supereventstextbg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SPEVNT_Second_Gaza_War"
+		texturefile = "gfx/super_event_images/SPEVNT_Second_Gaza_War.dds"
+		legacy_lazy_load = no
+	}
+}
