@@ -6,7 +6,7 @@ HAM_pre_war_decision = {
 		available = { always = no }
 		icon = GEN
 		is_good = no
-		days_mission_timeout = 127 
+		days_mission_timeout = 128 
 		cancel_trigger = { always = no }
 		timeout_effect = {country_event = { id = WAR_START_EVENTS.1 days = 0 }}#Oct7
 	}
