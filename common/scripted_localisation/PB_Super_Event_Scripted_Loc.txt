@@ -5,7 +5,7 @@ defined_text = { #SUPER EVENT TITLES
         trigger = {
             has_global_flag = HAM_Second_Gaza_War
         }
-        localization_key = "GFX_SPEVNT_Second_Gaza_War"
+        localization_key = "GFX_SPEVNT_Second_Gaza_War_TITLE"
     }
 
 }
@@ -17,8 +17,7 @@ defined_text = { #SUPER EVENT QUOTES
         trigger = {
             has_global_flag = HAM_Second_Gaza_War
         }
-        localization_key = "GFX_SPEVNT_Second_Gaza_War_TEXT"
+        localization_key = "GFX_SPEVNT_Second_Gaza_War_QUOTE"
     }
-    
 
 }
