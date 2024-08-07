@@ -25,6 +25,6 @@ country_event = {		#Super Event DONE
 
         set_global_flag = Super_Event_Visible
         set_global_flag = HAM_Second_Gaza_War
-		sound_effect = "tno_se_custom"
+		#sound_effect = "tno_se_custom"
 	}
 }
