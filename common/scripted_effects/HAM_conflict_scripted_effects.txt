@@ -6,10 +6,8 @@ begin_al_asqa_flood = {
 		target = ISR
 		type = annex_everything
 	}
-	
+
 	#SUPER EVENT
 	set_global_flag = Super_Event_Visible
 	set_global_flag = HAM_Second_Gaza_War
-	country_event = { id = super.1 days = 0 }
-	#TODO make more intricate later
 }
