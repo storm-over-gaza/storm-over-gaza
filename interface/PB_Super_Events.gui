@@ -13,11 +13,11 @@ guiTypes = {
 			name = "Background"	
 			spriteType ="GFX_supereventsbg"
 		}
-		# iconType = {
-		# 	name ="Super_Event_Image_Gaza_War"
-		# 	spriteType = "GFX_SPEVNT_Second_Gaza_War"
-		# 	position = { x = 0 y = 0 }
-		# }
+		 iconType = {
+		 	name ="Super_Event_Image_Gaza_War"
+		 	spriteType = "GFX_SPEVNT_Second_Gaza_War"
+		 	position = { x = 29 y = 85 }
+		 }
 		iconType ={ #pre-integrated
 			name ="superevents_overlay"
 			spriteType = "GFX_supereventtextbg"
