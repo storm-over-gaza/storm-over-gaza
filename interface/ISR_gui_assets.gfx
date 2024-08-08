@@ -16,10 +16,10 @@ SpriteTypes = {
 		textureFile = "gfx/interface/knesset_gui_assets/likud_icon.dds"
 	}
 	####NOTE Shas(11)
-	# spriteType = {
-	# 	name = GFX_UI_shas_icon
-	# 	textureFile = "gfx/interface/knesset_gui_assets/shas_icon.dds" #TODO need icon
-	# }
+	spriteType = {
+		name = GFX_UI_shas_icon
+		textureFile = "gfx/interface/knesset_gui_assets/shas_icon.dds" #TODO need icon
+	}
 	####NOTE United Torah Judaism(7)
 	spriteType = {
 		name = GFX_UI_utj_icon
