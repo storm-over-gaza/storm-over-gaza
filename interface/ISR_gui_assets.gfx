@@ -11,67 +11,94 @@ SpriteTypes = {
 	## PARTY ICONS
 	###GOVERNING COALITION
 	####NOTE Likud(GOV)(32)
+	####LEADER Bejanim Netenyahu
+	####COLOR #1f5aa7
 	spriteType = {
 		name = GFX_UI_likud_icon
 		textureFile = "gfx/interface/knesset_gui_assets/likud_icon.dds"
 	}
 	####NOTE Shas(11)
+	####LEADER Aryeh Deri
+	####COLOR #010000 (need to make some kind of background or do something different)
 	spriteType = {
 		name = GFX_UI_shas_icon
 		textureFile = "gfx/interface/knesset_gui_assets/shas_icon.dds" #TODO need icon
 	}
 	####NOTE United Torah Judaism(7)
+	####LEADER Yitzhak Goldknopf
+	####COLOR #06335d
 	spriteType = {
 		name = GFX_UI_utj_icon
 		textureFile = "gfx/interface/knesset_gui_assets/utj_icon.dds"
 	}
 	####NOTE National Religious Party(7)
+	####LEADER Bezalel Smotrich
+	####COLOR #101944
+	spriteType = {
 	spriteType = {
 		name = GFX_UI_nrp_icon
 		textureFile = "gfx/interface/knesset_gui_assets/nrp_icon.dds"
 	}
 	####NOTE Otzma Yehudit(6)
+	####LEADER Itamar Ben-Gvir
+	####COLOR #ff4105
 	spriteType = {
 		name = GFX_UI_jewish_power_icon
 		textureFile = "gfx/interface/knesset_gui_assets/jewish_power_icon.dds"
 	}
 	####NOTE Noam(1)
+	####LEADER Rabbi Dror Aryeh
+	####COLOR #04aff7
 	spriteType = {
 		name = GFX_UI_Noam_icon
 		textureFile = "gfx/interface/knesset_gui_assets/noam_icon.dds"
 	}
 	###OPPOSITION
 	####NOTE Yesh Atid(24)
+	####LEADER Yair Lapid
+	####COLOR #003c9e
 	spriteType = {
 		name = GFX_UI_yesh_atid_icon
 		textureFile = "gfx/interface/knesset_gui_assets/yesh_atid_icon.dds"
 	}
 	####NOTE National Unity(8)
+	####LEADER Benny Gantz
+	####COLOR #07b7eo
 	spriteType = {
 		name = GFX_UI_national_unity_icon
 		textureFile = "gfx/interface/knesset_gui_assets/national_unity_icon.dds"
 	}
 	####NOTE Yisrael Beiteinu(5)
+	####LEADER Avigdor Lieberman
+	####COLOR #99c1e4
 	spriteType = {
 		name = GFX_UI_yb_icon
 		textureFile = "gfx/interface/knesset_gui_assets/yisrael_beiteinu_icon.dds"
 	}
 	####NOTE Ra'am(5)
+	####LEADER Mansour Abbas
+	####COLOR #15793b
 	spriteType = {
 		name = GFX_UI_raam_icon
 		textureFile = "gfx/interface/knesset_gui_assets/ual_icon.dds"
 	}
 	####NOTE Hadash-Ta'al(5)
+	####LEADER Ayman Odeh
+	####COLOR #d4262f
 	spriteType = {
 		name = GFX_UI_had_taal_icon
 		textureFile = "gfx/interface/knesset_gui_assets/had_taal_icon.dds"
 	}
 	####NOTE Labor(4)
+	####LEADER Merav Michaeli (Dissolves in 2024)
+	####COLOR #ef1d20
 	spriteType = {
 		name = GFX_UI_labor_icon
 		textureFile = "gfx/interface/knesset_gui_assets/labor_icon.dds"
 	}
 	####NOTE New Hope(4)
+	####LEADER Gideon Sa'ar
+	####COLOR #235296
 	spriteType = {
 		name = GFX_UI_new_hope
 		textureFile = "gfx/interface/knesset_gui_assets/new_hope_icon.dds"
