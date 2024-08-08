@@ -1,0 +1,79 @@
+SpriteTypes = {
+	## GUI ELEMENTS
+	spriteType = {
+		name = GFX_UI_knesset_coa_icon
+		textureFile = "gfx/interface/knesset_gui_assets/knesset_coa.dds"
+	}
+	spriteType = {
+		name = GFX_UI_israeli_knesset_icon
+		textureFile = "gfx/interface/knesset_gui_assets/israeli_knesset.dds"
+	}
+	## PARTY ICONS
+	###GOVERNING COALITION
+	####NOTE Likud(GOV)(32)
+	spriteType = {
+		name = GFX_UI_likud_icon
+		textureFile = "gfx/interface/knesset_gui_assets/likud_icon.dds"
+	}
+	####NOTE Shas(11)
+	# spriteType = {
+	# 	name = GFX_UI_shas_icon
+	# 	textureFile = "gfx/interface/knesset_gui_assets/shas_icon.dds" #TODO need icon
+	# }
+	####NOTE United Torah Judaism(7)
+	spriteType = {
+		name = GFX_UI_utj_icon
+		textureFile = "gfx/interface/knesset_gui_assets/utj_icon.dds"
+	}
+	####NOTE National Religious Party(7)
+	spriteType = {
+		name = GFX_UI_nrp_icon
+		textureFile = "gfx/interface/knesset_gui_assets/nrp_icon.dds"
+	}
+	####NOTE Otzma Yehudit(6)
+	spriteType = {
+		name = GFX_UI_jewish_power_icon
+		textureFile = "gfx/interface/knesset_gui_assets/jewish_power_icon.dds"
+	}
+	####NOTE Noam(1)
+	spriteType = {
+		name = GFX_UI_Noam_icon
+		textureFile = "gfx/interface/knesset_gui_assets/noam_icon.dds"
+	}
+	###OPPOSITION
+	####NOTE Yesh Atid(24)
+	spriteType = {
+		name = GFX_UI_yesh_atid_icon
+		textureFile = "gfx/interface/knesset_gui_assets/yesh_atid_icon.dds"
+	}
+	####NOTE National Unity(8)
+	spriteType = {
+		name = GFX_UI_national_unity_icon
+		textureFile = "gfx/interface/knesset_gui_assets/national_unity_icon.dds"
+	}
+	####NOTE Yisrael Beiteinu(5)
+	spriteType = {
+		name = GFX_UI_yb_icon
+		textureFile = "gfx/interface/knesset_gui_assets/yisrael_beiteinu_icon.dds"
+	}
+	####NOTE Ra'am(5)
+	spriteType = {
+		name = GFX_UI_raam_icon
+		textureFile = "gfx/interface/knesset_gui_assets/ual_icon.dds"
+	}
+	####NOTE Hadash-Ta'al(5)
+	spriteType = {
+		name = GFX_UI_had_taal_icon
+		textureFile = "gfx/interface/knesset_gui_assets/had_taal_icon.dds"
+	}
+	####NOTE Labor(4)
+	spriteType = {
+		name = GFX_UI_labor_icon
+		textureFile = "gfx/interface/knesset_gui_assets/labor_icon.dds"
+	}
+	####NOTE New Hope(4)
+	spriteType = {
+		name = GFX_UI_new_hope
+		textureFile = "gfx/interface/knesset_gui_assets/new_hope_icon.dds"
+	}
+}
